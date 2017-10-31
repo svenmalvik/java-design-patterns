@@ -20,18 +20,16 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.iluwatar.eip.splitter;
+package de.malvik.doc;
 
-import org.junit.Test;
+import com.sun.javadoc.RootDoc;
 
 /**
- * Test for App class
+ * Created by smalvik on 30.10.2017.
  */
-public class AppTest {
+public class Sysdoclet {
 
-  @Test
-  public void testMain() throws Exception {
-    String[] args = {};
-    App.main(args);
-  }
+    public static boolean start(RootDoc root){
+        return true;
+    }
 }
