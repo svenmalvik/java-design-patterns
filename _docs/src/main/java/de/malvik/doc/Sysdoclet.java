@@ -24,6 +24,7 @@ package de.malvik.doc;
 
 import com.sun.javadoc.ClassDoc;
 import com.sun.javadoc.RootDoc;
+import io.github.swagger2markup.markup.builder.MarkupBlockStyle;
 import io.github.swagger2markup.markup.builder.MarkupDocBuilder;
 import io.github.swagger2markup.markup.builder.MarkupDocBuilders;
 
@@ -39,24 +40,30 @@ import static io.github.swagger2markup.markup.builder.MarkupLanguage.ASCIIDOC;
  */
 public class Sysdoclet {
 
-    static MarkupDocBuilder docBuilders = MarkupDocBuilders.documentBuilder(ASCIIDOC);
+    private static MarkupDocBuilder docBuilders = MarkupDocBuilders.documentBuilder(ASCIIDOC);
 
     public static boolean start(RootDoc root) {
-        ClassDoc[] classDocs = root.classes();
-        Arrays.stream(classDocs)
-                .filter(c -> (c.name().endsWith("App")))
-                .forEach(classDoc -> process(classDoc));
+        docBuilders.sectionTitleLevel1("Java Design Patterns");
+        process(root.classes());
         write(docBuilders);
         return true;
     }
 
-    private static void process(ClassDoc classDoc) {
-        String s = classDoc.commentText();
-        docBuilders.sectionTitleLevel2(classDoc.qualifiedTypeName());
-        docBuilders.paragraph(s);
+    private static void process(ClassDoc[] classDocs) {
+        Arrays.stream(classDocs)
+                .filter(c -> (c.name().endsWith("App")))
+                .forEach(classDoc -> {
+                    String s = classDoc.commentText();
+                    docBuilders.sectionTitleLevel2(classDoc.qualifiedTypeName());
+                    docBuilders.block(s, MarkupBlockStyle.PASSTHROUGH);
+                });
     }
 
     private static void write(MarkupDocBuilder docBuilders) {
-        docBuilders.writeToFile(new File("c:\\tmp\\index").toPath(), Charset.forName("UTF-8"), StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING);
+        docBuilders.writeToFile(
+                new File("target/_docs", "index").toPath(),
+                Charset.forName("UTF-8"),
+                StandardOpenOption.CREATE,
+                StandardOpenOption.TRUNCATE_EXISTING);
     }
 }
