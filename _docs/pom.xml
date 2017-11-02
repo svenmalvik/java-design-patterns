@@ -51,6 +51,16 @@
             <artifactId>swagger2markup</artifactId>
             <version>1.3.1</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.asciidoctor</groupId>
+            <artifactId>asciidoctorj-epub3</artifactId>
+            <version>${asciidoctor-epub.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.asciidoctor</groupId>
+            <artifactId>asciidoctorj</artifactId>
+            <scope>provided</scope>
+            <version>${asciidoctorj.version}</version>
+        </dependency>
     </dependencies>
 </project>

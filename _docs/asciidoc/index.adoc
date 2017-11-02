@@ -1,0 +1,3 @@
+= Test
+
+include::../generated/_docs/jp.adoc[]

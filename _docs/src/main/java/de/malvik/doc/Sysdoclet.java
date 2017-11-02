@@ -27,6 +27,8 @@ import com.sun.javadoc.RootDoc;
 import io.github.swagger2markup.markup.builder.MarkupBlockStyle;
 import io.github.swagger2markup.markup.builder.MarkupDocBuilder;
 import io.github.swagger2markup.markup.builder.MarkupDocBuilders;
+import org.asciidoctor.Asciidoctor;
+import org.asciidoctor.SafeMode;
 
 import java.io.File;
 import java.nio.charset.Charset;
@@ -34,6 +36,10 @@ import java.nio.file.StandardOpenOption;
 import java.util.Arrays;
 
 import static io.github.swagger2markup.markup.builder.MarkupLanguage.ASCIIDOC;
+import static org.asciidoctor.Asciidoctor.Factory.create;
+import static org.asciidoctor.OptionsBuilder.options;
+
+//import org.asciidoctor.AttributesBuilder;
 
 /**
  * Created by smalvik on 30.10.2017.
@@ -45,13 +51,16 @@ public class Sysdoclet {
     public static boolean start(RootDoc root) {
         docBuilders.sectionTitleLevel1("Java Design Patterns");
         process(root.classes());
-        write(docBuilders);
+
+        writeAdoc(docBuilders);
+        printEpub3();
+
         return true;
     }
 
     private static void process(ClassDoc[] classDocs) {
         Arrays.stream(classDocs)
-                .filter(c -> (c.name().endsWith("App")))
+                .filter(c -> c.name().endsWith("App"))
                 .forEach(classDoc -> {
                     String s = classDoc.commentText();
                     docBuilders.sectionTitleLevel2(classDoc.qualifiedTypeName());
@@ -59,11 +68,20 @@ public class Sysdoclet {
                 });
     }
 
-    private static void write(MarkupDocBuilder docBuilders) {
+    private static void writeAdoc(MarkupDocBuilder docBuilders) {
         docBuilders.writeToFile(
-                new File("target/_docs", "index").toPath(),
+                new File("asciidoc/generated/_docs", "jp").toPath(),
                 Charset.forName("UTF-8"),
                 StandardOpenOption.CREATE,
                 StandardOpenOption.TRUNCATE_EXISTING);
+    }
+
+    private static void printEpub3() {
+        Asciidoctor asciidoctor = create();
+
+        asciidoctor.convertFile(new File("asciidoc", "index.adoc"),
+                options().safe(SafeMode.SAFE).backend("epub3").get());
+        //asciidoctor.convertFile(file,
+        //        options().attributes(AttributesBuilder.attributes("ebook-format=kf8")).safe(SafeMode.SAFE).backend("epub3").get());
     }
 }
