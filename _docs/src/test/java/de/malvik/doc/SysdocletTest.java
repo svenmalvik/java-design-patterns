@@ -31,7 +31,7 @@ import java.io.File;
  */
 public class SysdocletTest {
 
-    //@Test
+    @Test
     public void invokeDoclet() {
         final EasyDoclet easyDoclet = new EasyDoclet(
                 new File("C:\\git\\java-design-patterns\\abstract-factory"),

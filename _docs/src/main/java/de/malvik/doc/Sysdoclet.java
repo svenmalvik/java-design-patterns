@@ -40,8 +40,6 @@ import static io.github.swagger2markup.markup.builder.MarkupLanguage.ASCIIDOC;
 import static org.asciidoctor.Asciidoctor.Factory.create;
 import static org.asciidoctor.OptionsBuilder.options;
 
-//import org.asciidoctor.AttributesBuilder;
-
 /**
  * Created by smalvik on 30.10.2017.
  */
@@ -71,7 +69,7 @@ public class Sysdoclet {
 
     private static void writeAdoc(MarkupDocBuilder docBuilders) {
         docBuilders.writeToFile(
-                new File(getOutputLocation() + "\\generated", "jp").toPath(),
+                new File(getOutputLocation() + "/generated", "jp").toPath(),
                 Charset.forName("UTF-8"),
                 StandardOpenOption.CREATE,
                 StandardOpenOption.TRUNCATE_EXISTING);
@@ -80,12 +78,12 @@ public class Sysdoclet {
     private static void printEpub3() {
         Asciidoctor asciidoctor = create();
 
-        File file = new File(getOutputLocation() + "\\index.adoc");
+        File file = new File(getOutputLocation(), "index.adoc");
         asciidoctor.convertFile(file,
                 options().safe(SafeMode.SAFE).backend("epub3").get());
     }
 
     private static String getOutputLocation() {
-        return "C:\\git\\java-design-patterns\\_docs\\asciidoc";
+        return "C:/git/java-design-patterns/_docs/asciidoc";
     }
 }
