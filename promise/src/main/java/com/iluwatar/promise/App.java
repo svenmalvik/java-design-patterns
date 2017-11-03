@@ -60,6 +60,8 @@ import java.util.concurrent.Executors;
  * </ul>
  * 
  * @see CompletableFuture
+ *
+ * @pattern Promise
  */
 public class App {
 

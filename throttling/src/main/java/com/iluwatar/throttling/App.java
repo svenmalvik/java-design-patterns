@@ -43,6 +43,8 @@ import java.util.concurrent.TimeUnit;
  * </p>
  * ({@link Tenant}) is the Tenant POJO class with which many tenants can be created
  * ({@link B2BService}) is the service which is consumed by the tenants and is throttled.
+ *
+ * @pattern Throttling
  */
 public class App {
 

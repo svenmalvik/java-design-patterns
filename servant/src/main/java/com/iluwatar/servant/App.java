@@ -36,6 +36,7 @@ import java.util.List;
  * <p>
  * In this example {@link Servant} is serving {@link King} and {@link Queen}.
  *
+ * @pattern Servant
  */
 public class App {
 

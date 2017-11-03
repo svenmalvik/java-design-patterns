@@ -62,7 +62,9 @@ import java.util.concurrent.Future;
  * in a thread. In real life this may happen one in of 1.000 or 10.000 conversions
  * and those are really hard to find errors.
  * 
- * @author Thomas Bauer, 2017 
+ * @author Thomas Bauer, 2017
+ *
+ * @pattern TLS
  */
 public class App {
   /**

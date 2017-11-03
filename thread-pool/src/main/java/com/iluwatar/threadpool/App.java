@@ -44,6 +44,7 @@ import java.util.concurrent.Executors;
  * {@link ExecutorService} with fixed number of threads (Thread Pool) and use them to execute the
  * {@link Worker}s.
  *
+ * @pattern Thread-Pool
  */
 public class App {
   

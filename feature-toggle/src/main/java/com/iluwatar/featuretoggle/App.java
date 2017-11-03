@@ -45,6 +45,7 @@ import java.util.Properties;
  * Note that this pattern can easily introduce code complexity, and if not kept in check can result in redundant
  * unmaintained code within the codebase.
  *
+ * @pattern Feature-Toggle
  */
 public class App {
 

@@ -58,6 +58,8 @@ import java.time.LocalDateTime;
  * to the Data-Bus when it receives a message.</p>
  *
  * @author Paul Campbell (pcampbell@kemitix.net)
+ *
+ * @pattern Data-Bus
  */
 class App {
 

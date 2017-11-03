@@ -39,7 +39,7 @@ package com.iluwatar.monostate;
  * the second load balancer has already selected the second server.
  * <p>
  * .
- * 
+ * @pattern Monostate
  */
 public class App {
   /**

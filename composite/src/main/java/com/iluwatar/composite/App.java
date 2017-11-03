@@ -34,7 +34,8 @@ import org.slf4j.LoggerFactory;
  * <p>
  * In this example we have sentences composed of words composed of letters. All of the objects can
  * be treated through the same interface ({@link LetterComposite}).
- * 
+ *
+ * @pattern Composite
  */
 public class App {
 

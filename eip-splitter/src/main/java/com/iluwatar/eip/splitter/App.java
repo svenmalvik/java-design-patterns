@@ -40,6 +40,7 @@ import org.springframework.context.ConfigurableApplicationContext;
  * multiple parts to the output channel. It is not defined if it should keep the order of items though.
  * </p>
  *
+ * @pattern Eip-Splitter
  */
 @SpringBootApplication
 public class App {

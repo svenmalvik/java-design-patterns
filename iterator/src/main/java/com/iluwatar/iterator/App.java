@@ -33,7 +33,8 @@ import org.slf4j.LoggerFactory;
  * In this example the Iterator ({@link ItemIterator}) adds abstraction layer on top of a collection
  * ({@link TreasureChest}). This way the collection can change its internal implementation without
  * affecting its clients.
- * 
+ *
+ * @pattern Iterator
  */
 public class App {
 

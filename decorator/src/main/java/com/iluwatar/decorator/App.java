@@ -35,7 +35,8 @@ import org.slf4j.LoggerFactory;
  * In this example we show how the simple {@link SimpleTroll} first attacks and then flees the battle.
  * Then we decorate the {@link SimpleTroll} with a {@link ClubbedTroll} and perform the attack again. You
  * can see how the behavior changes after the decoration.
- * 
+ *
+ * @pattern Decorator
  */
 public class App {
 

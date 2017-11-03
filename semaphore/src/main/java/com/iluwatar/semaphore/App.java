@@ -30,7 +30,9 @@ package com.iluwatar.semaphore;
  * access a bowl simultaneously. A Semaphore is used to indicate how many 
  * resources are currently available and must be acquired in order for a bowl 
  * to be given to a customer. Customers continually try to take fruit until 
- * there is no fruit left in the shop. 
+ * there is no fruit left in the shop.
+ *
+ * @pattern Semaphore
  */
 public class App {
     

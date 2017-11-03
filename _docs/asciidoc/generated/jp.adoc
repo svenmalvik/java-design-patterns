@@ -45,7 +45,7 @@ The Abstract Factory pattern provides a way to encapsulate a group of individual
 ++++
 
 
-=== com.iluwatar.tls.App
+=== TLS
 ++++
 ThreadLocal pattern
  <p>
@@ -106,7 +106,7 @@ The intention of the Builder pattern is to find a solution to the telescoping co
 ++++
 
 
-=== com.iluwatar.factory.method.App
+=== Factory Method
 ++++
 The Factory Method is a creational design pattern which uses factory methods to deal with the
  problem of creating objects without specifying the exact class of object that will be created.
@@ -121,7 +121,7 @@ The Factory Method is a creational design pattern which uses factory methods to 
 ++++
 
 
-=== com.iluwatar.prototype.App
+=== Prototype
 ++++
 The Prototype pattern is a creational design pattern in software development. It is used when the
  type of objects to create is determined by a prototypical instance, which is cloned to produce
@@ -134,7 +134,7 @@ The Prototype pattern is a creational design pattern in software development. It
 ++++
 
 
-=== com.iluwatar.singleton.App
+=== Singelton
 ++++
 Singleton pattern ensures that the class can have only one existing instance per Java classloader
  instance and provides global access to it.
@@ -212,7 +212,7 @@ Composition over inheritance. The Bridge pattern can also be thought of as two l
 ++++
 
 
-=== com.iluwatar.composite.App
+=== Composite
 ++++
 The Composite pattern is a partitioning design pattern. The Composite pattern describes that a
  group of objects is to be treated in the same way as a single instance of an object. The intent
@@ -225,7 +225,7 @@ The Composite pattern is a partitioning design pattern. The Composite pattern de
 ++++
 
 
-=== com.iluwatar.dao.App
+=== Dao
 ++++
 Data Access Object (DAO) is an object that provides an abstract interface to some type of
  database or other persistence mechanism. By mapping application calls to the persistence layer,
@@ -240,7 +240,7 @@ Data Access Object (DAO) is an object that provides an abstract interface to som
 ++++
 
 
-=== com.iluwatar.datamapper.App
+=== Data Mapper
 ++++
 The Data Mapper (DM) is a layer of software that separates the in-memory objects from the
  database. Its responsibility is to transfer data between the two and also to isolate them from
@@ -253,7 +253,7 @@ The Data Mapper (DM) is a layer of software that separates the in-memory objects
 ++++
 
 
-=== com.iluwatar.decorator.App
+=== Decorator
 ++++
 The Decorator pattern is a more flexible alternative to subclassing. The Decorator class
  implements the same interface as the target and uses aggregation to "decorate" calls to the
@@ -266,7 +266,7 @@ The Decorator pattern is a more flexible alternative to subclassing. The Decorat
 ++++
 
 
-=== com.iluwatar.facade.App
+=== Facade
 ++++
 The Facade design pattern is often used when a system is very complex or difficult to understand
  because the system has a large number of interdependent classes or its source code is
@@ -280,7 +280,7 @@ The Facade design pattern is often used when a system is very complex or difficu
 ++++
 
 
-=== com.iluwatar.flyweight.App
+=== Flyweight
 ++++
 Flyweight pattern is useful when the program needs a huge amount of objects. It provides means to
  decrease resource usage by sharing object instances.
@@ -295,7 +295,7 @@ Flyweight pattern is useful when the program needs a huge amount of objects. It 
 ++++
 
 
-=== com.iluwatar.proxy.App
+=== Proxy
 ++++
 A proxy, in its most general form, is a class functioning as an interface to something else. The
  proxy could interface to anything: a network connection, a large object in memory, a file, or
@@ -312,7 +312,7 @@ A proxy, in its most general form, is a class functioning as an interface to som
 ++++
 
 
-=== com.iluwatar.chain.App
+=== Chain
 ++++
 The Chain of Responsibility pattern is a design pattern consisting of command objects and a
  series of processing objects. Each processing object contains logic that defines the types of
@@ -326,7 +326,7 @@ The Chain of Responsibility pattern is a design pattern consisting of command ob
 ++++
 
 
-=== com.iluwatar.command.App
+=== Command
 ++++
 The Command pattern is a behavioral design pattern in which an object is used to encapsulate all
  information needed to perform an action or trigger an event at a later time. This information
@@ -347,7 +347,7 @@ The Command pattern is a behavioral design pattern in which an object is used to
 ++++
 
 
-=== com.iluwatar.interpreter.App
+=== Interpreter
 ++++
 The Interpreter pattern is a design pattern that specifies how to evaluate sentences in a
  language. The basic idea is to have a class for each symbol (terminal or nonterminal) in a
@@ -359,7 +359,7 @@ The Interpreter pattern is a design pattern that specifies how to evaluate sente
 ++++
 
 
-=== com.iluwatar.iterator.App
+=== Iterator
 ++++
 The Iterator pattern is a design pattern in which an iterator is used to traverse a container and
  access the container's elements. The Iterator pattern decouples algorithms from containers.
@@ -370,7 +370,7 @@ The Iterator pattern is a design pattern in which an iterator is used to travers
 ++++
 
 
-=== com.iluwatar.mediator.App
+=== Mediator
 ++++
 The Mediator pattern defines an object that encapsulates how a set of objects interact. This
  pattern is considered to be a behavioral pattern due to the way it can alter the program's
@@ -393,7 +393,7 @@ The Mediator pattern defines an object that encapsulates how a set of objects in
 ++++
 
 
-=== com.iluwatar.memento.App
+=== Memento
 ++++
 The Memento pattern is a software design pattern that provides the ability to restore an object
  to its previous state (undo via rollback).
@@ -429,7 +429,7 @@ The Model-View-Presenter(MVP) architectural pattern, helps us achieve what is ca
 ++++
 
 
-=== com.iluwatar.observer.App
+=== Observer
 ++++
 The Observer pattern is a software design pattern in which an object, called the subject,
  maintains a list of its dependents, called observers, and notifies them automatically of any
@@ -443,7 +443,7 @@ The Observer pattern is a software design pattern in which an object, called the
 ++++
 
 
-=== com.iluwatar.state.App
+=== State
 ++++
 In State pattern the container object has an internal state object that defines the current
  behavior. The state object can be changed to alter the behavior.
@@ -455,7 +455,7 @@ In State pattern the container object has an internal state object that defines 
 ++++
 
 
-=== com.iluwatar.strategy.App
+=== Strategy
 ++++
 The Strategy pattern (also known as the policy pattern) is a software design pattern that enables
  an algorithm's behavior to be selected at runtime.
@@ -469,7 +469,7 @@ The Strategy pattern (also known as the policy pattern) is a software design pat
 ++++
 
 
-=== com.iluwatar.templatemethod.App
+=== Template-Method
 ++++
 Template Method defines a skeleton for an algorithm. The algorithm subclasses provide
  implementation for the blank parts.
@@ -503,7 +503,7 @@ Double Checked Locking is a concurrency design pattern used to reduce the overhe
 ++++
 
 
-=== com.iluwatar.servant.App
+=== Servant
 ++++
 Servant offers some functionality to a group of classes without defining that functionality in
  each of them. A Servant is a class whose instance provides methods that take care of a desired
@@ -513,7 +513,7 @@ Servant offers some functionality to a group of classes without defining that fu
 ++++
 
 
-=== com.iluwatar.servicelocator.App
+=== Service-Locator
 ++++
 The Service Locator pattern is a design pattern used in software development to encapsulate the
  processes involved in obtaining a service with a strong abstraction layer. This pattern uses a
@@ -526,7 +526,7 @@ The Service Locator pattern is a design pattern used in software development to 
 ++++
 
 
-=== com.iluwatar.nullobject.App
+=== Null-Object
 ++++
 Null Object pattern replaces null values with neutral objects. Many times this simplifies
  algorithms since no extra null checks are needed.
@@ -558,7 +558,7 @@ This example generates the exact same output as {@link App} however the callback
 ++++
 
 
-=== com.iluwatar.callback.App
+=== Callback
 ++++
 Callback pattern is more native for functional languages where functions are treated as
  first-class citizens. Prior to Java 8 callbacks can be simulated using simple (alike command)
@@ -578,7 +578,7 @@ The Execute Around idiom specifies some code to be executed before and after a m
 ++++
 
 
-=== com.iluwatar.property.App
+=== Property
 ++++
 The Property pattern is also known as Prototype inheritance.
  <p>
@@ -704,7 +704,7 @@ The central idea of the Specification pattern is to separate the statement of ho
 ++++
 
 
-=== com.iluwatar.tolerantreader.App
+=== Tolerant-Reader
 ++++
 Tolerant Reader is an integration pattern that helps creating robust communication systems. The
  idea is to be as tolerant as possible when reading data from another service. This way, when the
@@ -755,7 +755,7 @@ Flux is the application architecture that Facebook uses for building client-side
 ++++
 
 
-=== com.iluwatar.doubledispatch.App
+=== Double-Dispatch
 ++++
 When a message with a parameter is sent to an object, the resultant behaviour is defined by the implementation of
  that method in the receiver. Sometimes the behaviour must also be determined by the type of the parameter.
@@ -774,7 +774,7 @@ When a message with a parameter is sent to an object, the resultant behaviour is
 ++++
 
 
-=== com.iluwatar.multiton.App
+=== Multiton
 ++++
 Whereas Singleton design pattern introduces single globally accessible object the Multiton
  pattern defines many globally accessible objects. The client asks for the correct instance from
@@ -807,7 +807,7 @@ Resource Acquisition Is Initialization pattern was developed for exception safe 
 ++++
 
 
-=== com.iluwatar.threadpool.App
+=== Thread-Pool
 ++++
 Thread Pool pattern is where a number of threads are created to perform a number of tasks, which
  are usually organized in a queue. The results from the tasks being executed might also be placed
@@ -823,7 +823,7 @@ Thread Pool pattern is where a number of threads are created to perform a number
 ++++
 
 
-=== com.iluwatar.twin.App
+=== Twin
 ++++
 Twin pattern is a design pattern which provides a standard solution to simulate multiple
  inheritance in java.
@@ -834,7 +834,7 @@ Twin pattern is a design pattern which provides a standard solution to simulate 
 ++++
 
 
-=== com.iluwatar.privateclassdata.App
+=== Private-Class-Data
 ++++
 The Private Class Data design pattern seeks to reduce exposure of attributes by limiting their
  visibility. It reduces the number of class attributes by encapsulating them in single data
@@ -914,7 +914,7 @@ The Front Controller is a presentation tier pattern. Essentially it defines a co
 ++++
 
 
-=== com.iluwatar.repository.App
+=== Repository
 ++++
 Repository pattern mediates between the domain and data mapping layers using a collection-like
  interface for accessing domain objects. A system with complex domain model often benefits from a
@@ -955,7 +955,7 @@ This application demonstrates the async method invocation pattern. Key parts of 
 ++++
 
 
-=== com.iluwatar.monostate.App
+=== Monostate
 ++++
 The MonoState pattern ensures that all instances of the class will have the same state. This can
  be used a direct replacement of the Singleton pattern.
@@ -973,7 +973,7 @@ The MonoState pattern ensures that all instances of the class will have the same
 ++++
 
 
-=== com.iluwatar.stepbuilder.App
+=== Step-Builder
 ++++
 Step Builder Pattern
 
@@ -1025,7 +1025,7 @@ The Business Delegate pattern adds an abstraction layer between the presentation
 ++++
 
 
-=== com.iluwatar.halfsynchalfasync.App
+=== Half-Sync/Half-Async
 ++++
 This application demonstrates Half-Sync/Half-Async pattern. Key parts of the pattern are
  {@link AsyncTask} and {@link AsynchronousService}.
@@ -1066,7 +1066,7 @@ This application demonstrates Half-Sync/Half-Async pattern. Key parts of the pat
 ++++
 
 
-=== com.iluwatar.layers.App
+=== Layers
 ++++
 Layers is an architectural style where software responsibilities are divided among the different layers of the
  application.
@@ -1253,7 +1253,7 @@ The delegate pattern provides a mechanism to abstract away the implementation an
 ++++
 
 
-=== com.iluwatar.eda.App
+=== Event-Driven-Architecture
 ++++
 An event-driven architecture (EDA) is a framework that orchestrates behavior around the
  production, detection and consumption of events as well as the responses they evoke. An event is
@@ -1293,7 +1293,7 @@ With the Microservices pattern, a client may need data from multiple different m
 ++++
 
 
-=== com.iluwatar.factorykit.App
+=== Factory-Kit
 ++++
 Factory-kit is a creational pattern which defines a factory of immutable content
  with separated builder and factory interfaces to deal with the problem of
@@ -1309,7 +1309,7 @@ Factory-kit is a creational pattern which defines a factory of immutable content
 ++++
 
 
-=== com.iluwatar.featuretoggle.App
+=== Feature-Toggle
 ++++
 The Feature Toggle pattern allows for complete code executions to be turned on or off with ease. This allows features
  to be controlled by either dynamic methods just as {@link User} information or by {@link Properties}. In the App
@@ -1342,7 +1342,7 @@ A Value Object are objects which follow value semantics rather than reference se
 ++++
 
 
-=== com.iluwatar.module.App
+=== Module
 ++++
 The Module pattern can be considered a Creational pattern and a Structural pattern. It manages
  the creation and organization of other elements, and groups them as the structural pattern does.
@@ -1355,7 +1355,7 @@ The Module pattern can be considered a Creational pattern and a Structural patte
 ++++
 
 
-=== com.iluwatar.monad.App
+=== Monad
 ++++
 The Monad pattern defines a monad structure, that enables chaining operations
  in pipelines and processing data step by step.
@@ -1372,7 +1372,7 @@ The Monad pattern defines a monad structure, that enables chaining operations
 ++++
 
 
-=== com.iluwatar.mute.App
+=== Mute-Idiom
 ++++
 Mute pattern is utilized when we need to suppress an exception due to an API flaw or in 
  situation when all we can do to handle the exception is to log it. 
@@ -1391,7 +1391,7 @@ Mute pattern is utilized when we need to suppress an exception due to an API fla
 ++++
 
 
-=== com.iluwatar.mutex.App
+=== Mutex
 ++++
 A Mutex prevents multiple threads from accessing a resource simultaneously.
  <p>
@@ -1405,7 +1405,7 @@ A Mutex prevents multiple threads from accessing a resource simultaneously.
 ++++
 
 
-=== com.iluwatar.semaphore.App
+=== Semaphore
 ++++
 A Semaphore mediates access by a group of threads to a pool of resources.
  <p>
@@ -1418,7 +1418,7 @@ A Semaphore mediates access by a group of threads to a pool of resources.
 ++++
 
 
-=== com.iluwatar.hexagonal.App
+=== Hexagonal
 ++++
 Hexagonal Architecture pattern decouples the application core from the
  services it uses. This allows the services to be plugged in and the 
@@ -1463,13 +1463,13 @@ The Abstract Document pattern enables handling additional, non-static
 ++++
 
 
-=== com.iluwatar.aggregator.microservices.App
+=== Aggregator-Service
 ++++
 Spring Boot EntryPoint Class
 ++++
 
 
-=== com.iluwatar.promise.App
+=== Promise
 ++++
 The Promise object is used for asynchronous computations. A Promise represents an operation
   that hasn't completed yet, but is expected in the future.
@@ -1499,7 +1499,7 @@ The Promise object is used for asynchronous computations. A Promise represents a
 ++++
 
 
-=== com.iluwatar.pageobject.App
+=== Page-Object
 ++++
 Page Object pattern wraps an UI component with an application specific API allowing you to
  manipulate the UI elements without having to dig around with the underlying UI technology used. This is
@@ -1524,7 +1524,7 @@ Page Object pattern wraps an UI component with an application specific API allow
 ++++
 
 
-=== com.iluwatar.event.asynchronous.App
+=== Event-Asynchronous
 ++++
 This application demonstrates the <b>Event-based Asynchronous</b> pattern. Essentially, users (of the pattern) may
  choose to run events in an Asynchronous or Synchronous mode. There can be multiple Asynchronous events running at
@@ -1589,7 +1589,7 @@ Many solutions in the cloud involve running tasks that invoke services. In this 
 ++++
 
 
-=== com.iluwatar.databus.App
+=== Data-Bus
 ++++
 The Data Bus pattern
  <p>
@@ -1618,7 +1618,7 @@ The Data Bus pattern
 ++++
 
 
-=== com.iluwatar.converter.App
+=== Converter
 ++++
 The Converter pattern is a behavioral design pattern which allows a common way of bidirectional
  conversion between corresponding types (e.g. DTO and domain representations of the logically
@@ -1693,7 +1693,7 @@ The Data Transfer Object pattern is a design pattern in which an data transfer o
 ++++
 
 
-=== com.iluwatar.throttling.App
+=== Throttling
 ++++
 Throttling pattern is a design pattern to throttle or limit the use of resources or even a complete service by
  users or a particular tenant. This can allow systems to continue to function and meet service level agreements,
@@ -1707,7 +1707,7 @@ Throttling pattern is a design pattern to throttle or limit the use of resources
 ++++
 
 
-=== com.iluwatar.partialresponse.App
+=== Partial-Response
 ++++
 The Partial response pattern is a design pattern in which client specifies fields to fetch to serve.
  Here {@link App} is playing as client for {@link VideoResource} server.
@@ -1718,7 +1718,7 @@ The Partial response pattern is a design pattern in which client specifies field
 ++++
 
 
-=== com.iluwatar.eip.wiretap.App
+=== Wiretap
 ++++
 In most integration cases there is a need to monitor the messages flowing through the system. It is usually achieved
  by intercepting the message and redirecting it to a different location like console, filesystem or the database.
@@ -1732,7 +1732,7 @@ In most integration cases there is a need to monitor the messages flowing throug
 ++++
 
 
-=== com.iluwatar.eip.splitter.App
+=== Eip-Splitter
 ++++
 It is very common in integration systems that incoming messages consists of many items bundled together. For example
  an invoice document contains multiple invoice lines describing transaction (quantity, name of provided

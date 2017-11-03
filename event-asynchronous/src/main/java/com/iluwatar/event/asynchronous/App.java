@@ -48,6 +48,7 @@ import java.util.Scanner;
  * @see EventManager
  * @see Event
  *
+ * @pattern Event-Asynchronous
  */
 public class App {
 

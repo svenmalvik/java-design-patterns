@@ -37,6 +37,8 @@ import java.util.Map;
  * <p>
  * <p>
  * {@link VideoResource} act as server to serve video information.
+ *
+ * @pattern Partial-Response
  */
 
 public class App {

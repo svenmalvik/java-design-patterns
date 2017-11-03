@@ -41,7 +41,7 @@ package com.iluwatar.command;
  * the previous spells cast, so it is easy to undo them. In addition, the wizard keeps track of the
  * spells undone, so they can be redone.
  * 
- * 
+ * @pattern Command
  */
 public class App {
 

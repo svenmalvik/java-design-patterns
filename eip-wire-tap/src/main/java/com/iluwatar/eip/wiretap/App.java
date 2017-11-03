@@ -38,6 +38,8 @@ import org.springframework.context.ConfigurableApplicationContext;
  * destination. It basically consumes messages of the input channel and publishes the unmodified message to both
  * output channels.
  * </p>
+ *
+ * @pattern Wiretap
  */
 @SpringBootApplication
 public class App {

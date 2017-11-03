@@ -35,6 +35,7 @@ import org.slf4j.LoggerFactory;
  * {@link NazgulName}. The {@link Nazgul}s are statically initialized and stored in concurrent hash
  * map.
  *
+ * @pattern Multiton
  */
 public class App {
 

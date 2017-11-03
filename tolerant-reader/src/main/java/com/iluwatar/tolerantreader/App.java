@@ -41,6 +41,7 @@ import java.io.IOException;
  * Fortunately the reading method has been designed with the Tolerant Reader pattern and does not
  * break even though {@link RainbowFishV2} has new fields that are serialized.
  *
+ * @pattern Tolerant-Reader
  */
 public class App {
 

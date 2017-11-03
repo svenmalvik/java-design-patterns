@@ -29,7 +29,8 @@ package com.iluwatar.templatemethod;
  * <p>
  * In this example {@link HalflingThief} contains {@link StealingMethod} that can be changed. First
  * the thief hits with {@link HitAndRunMethod} and then with {@link SubtleMethod}.
- * 
+ *
+ * @pattern Template-Method
  */
 public class App {
 

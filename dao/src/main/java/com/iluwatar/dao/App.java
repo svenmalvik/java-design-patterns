@@ -47,7 +47,7 @@ import org.h2.jdbcx.JdbcDataSource;
  * without directly interacting with the data source. The below example demonstrates basic CRUD 
  * operations: select, add, update, and delete.
  * 
- * 
+ * @pattern Dao
  */
 public class App {
   private static final String DB_URL = "jdbc:h2:~/dao";

@@ -37,6 +37,7 @@ package com.iluwatar.privateclassdata;
  * class that contains {@link StewData}. The private data members of {@link Stew} are now in
  * {@link StewData} and cannot be altered by {@link ImmutableStew} methods.
  *
+ * @pattern Private-Class-Data
  */
 public class App {
 

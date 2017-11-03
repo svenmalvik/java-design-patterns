@@ -36,7 +36,8 @@ import org.slf4j.LoggerFactory;
  * <p>
  * In this example ({@link DragonSlayingStrategy}) encapsulates an algorithm. The containing object
  * ({@link DragonSlayer}) can alter its behavior by changing its strategy.
- * 
+ *
+ * @pattern Strategy
  */
 public class App {
 

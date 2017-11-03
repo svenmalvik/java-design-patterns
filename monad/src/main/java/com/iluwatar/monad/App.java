@@ -42,6 +42,8 @@ import java.util.function.Predicate;
  * and validates it {@link Validator#validate(Function, Predicate, String)} against given predicates.
  * <p>As a validation result {@link Validator#get()} it either returns valid object {@link Validator#t}
  * or throws a list of exceptions {@link Validator#exceptions} collected during validation.
+ *
+ * @pattern Monad
  */
 public class App {
 

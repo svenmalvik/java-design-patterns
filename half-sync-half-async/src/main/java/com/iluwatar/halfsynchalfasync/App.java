@@ -65,7 +65,8 @@ import java.util.concurrent.LinkedBlockingQueue;
  * between both layers. Such as Priority Queue can be used as queuing layer to prioritize the way
  * tasks are executed. Our implementation is just one simple way of implementing this pattern, there
  * are many variants possible as described in its applications.
- * 
+ *
+ * @pattern Half-Sync/Half-Async
  */
 public class App {
 

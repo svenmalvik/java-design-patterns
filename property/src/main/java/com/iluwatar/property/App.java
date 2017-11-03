@@ -37,7 +37,8 @@ import org.slf4j.LoggerFactory;
  * affected as result.
  * <p>
  * In this example we demonstrate {@link Character} instantiation using the Property pattern.
- * 
+ *
+ * @pattern Property
  */
 public class App {
 

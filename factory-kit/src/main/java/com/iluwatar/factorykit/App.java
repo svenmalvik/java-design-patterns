@@ -37,6 +37,8 @@ import org.slf4j.LoggerFactory;
  * <br>Each of them can be called with {@link WeaponFactory#create(WeaponType)} method, with
  * an input representing an instance of {@link WeaponType} that needs to
  * be mapped explicitly with desired class type in the factory instance.
+ *
+ * @pattern Factory-Kit
  */
 public class App {
 

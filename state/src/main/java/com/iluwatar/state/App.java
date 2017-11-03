@@ -31,7 +31,8 @@ package com.iluwatar.state;
  * large monolithic conditional statements and thus improves maintainability.
  * <p>
  * In this example the {@link Mammoth} changes its behavior as time passes by.
- * 
+ *
+ * @pattern State
  */
 public class App {
 

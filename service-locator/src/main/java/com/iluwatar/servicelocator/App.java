@@ -34,7 +34,8 @@ package com.iluwatar.servicelocator;
  * <p>
  * 
  * @author saifasif
- * 
+ *
+ * @pattern Service-Locator
  */
 public class App {
 

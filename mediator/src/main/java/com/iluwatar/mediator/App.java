@@ -42,7 +42,8 @@ package com.iluwatar.mediator;
  * <p>
  * In this example the mediator encapsulates how a set of objects ({@link PartyMember}) interact.
  * Instead of referring to each other directly they use the mediator ({@link Party}) interface.
- * 
+ *
+ * @pattern Mediator
  */
 public class App {
 

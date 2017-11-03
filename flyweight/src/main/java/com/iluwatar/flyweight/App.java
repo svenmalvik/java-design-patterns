@@ -34,7 +34,8 @@ package com.iluwatar.flyweight;
  * <p>
  * To enable safe sharing, between clients and threads, Flyweight objects must be immutable.
  * Flyweight objects are by definition value objects.
- * 
+ *
+ * @pattern Flyweight
  */
 public class App {
 

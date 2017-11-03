@@ -31,7 +31,8 @@ import org.apache.log4j.Logger;
  * Data Mapper itself is even unknown to the domain layer.
  * <p>
  * The below example demonstrates basic CRUD operations: Create, Read, Update, and Delete.
- * 
+ *
+ * @pattern Data Mapper
  */
 public final class App {
 

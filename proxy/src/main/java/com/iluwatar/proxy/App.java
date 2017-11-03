@@ -36,7 +36,8 @@ package com.iluwatar.proxy;
  * <p>
  * In this example the proxy ({@link WizardTowerProxy}) controls access to the actual object (
  * {@link IvoryTower}).
- * 
+ *
+ * @pattern Proxy
  */
 public class App {
 

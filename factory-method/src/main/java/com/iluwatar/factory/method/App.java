@@ -37,7 +37,8 @@ import org.slf4j.LoggerFactory;
  * creating objects ({@link Blacksmith#manufactureWeapon}). The concrete subclasses (
  * {@link OrcBlacksmith}, {@link ElfBlacksmith}) then override the method to produce objects of
  * their liking.
- * 
+ *
+ * @pattern Factory Method
  */
 public class App {
 

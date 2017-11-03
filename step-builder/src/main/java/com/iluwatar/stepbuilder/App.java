@@ -56,6 +56,8 @@ import org.slf4j.LoggerFactory;
  * process of constructing the order is important.
  * <p>
  * http://rdafbn.blogspot.co.uk/2012/07/step-builder-pattern_28.html
+ *
+ * @pattern Step-Builder
  */
 public class App {
 

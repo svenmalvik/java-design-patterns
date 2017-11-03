@@ -44,7 +44,7 @@ import java.util.Stack;
  * In this example the object ({@link Star}) gives out a "memento" ({@link StarMemento}) that
  * contains the state of the object. Later on the memento can be set back to the object restoring
  * the state.
- * 
+ * @pattern Memento
  */
 public class App {
 

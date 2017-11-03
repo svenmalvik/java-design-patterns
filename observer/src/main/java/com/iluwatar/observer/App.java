@@ -39,7 +39,8 @@ import org.slf4j.LoggerFactory;
  * <p>
  * In this example {@link Weather} has a state that can be observed. The {@link Orcs} and
  * {@link Hobbits} register as observers and receive notifications when the {@link Weather} changes.
- * 
+ *
+ * @pattern Observer
  */
 public class App {
 

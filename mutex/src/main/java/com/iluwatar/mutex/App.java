@@ -32,6 +32,8 @@ package com.iluwatar.mutex;
  * already been acquired, the thief will be prevented from continuing (blocked)
  * until the lock has been released. The thieves stop taking beans once there
  * are no beans left to take.
+ *
+ * @pattern Mutex
  */
 public class App {
 

@@ -38,6 +38,7 @@ import com.iluwatar.eda.model.User;
  * respective handlers once an {@link Event} is dispatched, it's respective handler is invoked and
  * the {@link Event} is handled accordingly.
  *
+ * @pattern Event-Driven-Architecture
  */
 public class App {
 

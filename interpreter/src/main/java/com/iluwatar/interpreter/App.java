@@ -36,7 +36,8 @@ import java.util.Stack;
  * <p>
  * In this example we use the Interpreter pattern to break sentences into expressions (
  * {@link Expression}) that can be evaluated and as a whole form the result.
- * 
+ *
+ * @pattern Interpreter
  */
 public class App {
 

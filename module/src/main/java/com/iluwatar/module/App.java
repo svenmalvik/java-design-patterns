@@ -29,7 +29,8 @@ import java.io.FileNotFoundException;
  * <p>
  * The below example demonstrates a use case for testing two different modules: File Logger and
  * Console Logger
- * 
+ *
+ * @pattern Module
  */
 public final class App {
 

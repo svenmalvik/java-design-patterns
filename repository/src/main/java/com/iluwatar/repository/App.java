@@ -42,6 +42,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * the entity, moreover, the query by {@link org.springframework.data.jpa.domain.Specification} are
  * also performed. Underneath we have configured in-memory H2 database for which schema is created
  * and dropped on each run.
+ *
+ * @pattern Repository
  */
 public class App {
 

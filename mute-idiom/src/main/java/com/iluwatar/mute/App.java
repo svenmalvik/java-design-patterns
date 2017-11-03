@@ -45,7 +45,8 @@ import java.sql.SQLException;
  *   }
  * </code>
  * </pre> every time we need to ignore an exception.
- * 
+ *
+ * @pattern Mute-Idiom
  */
 public class App {
 

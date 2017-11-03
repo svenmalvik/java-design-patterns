@@ -45,6 +45,7 @@ import java.util.List;
  * own coordinates which are checked against the other objects' coordinates. If there is an overlap, then the objects
  * collide utilizing the Double Dispatch pattern.
  *
+ * @pattern Double-Dispatch
  */
 public class App {
 

@@ -60,6 +60,8 @@ import org.slf4j.LoggerFactory;
  * Yet another way to implement thread safe lazily initialized Singleton can be found in
  * {@link InitializingOnDemandHolderIdiom}. However, this implementation requires at least Java 8
  * API level to work.
+ *
+ * @pattern Singelton
  */
 public class App {
 

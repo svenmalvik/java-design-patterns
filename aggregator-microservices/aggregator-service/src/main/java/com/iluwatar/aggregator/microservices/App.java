@@ -27,6 +27,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * Spring Boot EntryPoint Class
+ *
+ * @pattern Aggregator-Service
  */
 @SpringBootApplication
 public class App {

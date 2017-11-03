@@ -59,6 +59,7 @@ import com.iluwatar.hexagonal.sampledata.SampleData;
  * eventlog as lottery events occur and {@link LotteryTicketRepository}
  * that is the storage for the lottery tickets.
  *
+ * @pattern Hexagonal
  */
 public class App {
 
