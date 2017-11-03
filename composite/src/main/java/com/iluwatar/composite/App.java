@@ -31,7 +31,7 @@ import org.slf4j.LoggerFactory;
  * of a composite is to "compose" objects into tree structures to represent part-whole hierarchies.
  * Implementing the Composite pattern lets clients treat individual objects and compositions
  * uniformly.
- * <p>
+ *
  * In this example we have sentences composed of words composed of letters. All of the objects can
  * be treated through the same interface ({@link LetterComposite}).
  *

@@ -30,7 +30,7 @@ package com.iluwatar.facade;
  * interface to the client. It typically involves a single wrapper class which contains a set of
  * members required by client. These members access the system on behalf of the facade client and
  * hide the implementation details.
- * <p>
+ *
  * In this example the Facade is ({@link DwarvenGoldmineFacade}) and it provides a simpler interface
  * to the goldmine subsystem.
  *

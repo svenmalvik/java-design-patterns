@@ -30,7 +30,7 @@ import org.slf4j.LoggerFactory;
  * with separated builder and factory interfaces to deal with the problem of
  * creating one of the objects specified directly in the factory-kit instance.
  *
- * <p>
+ *
  * In the given example {@link WeaponFactory} represents the factory-kit, that contains
  * four {@link Builder}s for creating new objects of
  * the classes implementing {@link Weapon} interface.

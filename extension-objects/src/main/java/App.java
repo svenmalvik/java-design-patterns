@@ -35,6 +35,7 @@ import org.slf4j.LoggerFactory;
  * Additional interfaces are defined by extension objects.
  *
  * @pattern Extension Objects
+ * @level Hard
  */
 public class App {
 

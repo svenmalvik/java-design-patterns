@@ -36,7 +36,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * query construction code is concentrated. This becomes more important when there are a large
  * number of domain classes or heavy querying. In these cases particularly, adding this layer helps
  * minimize duplicate query logic.
- * <p>
+ *
  * In this example we utilize Spring Data to automatically generate a repository for us from the
  * {@link Person} domain object. Using the {@link PersonRepository} we perform CRUD operations on
  * the entity, moreover, the query by {@link org.springframework.data.jpa.domain.Specification} are

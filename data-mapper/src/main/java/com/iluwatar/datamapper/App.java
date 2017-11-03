@@ -29,7 +29,7 @@ import org.apache.log4j.Logger;
  * present; they need no SQL interface code, and certainly no knowledge of the database schema. (The
  * database schema is always ignorant of the objects that use it.) Since it's a form of Mapper ,
  * Data Mapper itself is even unknown to the domain layer.
- * <p>
+ *
  * The below example demonstrates basic CRUD operations: Create, Read, Update, and Delete.
  *
  * @pattern Data Mapper

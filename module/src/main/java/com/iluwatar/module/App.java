@@ -26,7 +26,7 @@ import java.io.FileNotFoundException;
  * An object that applies this pattern can provide the equivalent of a namespace, providing the
  * initialization and finalization process of a static class or a class with static members with
  * cleaner, more concise syntax and semantics.
- * <p>
+ *
  * The below example demonstrates a use case for testing two different modules: File Logger and
  * Console Logger
  *

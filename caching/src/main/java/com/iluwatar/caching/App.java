@@ -42,7 +42,7 @@ import org.slf4j.LoggerFactory;
  * should be written back to the backing store (i.e. Database) and help keep both data sources
  * synchronized/up-to-date. This pattern can improve performance and also helps to maintain
  * consistency between data held in the cache and the data in the underlying data store.
- * <p>
+ *
  * In this example, the user account ({@link UserAccount}) entity is used as the underlying
  * application data. The cache itself is implemented as an internal (Java) data structure. It adopts
  * a Least-Recently-Used (LRU) strategy for evicting data from itself when its full. The four

@@ -28,10 +28,10 @@ package com.iluwatar.servicelocator;
  * processes involved in obtaining a service with a strong abstraction layer. This pattern uses a
  * central registry known as the "service locator", which on request returns the information
  * necessary to perform a certain task.
- * <p>
+ *
  * In this example we use the Service locator pattern to lookup JNDI-services and cache them for
  * subsequent requests.
- * <p>
+ *
  * 
  * @author saifasif
  *

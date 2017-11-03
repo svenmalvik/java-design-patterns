@@ -36,7 +36,7 @@ import org.slf4j.LoggerFactory;
  * distributed event handling systems. The Observer pattern is also a key part in the familiar
  * model–view–controller (MVC) architectural pattern. The Observer pattern is implemented in
  * numerous programming libraries and systems, including almost all GUI toolkits.
- * <p>
+ *
  * In this example {@link Weather} has a state that can be observed. The {@link Orcs} and
  * {@link Hobbits} register as observers and receive notifications when the {@link Weather} changes.
  *

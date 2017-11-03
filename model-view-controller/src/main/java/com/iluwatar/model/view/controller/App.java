@@ -26,13 +26,13 @@ package com.iluwatar.model.view.controller;
  * 
  * Model-View-Controller is a pattern for implementing user interfaces. It divides the application
  * into three interconnected parts namely the model, the view and the controller.
- * <p>
+ *
  * The central component of MVC, the model, captures the behavior of the application in terms of its
  * problem domain, independent of the user interface. The model directly manages the data, logic and
  * rules of the application. A view can be any output representation of information, such as a chart
  * or a diagram The third part, the controller, accepts input and converts it to commands for the
  * model or view.
- * <p>
+ *
  * In this example we have a giant ({@link GiantModel}) with statuses for health, fatigue and
  * nourishment. {@link GiantView} can display the giant with its current status.
  * {@link GiantController} receives input affecting the model and delegates redrawing the giant to

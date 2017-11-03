@@ -42,7 +42,7 @@ import org.slf4j.LoggerFactory;
  * The Fluent Interface pattern is useful when you want to provide an easy readable, flowing API.
  * Those interfaces tend to mimic domain specific languages, so they can nearly be read as human
  * languages.
- * <p>
+ *
  * In this example two implementations of a {@link FluentIterable} interface are given. The
  * {@link SimpleFluentIterable} evaluates eagerly and would be too costly for real world
  * applications. The {@link LazyFluentIterable} is evaluated on termination. Their usage is

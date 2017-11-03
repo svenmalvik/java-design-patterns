@@ -32,7 +32,7 @@ import java.io.IOException;
  * Tolerant Reader is an integration pattern that helps creating robust communication systems. The
  * idea is to be as tolerant as possible when reading data from another service. This way, when the
  * communication schema changes, the readers must not break.
- * <p>
+ *
  * In this example we use Java serialization to write representations of {@link RainbowFish} objects
  * to file. {@link RainbowFish} is the initial version which we can easily read and write using
  * {@link RainbowFishSerializer} methods. {@link RainbowFish} then evolves to {@link RainbowFishV2}

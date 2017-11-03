@@ -24,7 +24,7 @@ package com.iluwatar.mutex;
 
 /**
  * A Mutex prevents multiple threads from accessing a resource simultaneously.
- * <p>
+ *
  * In this example we have two thieves who are taking beans from a jar.
  * Only one thief can take a bean at a time. This is ensured by a Mutex lock
  * which must be acquired in order to access the jar. Each thief attempts to

@@ -23,7 +23,7 @@
 /**
  * Guarded-suspension is a concurrent design pattern for handling situation when to execute some action we need
  * condition to be satisfied.
- * <p>
+ *
  * Implementation is based on GuardedQueue, which has two methods: get and put,
  * the condition is that we cannot get from empty queue so when thread attempt
  * to break the condition we invoke Object's wait method on him and when other thread put an element

@@ -35,7 +35,7 @@ import java.util.stream.Stream;
  * (the public interface of the DAO), from how these needs can be satisfied with a specific DBMS,
  * database schema, etc.
  * 
- * <p>Any change in the way data is stored and retrieved will not change the client code as the 
+ * Any change in the way data is stored and retrieved will not change the client code as the
  * client will be using interface and need not worry about exact source.
  * 
  * @see InMemoryCustomerDao

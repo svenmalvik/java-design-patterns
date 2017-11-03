@@ -33,7 +33,7 @@ import java.util.List;
  * Servant offers some functionality to a group of classes without defining that functionality in
  * each of them. A Servant is a class whose instance provides methods that take care of a desired
  * service, while objects for which the servant does something, are taken as parameters.
- * <p>
+ *
  * In this example {@link Servant} is serving {@link King} and {@link Queen}.
  *
  * @pattern Servant

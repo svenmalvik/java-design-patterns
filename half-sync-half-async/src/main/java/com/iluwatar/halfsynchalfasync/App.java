@@ -32,19 +32,19 @@ import java.util.concurrent.LinkedBlockingQueue;
  * This application demonstrates Half-Sync/Half-Async pattern. Key parts of the pattern are
  * {@link AsyncTask} and {@link AsynchronousService}.
  * 
- * <p>
+ *
  * <i>PROBLEM</i> <br/>
  * A concurrent system have a mixture of short duration, mid duration and long duration tasks. Mid
  * or long duration tasks should be performed asynchronously to meet quality of service
  * requirements.
  * 
- * <p>
+ *
  * <i>INTENT</i> <br/>
  * The intent of this pattern is to separate the the synchronous and asynchronous processing in the
  * concurrent application by introducing two intercommunicating layers - one for sync and one for
  * async. This simplifies the programming without unduly affecting the performance.
  * 
- * <p>
+ *
  * <i>APPLICABILITY</i> <br/>
  * UNIX network subsystems - In operating systems network operations are carried out
  * asynchronously with help of hardware level interrupts.<br/>
@@ -56,7 +56,7 @@ import java.util.concurrent.LinkedBlockingQueue;
  * calls, such as downloading a file, in background threads so that the UI thread remains free to
  * respond to user inputs.<br/>
  * 
- * <p>
+ *
  * <i>IMPLEMENTATION</i> <br/>
  * The main method creates an asynchronous service which does not block the main thread while the
  * task is being performed. The main thread continues its work which is similar to Async Method

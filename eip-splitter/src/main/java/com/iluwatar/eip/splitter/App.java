@@ -35,7 +35,7 @@ import org.springframework.context.ConfigurableApplicationContext;
  * pattern comes in handy. It will take the whole document, split it based on given criteria and send individual
  * items to the endpoint.
  *
- * <p>
+ *
  * Splitter allows you to split messages based on defined criteria. It takes original message, process it and send
  * multiple parts to the output channel. It is not defined if it should keep the order of items though.
  * </p>

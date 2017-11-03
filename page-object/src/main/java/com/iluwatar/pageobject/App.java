@@ -33,7 +33,7 @@ import java.io.IOException;
  * the actual test cases where as the manipulation of the UI can be left to the internals of the page object
  * itself.
  *
- * <p>
+ *
  * Due to this reason, it has become very popular within the test automation community.
  * In particular, it is very common in that the page object is used to represent the html pages of a
  * web application that is under test. This web application is referred to as AUT (Application Under Test).
@@ -42,7 +42,7 @@ import java.io.IOException;
  * therefore only be responsible for particular test cases and page object would be used by the test class
  * for UI manipulation required for the tests.
  *
- * <p>
+ *
  * In this implementation rather than using Selenium, the HtmlUnit library is used as a replacement to
  * represent the specific html elements and to drive the browser. The purpose of this example is just to
  * provide a simple version that showcase the intentions of this pattern and how this pattern is used
@@ -58,12 +58,12 @@ public final class App {
   /**
    * Application entry point
    *
-   * <p>
+   *
    * The application under development is a web application. Normally you would probably have a
    * backend that is probably implemented in an object-oriented language (e.g. Java) that serves
    * the frontend which comprises of a series of HTML, CSS, JS etc...
    *
-   * <p>
+   *
    * For illustrations purposes only, a very simple static html app is used here. This main method
    * just fires up this simple web app in a default browser.
    *

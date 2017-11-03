@@ -43,7 +43,7 @@ import org.h2.jdbcx.JdbcDataSource;
  * application needs, in terms of domain-specific objects and data types (the public interface of
  * the DAO), from how these needs can be satisfied with a specific DBMS.
  *
- * <p>With the DAO pattern, we can use various method calls to retrieve/add/delete/update data 
+ * With the DAO pattern, we can use various method calls to retrieve/add/delete/update data
  * without directly interacting with the data source. The below example demonstrates basic CRUD 
  * operations: select, add, update, and delete.
  * 

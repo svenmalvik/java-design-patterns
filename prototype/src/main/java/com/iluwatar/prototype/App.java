@@ -32,7 +32,7 @@ import org.slf4j.LoggerFactory;
  * new objects. This pattern is used to: - avoid subclasses of an object creator in the client
  * application, like the abstract factory pattern does. - avoid the inherent cost of creating a new
  * object in the standard way (e.g., using the 'new' keyword)
- * <p>
+ *
  * In this example we have a factory class ({@link HeroFactoryImpl}) producing objects by cloning
  * the existing ones. The factory's prototype objects are given as constructor parameters.
  *

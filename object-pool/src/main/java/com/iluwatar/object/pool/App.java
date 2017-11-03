@@ -31,7 +31,7 @@ import org.slf4j.LoggerFactory;
  * instantiate and each object is only needed for a short period of time, the performance of an
  * entire application may be adversely affected. An object pool design pattern may be deemed
  * desirable in cases such as these.
- * <p>
+ *
  * The object pool design pattern creates a set of objects that may be reused. When a new object is
  * needed, it is requested from the pool. If a previously prepared object is available it is
  * returned immediately, avoiding the instantiation cost. If no objects are present in the pool, a
@@ -39,7 +39,7 @@ import org.slf4j.LoggerFactory;
  * returned to the pool, allowing it to be used again in the future without repeating the
  * computationally expensive instantiation process. It is important to note that once an object has
  * been used and returned, existing references will become invalid.
- * <p>
+ *
  * In this example we have created {@link OliphauntPool} inheriting from generic {@link ObjectPool}.
  * {@link Oliphaunt}s can be checked out from the pool and later returned to it. The pool tracks
  * created instances and their status (available, inUse).

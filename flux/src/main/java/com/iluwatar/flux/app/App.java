@@ -36,12 +36,12 @@ import com.iluwatar.flux.view.MenuView;
  * a React view, the view propagates an action through a central dispatcher, to the various stores
  * that hold the application's data and business logic, which updates all of the views that are
  * affected.
- * <p>
+ *
  * This example has two views: menu and content. They represent typical main menu and content area
  * of a web page. When menu item is clicked it triggers events through the dispatcher. The events
  * are received and handled by the stores updating their data as needed. The stores then notify the
  * views that they should rerender themselves.
- * <p>
+ *
  * http://facebook.github.io/flux/docs/overview.html
  *
  */

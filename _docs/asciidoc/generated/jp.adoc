@@ -16,7 +16,7 @@ Created by Alexis on 28-Apr-17.
  Like in case of serialization , objects that need to be serialized must implement serializable interface
  (it is empty interface) and down the line writeObject() method must be checking
  if it is a instance of serializable or not.
- <p>
+
  Marker interface vs annotation
  Marker interfaces and marker annotations both have their uses,
  neither of them is obsolete or always better then the other one.
@@ -38,7 +38,7 @@ The Abstract Factory pattern provides a way to encapsulate a group of individual
  factories, since it uses only the generic interfaces of their products. This pattern separates the details of
  implementation of a set of objects from their general usage and relies on object composition, as object creation is
  implemented in methods exposed in the factory interface.
- <p>
+
  The essence of the Abstract Factory pattern is a factory interface ({@link KingdomFactory}) and its implementations (
  {@link ElfKingdomFactory}, {@link OrcKingdomFactory}). The example uses both concrete implementations to create a
  king, a castle and an army.
@@ -48,25 +48,25 @@ The Abstract Factory pattern provides a way to encapsulate a group of individual
 === TLS
 ++++
 ThreadLocal pattern
- <p>
+
  This App shows how to create an isolated space per each thread. In this
  example the usage of SimpleDateFormat is made to be thread-safe. This is an
  example of the ThreadLocal pattern.
- <p>
+
  By applying the ThreadLocal pattern you can keep track of application
  instances or locale settings throughout the handling of a request. The
  ThreadLocal class works like a static variable, with the exception that it is
  only bound to the current thread! This allows us to use static variables in a
  thread-safe way.
- <p>
+
  In Java, thread-local variables are implemented by the ThreadLocal class
  object. ThreadLocal holds a variable of type T, which is accessible via get/set
  methods.
- <p>
+
  SimpleDateFormat is one of the basic Java classes and is not thread-safe. If
  you do not isolate the instance of SimpleDateFormat per each thread then
  problems arise. 
- <p>
+
  App converts the String date value 15/12/2015 to the Date format using the
  Java class SimpleDateFormat. It does this 20 times using 4 threads, each doing 
  it 5 times. With the usage of as ThreadLocal in DateFormatCallable everything 
@@ -74,7 +74,7 @@ ThreadLocal pattern
  and comment in the non ThreadLocal variant (marked with "//NTLNTL") you can 
  see what will happen without the ThreadLocal. Most likely you will get incorrect 
  date values and / or exceptions.
- <p>
+
  This example clearly show what will happen when using non thread-safe classes
  in a thread. In real life this may happen one in of 1.000 or 10.000 conversions
  and those are really hard to find errors.
@@ -88,15 +88,15 @@ The intention of the Builder pattern is to find a solution to the telescoping co
  constructor parameter combination leads to an exponential list of constructors. Instead of using
  numerous constructors, the builder pattern uses another object, a builder, that receives each
  initialization parameter step by step and then returns the resulting constructed object at once.
- <p>
+
  The Builder pattern has another benefit. It can be used for objects that contain flat data (html
  code, SQL query, X.509 certificate...), that is to say, data that can't be easily edited. This
  type of data cannot be edited step by step and must be edited at once. The best way to construct
  such an object is to use a builder class.
- <p>
+
  In this example we have the Builder pattern variation as described by Joshua Bloch in Effective
  Java 2nd Edition.
- <p>
+
  We want to build {@link Hero} objects, but its construction is complex because of the many
  parameters needed. To aid the user we introduce {@link Builder} class. {@link Hero.Builder}
  takes the minimum parameters to build {@link Hero} object in its constructor. After that
@@ -113,7 +113,7 @@ The Factory Method is a creational design pattern which uses factory methods to 
  This is done by creating objects via calling a factory method either specified in an interface
  and implemented by child classes, or implemented in a base class and optionally overridden by
  derived classes—rather than by calling a constructor.
- <p>
+
  In this Factory Method example we have an interface ({@link Blacksmith}) with a method for
  creating objects ({@link Blacksmith#manufactureWeapon}). The concrete subclasses (
  {@link OrcBlacksmith}, {@link ElfBlacksmith}) then override the method to produce objects of
@@ -128,7 +128,7 @@ The Prototype pattern is a creational design pattern in software development. It
  new objects. This pattern is used to: - avoid subclasses of an object creator in the client
  application, like the abstract factory pattern does. - avoid the inherent cost of creating a new
  object in the standard way (e.g., using the 'new' keyword)
- <p>
+
  In this example we have a factory class ({@link HeroFactoryImpl}) producing objects by cloning
  the existing ones. The factory's prototype objects are given as constructor parameters.
 ++++
@@ -138,18 +138,18 @@ The Prototype pattern is a creational design pattern in software development. It
 ++++
 Singleton pattern ensures that the class can have only one existing instance per Java classloader
  instance and provides global access to it.
- <p/>
+
  One of the risks of this pattern is that bugs resulting from setting a singleton up in a
  distributed environment can be tricky to debug, since it will work fine if you debug with a
  single classloader. Additionally, these problems can crop up a while after the implementation of
  a singleton, since they may start out synchronous and only become async with time, so you it may
  not be clear why you are seeing certain changes in behaviour.
- <p/>
+
  There are many ways to implement the Singleton. The first one is the eagerly initialized instance
  in {@link IvoryTower}. Eager initialization implies that the implementation is thread safe. If
  you can afford giving up control of the instantiation moment, then this implementation will suit
  you fine.
- <p/>
+
  The other option to implement eagerly initialized Singleton is enum based Singleton. The example
  is found in {@link EnumIvoryTower}. At first glance the code looks short and simple. However, you
  should be aware of the downsides including committing to implementation strategy, extending the
@@ -157,16 +157,16 @@ Singleton pattern ensures that the class can have only one existing instance per
  Overflow:
  http://programmers.stackexchange.com/questions/179386/what-are-the-downsides-of-implementing
  -a-singleton-with-javas-enum
- <p/>
+
  {@link ThreadSafeLazyLoadedIvoryTower} is a Singleton implementation that is initialized on
  demand. The downside is that it is very slow to access since the whole access method is
  synchronized.
- <p/>
+
  Another Singleton implementation that is initialized on demand is found in
  {@link ThreadSafeDoubleCheckLocking}. It is somewhat faster than
  {@link ThreadSafeLazyLoadedIvoryTower} since it doesn't synchronize the whole access method but
  only the method internals on specific conditions.
- <p/>
+
  Yet another way to implement thread safe lazily initialized Singleton can be found in
  {@link InitializingOnDemandHolderIdiom}. However, this implementation requires at least Java 8
  API level to work.
@@ -180,16 +180,16 @@ An adapter helps two incompatible interfaces to work together. This is the real 
  The Adapter design pattern allows otherwise incompatible classes to work together by converting
  the interface of one class into an interface expected by the clients.
 
- <p>
+
  There are two variations of the Adapter pattern: The class adapter implements the adaptee's
  interface whereas the object adapter uses composition to contain the adaptee in the adapter
  object. This example uses the object adapter approach.
 
- <p>
+
  The Adapter ({@link FishingBoatAdapter}) converts the interface of the adaptee class (
  {@link FishingBoat}) into a suitable one expected by the client ( {@link RowingBoat} ).
 
- <p>
+
  The story of this implementation is this. <br>
  Pirates are coming! we need a {@link RowingBoat} to flee! We have a {@link FishingBoat} and our
  captain. We have no time to make up a new ship! we need to reuse this {@link FishingBoat}. The
@@ -202,11 +202,11 @@ An adapter helps two incompatible interfaces to work together. This is the real 
 ++++
 Composition over inheritance. The Bridge pattern can also be thought of as two layers of abstraction.
  With Bridge, you can decouple an abstraction from its implementation so that the two can vary independently.
- <p>
+
  In Bridge pattern both abstraction ({@link Weapon}) and implementation (
  {@link Enchantment}) have their own class hierarchies. The interface of the implementations
  can be changed without affecting the clients.
- <p>
+
  In this example we have two class hierarchies. One of weapons and another one of enchantments. We can easily
  combine any weapon with any enchantment using composition instead of creating deep class hierarchy.
 ++++
@@ -219,7 +219,7 @@ The Composite pattern is a partitioning design pattern. The Composite pattern de
  of a composite is to "compose" objects into tree structures to represent part-whole hierarchies.
  Implementing the Composite pattern lets clients treat individual objects and compositions
  uniformly.
- <p>
+
  In this example we have sentences composed of words composed of letters. All of the objects can
  be treated through the same interface ({@link LetterComposite}).
 ++++
@@ -234,7 +234,7 @@ Data Access Object (DAO) is an object that provides an abstract interface to som
  application needs, in terms of domain-specific objects and data types (the public interface of
  the DAO), from how these needs can be satisfied with a specific DBMS.
 
- <p>With the DAO pattern, we can use various method calls to retrieve/add/delete/update data 
+ With the DAO pattern, we can use various method calls to retrieve/add/delete/update data
  without directly interacting with the data source. The below example demonstrates basic CRUD 
  operations: select, add, update, and delete.
 ++++
@@ -248,7 +248,7 @@ The Data Mapper (DM) is a layer of software that separates the in-memory objects
  present; they need no SQL interface code, and certainly no knowledge of the database schema. (The
  database schema is always ignorant of the objects that use it.) Since it's a form of Mapper ,
  Data Mapper itself is even unknown to the domain layer.
- <p>
+
  The below example demonstrates basic CRUD operations: Create, Read, Update, and Delete.
 ++++
 
@@ -259,7 +259,7 @@ The Decorator pattern is a more flexible alternative to subclassing. The Decorat
  implements the same interface as the target and uses aggregation to "decorate" calls to the
  target. Using the Decorator pattern it is possible to change the behavior of the class during
  runtime.
- <p>
+
  In this example we show how the simple {@link SimpleTroll} first attacks and then flees the battle.
  Then we decorate the {@link SimpleTroll} with a {@link ClubbedTroll} and perform the attack again. You
  can see how the behavior changes after the decoration.
@@ -274,7 +274,7 @@ The Facade design pattern is often used when a system is very complex or difficu
  interface to the client. It typically involves a single wrapper class which contains a set of
  members required by client. These members access the system on behalf of the facade client and
  hide the implementation details.
- <p>
+
  In this example the Facade is ({@link DwarvenGoldmineFacade}) and it provides a simpler interface
  to the goldmine subsystem.
 ++++
@@ -284,12 +284,12 @@ The Facade design pattern is often used when a system is very complex or difficu
 ++++
 Flyweight pattern is useful when the program needs a huge amount of objects. It provides means to
  decrease resource usage by sharing object instances.
- <p>
+
  In this example {@link AlchemistShop} has great amount of potions on its shelves. To fill the
  shelves {@link AlchemistShop} uses {@link PotionFactory} (which represents the Flyweight in this
  example). Internally {@link PotionFactory} holds a map of the potions and lazily creates new ones
  when requested.
- <p>
+
  To enable safe sharing, between clients and threads, Flyweight objects must be immutable.
  Flyweight objects are by definition value objects.
 ++++
@@ -302,11 +302,11 @@ A proxy, in its most general form, is a class functioning as an interface to som
  some other resource that is expensive or impossible to duplicate. In short, a proxy is a wrapper
  or agent object that is being called by the client to access the real serving object behind the
  scenes.
- <p>
+
  The Proxy design pattern allows you to provide an interface to other objects by creating a
  wrapper class as the proxy. The wrapper class, which is the proxy, can add additional
  functionality to the object of interest without changing the object's code.
- <p>
+
  In this example the proxy ({@link WizardTowerProxy}) controls access to the actual object (
  {@link IvoryTower}).
 ++++
@@ -318,7 +318,7 @@ The Chain of Responsibility pattern is a design pattern consisting of command ob
  series of processing objects. Each processing object contains logic that defines the types of
  command objects that it can handle; the rest are passed to the next processing object in the
  chain. A mechanism also exists for adding new processing objects to the end of this chain.
- <p>
+
  In this example we organize the request handlers ({@link RequestHandler}) into a chain where each
  handler has a chance to act on the request on its turn. Here the king ({@link OrcKing}) makes
  requests and the military orcs ({@link OrcCommander}, {@link OrcOfficer}, {@link OrcSoldier})
@@ -331,7 +331,7 @@ The Chain of Responsibility pattern is a design pattern consisting of command ob
 The Command pattern is a behavioral design pattern in which an object is used to encapsulate all
  information needed to perform an action or trigger an event at a later time. This information
  includes the method name, the object that owns the method and values for the method parameters.
- <p>
+
  Four terms always associated with the command pattern are command, receiver, invoker and client.
  A command object (spell) knows about the receiver (target) and invokes a method of the receiver.
  Values for parameters of the receiver method are stored in the command. The receiver then does
@@ -340,7 +340,7 @@ The Command pattern is a behavioral design pattern in which an object is used to
  command, it knows only about command interface. Both an invoker object and several command
  objects are held by a client object (app). The client decides which commands to execute at which
  points. To execute a command, it passes the command object to the invoker object.
- <p>
+
  In other words, in this example the wizard casts spells on the goblin. The wizard keeps track of
  the previous spells cast, so it is easy to undo them. In addition, the wizard keeps track of the
  spells undone, so they can be redone.
@@ -353,7 +353,7 @@ The Interpreter pattern is a design pattern that specifies how to evaluate sente
  language. The basic idea is to have a class for each symbol (terminal or nonterminal) in a
  specialized computer language. The syntax tree of a sentence in the language is an instance of
  the composite pattern and is used to evaluate (interpret) the sentence for a client.
- <p>
+
  In this example we use the Interpreter pattern to break sentences into expressions (
  {@link Expression}) that can be evaluated and as a whole form the result.
 ++++
@@ -363,7 +363,7 @@ The Interpreter pattern is a design pattern that specifies how to evaluate sente
 ++++
 The Iterator pattern is a design pattern in which an iterator is used to traverse a container and
  access the container's elements. The Iterator pattern decouples algorithms from containers.
- <p>
+
  In this example the Iterator ({@link ItemIterator}) adds abstraction layer on top of a collection
  ({@link TreasureChest}). This way the collection can change its internal implementation without
  affecting its clients.
@@ -375,19 +375,19 @@ The Iterator pattern is a design pattern in which an iterator is used to travers
 The Mediator pattern defines an object that encapsulates how a set of objects interact. This
  pattern is considered to be a behavioral pattern due to the way it can alter the program's
  running behavior.
- <p>
+
  Usually a program is made up of a large number of classes. So the logic and computation is
  distributed among these classes. However, as more classes are developed in a program, especially
  during maintenance and/or refactoring, the problem of communication between these classes may
  become more complex. This makes the program harder to read and maintain. Furthermore, it can
  become difficult to change the program, since any change may affect code in several other
  classes.
- <p>
+
  With the Mediator pattern, communication between objects is encapsulated with a mediator object.
  Objects no longer communicate directly with each other, but instead communicate through the
  mediator. This reduces the dependencies between communicating objects, thereby lowering the
  coupling.
- <p>
+
  In this example the mediator encapsulates how a set of objects ({@link PartyMember}) interact.
  Instead of referring to each other directly they use the mediator ({@link Party}) interface.
 ++++
@@ -397,7 +397,7 @@ The Mediator pattern defines an object that encapsulates how a set of objects in
 ++++
 The Memento pattern is a software design pattern that provides the ability to restore an object
  to its previous state (undo via rollback).
- <p>
+
  The Memento pattern is implemented with three objects: the originator, a caretaker and a memento.
  The originator is some object that has an internal state. The caretaker is going to do something
  to the originator, but wants to be able to undo the change. The caretaker first asks the
@@ -406,7 +406,7 @@ The Memento pattern is a software design pattern that provides the ability to re
  to the originator. The memento object itself is an opaque object (one which the caretaker cannot,
  or should not, change). When using this pattern, care should be taken if the originator may
  change other objects or resources - the memento pattern operates on a single object.
- <p>
+
  In this example the object ({@link Star}) gives out a "memento" ({@link StarMemento}) that
  contains the state of the object. Later on the memento can be set back to the object restoring
  the state.
@@ -419,11 +419,11 @@ The Model-View-Presenter(MVP) architectural pattern, helps us achieve what is ca
  "The separation of concerns" principle. This is accomplished by separating the application's
  logic (Model), GUIs (View), and finally the way that the user's actions update the application's
  logic (Presenter).
- <p>
+
  In the following example, The {@link FileLoader} class represents the app's logic, the
  {@link FileSelectorJFrame} is the GUI and the {@link FileSelectorPresenter} is responsible to
  respond to users' actions.
- <p>
+
  Finally, please notice the wiring between the Presenter and the View and between the Presenter
  and the Model.
 ++++
@@ -437,7 +437,7 @@ The Observer pattern is a software design pattern in which an object, called the
  distributed event handling systems. The Observer pattern is also a key part in the familiar
  model–view–controller (MVC) architectural pattern. The Observer pattern is implemented in
  numerous programming libraries and systems, including almost all GUI toolkits.
- <p>
+
  In this example {@link Weather} has a state that can be observed. The {@link Orcs} and
  {@link Hobbits} register as observers and receive notifications when the {@link Weather} changes.
 ++++
@@ -447,10 +447,10 @@ The Observer pattern is a software design pattern in which an object, called the
 ++++
 In State pattern the container object has an internal state object that defines the current
  behavior. The state object can be changed to alter the behavior.
- <p>
+
  This can be a cleaner way for an object to change its behavior at runtime without resorting to
  large monolithic conditional statements and thus improves maintainability.
- <p>
+
  In this example the {@link Mammoth} changes its behavior as time passes by.
 ++++
 
@@ -459,11 +459,11 @@ In State pattern the container object has an internal state object that defines 
 ++++
 The Strategy pattern (also known as the policy pattern) is a software design pattern that enables
  an algorithm's behavior to be selected at runtime.
- <p>
+
  Before Java 8 the Strategies needed to be separate classes forcing the developer
  to write lots of boilerplate code. With modern Java it is easy to pass behavior
  with method references and lambdas making the code shorter and more readable.
- <p>
+
  In this example ({@link DragonSlayingStrategy}) encapsulates an algorithm. The containing object
  ({@link DragonSlayer}) can alter its behavior by changing its strategy.
 ++++
@@ -473,7 +473,7 @@ The Strategy pattern (also known as the policy pattern) is a software design pat
 ++++
 Template Method defines a skeleton for an algorithm. The algorithm subclasses provide
  implementation for the blank parts.
- <p>
+
  In this example {@link HalflingThief} contains {@link StealingMethod} that can be changed. First
  the thief hits with {@link HitAndRunMethod} and then with {@link SubtleMethod}.
 ++++
@@ -483,7 +483,7 @@ Template Method defines a skeleton for an algorithm. The algorithm subclasses pr
 ++++
 Visitor pattern defines mechanism to apply operations on nodes in hierarchy. New operations can
  be added without altering the node interface.
- <p>
+
  In this example there is a unit hierarchy beginning from {@link Commander}. This hierarchy is
  traversed by visitors. {@link SoldierVisitor} applies its operation on {@link Soldier}s,
  {@link SergeantVisitor} on {@link Sergeant}s and so on.
@@ -496,7 +496,7 @@ Double Checked Locking is a concurrency design pattern used to reduce the overhe
  lock by first testing the locking criterion (the "lock hint") without actually acquiring the
  lock. Only if the locking criterion check indicates that locking is required does the actual
  locking logic proceed.
- <p>
+
  In {@link Inventory} we store the items with a given size. However, we do not store more items
  than the inventory size. To address concurrent access problems we use double checked locking to
  add item to inventory. In this method, the thread which gets the lock first adds the item.
@@ -508,7 +508,7 @@ Double Checked Locking is a concurrency design pattern used to reduce the overhe
 Servant offers some functionality to a group of classes without defining that functionality in
  each of them. A Servant is a class whose instance provides methods that take care of a desired
  service, while objects for which the servant does something, are taken as parameters.
- <p>
+
  In this example {@link Servant} is serving {@link King} and {@link Queen}.
 ++++
 
@@ -519,10 +519,9 @@ The Service Locator pattern is a design pattern used in software development to 
  processes involved in obtaining a service with a strong abstraction layer. This pattern uses a
  central registry known as the "service locator", which on request returns the information
  necessary to perform a certain task.
- <p>
+
  In this example we use the Service locator pattern to lookup JNDI-services and cache them for
  subsequent requests.
- <p>
 ++++
 
 
@@ -530,7 +529,7 @@ The Service Locator pattern is a design pattern used in software development to 
 ++++
 Null Object pattern replaces null values with neutral objects. Many times this simplifies
  algorithms since no extra null checks are needed.
- <p>
+
  In this example we build a binary tree where the nodes are either normal or Null Objects. No null
  values are used in the tree making the traversal easy.
 ++++
@@ -541,10 +540,10 @@ Null Object pattern replaces null values with neutral objects. Many times this s
 A system with lots of objects can lead to complexities when a client wants to subscribe to
  events. The client has to find and register for each object individually, if each object has
  multiple events then each event requires a separate subscription.
- <p>
+
  An Event Aggregator acts as a single source of events for many objects. It registers for all the
  events of the many objects allowing clients to register with just the aggregator.
- <p>
+
  In the example {@link LordBaelish}, {@link LordVarys} and {@link Scout} deliver events to
  {@link KingsHand}. {@link KingsHand}, the event aggregator, then delivers the events to
  {@link KingJoffrey}.
@@ -571,7 +570,7 @@ Callback pattern is more native for functional languages where functions are tre
 The Execute Around idiom specifies some code to be executed before and after a method. Typically
  the idiom is used when the API has methods to be executed in pairs, such as resource
  allocation/deallocation or lock acquisition/release.
- <p>
+
  In this example, we have {@link SimpleFileWriter} class that opens and closes the file for the
  user. The user specifies only what to do with the file by providing the {@link FileWriterAction}
  implementation.
@@ -581,13 +580,13 @@ The Execute Around idiom specifies some code to be executed before and after a m
 === Property
 ++++
 The Property pattern is also known as Prototype inheritance.
- <p>
+
  In prototype inheritance instead of classes, as opposite to Java class inheritance, objects are
  used to create another objects and object hierarchies. Hierarchies are created using prototype
  chain through delegation: every object has link to parent object. Any base (parent) object can be
  amended at runtime (by adding or removal of some property), and all child objects will be
  affected as result.
- <p>
+
  In this example we demonstrate {@link Character} instantiation using the Property pattern.
 ++++
 
@@ -601,19 +600,18 @@ When a request enters a Web application, it often must pass several entrance tes
  the browser type of the client? Some of these checks are tests, resulting in a yes or no answer
  that determines whether processing will continue. Other checks manipulate the incoming data
  stream into a form suitable for processing.
- <p>
+
  The classic solution consists of a series of conditional checks, with any failed check aborting
  the request. Nested if/else statements are a standard strategy, but this solution leads to code
  fragility and a copy-and-paste style of programming, because the flow of the filtering and the
  action of the filters is compiled into the application.
- <p>
+
  The key to solving this problem in a flexible and unobtrusive manner is to have a simple
  mechanism for adding and removing processing components, in which each component completes a
  specific filtering action. This is the Intercepting Filter pattern in action.
- <p>
+
  In this example we check whether the order request is valid through pre-processing done via
  {@link Filter}. Each field has its own corresponding {@link Filter}
- <p>
 ++++
 
 
@@ -621,7 +619,7 @@ When a request enters a Web application, it often must pass several entrance tes
 ++++
 Producer Consumer Design pattern is a classic concurrency or threading pattern which reduces coupling between
  Producer and Consumer by separating Identification of work with Execution of Work.
- <p>
+
  In producer consumer design pattern a shared queue is used to control the flow and this separation allows you to code
  producer and consumer separately. It also addresses the issue of different timing require to produce item or
  consuming item. by using producer consumer pattern both Producer and Consumer Thread can work with different speed.
@@ -636,7 +634,7 @@ One of the possible approaches to terminate Producer-Consumer pattern is using t
  Pill will stop reading messages from the queue. You must also ensure that the Poison Pill will be
  the last message that will be read from the queue (if you have prioritized queue then this can be
  tricky).
- <p>
+
  In simple cases the Poison Pill can be just a null-reference, but holding a unique separate
  shared object-marker (with name "Poison" or "Poison Pill") is more clear and self describing.
 ++++
@@ -647,14 +645,14 @@ One of the possible approaches to terminate Producer-Consumer pattern is using t
 In a multiple thread applications, the threads may try to synchronize the shared resources
  regardless of read or write operation. It leads to a low performance especially in a "read more
  write less" system as indeed the read operations are thread-safe to another read operation.
- <p>
+
  Reader writer lock is a synchronization primitive that try to resolve this problem. This pattern
  allows concurrent access for read-only operations, while write operations require exclusive
  access. This means that multiple threads can read the data in parallel but an exclusive lock is
  needed for writing or modifying data. When a writer is writing the data, all other writers or
  readers will be blocked until the writer is finished writing.
  
- <p>
+
  This example use two mutex to demonstrate the concurrent access of multiple readers and writers.
 ++++
 
@@ -662,9 +660,9 @@ In a multiple thread applications, the threads may try to synchronize the shared
 === com.iluwatar.lazy.loading.App
 ++++
 Lazy loading idiom defers object creation until needed.
- <p>
+
  This example shows different implementations of the pattern with increasing sophistication.
- <p>
+
  Additional information and lazy loading flavours are described in
  http://martinfowler.com/eaaCatalog/lazyLoad.html
 ++++
@@ -674,7 +672,7 @@ Lazy loading idiom defers object creation until needed.
 ++++
 Service layer defines an application's boundary with a layer of services that establishes a set
  of available operations and coordinates the application's response in each operation.
- <p>
+
  Enterprise applications typically require different kinds of interfaces to the data they store
  and the logic they implement: data loaders, user interfaces, integration gateways, and others.
  Despite their different purposes, these interfaces often need common interactions with the
@@ -682,7 +680,7 @@ Service layer defines an application's boundary with a layer of services that es
  be complex, involving transactions across multiple resources and the coordination of several
  responses to an action. Encoding the logic of the interactions separately in each interface
  causes a lot of duplication.
- <p>
+
  The example application demonstrates interactions between a client ({@link App}) and a service (
  {@link MagicService}). The service is implemented with 3-layer architecture (entity, dao,
  service). For persistence the example uses in-memory H2 database which is populated on each
@@ -695,11 +693,11 @@ Service layer defines an application's boundary with a layer of services that es
 The central idea of the Specification pattern is to separate the statement of how to match a
  candidate, from the candidate object that it is matched against. As well as its usefulness in
  selection, it is also valuable for validation and for building to order.
- <p>
+
  In this example we have a pool of creatures with different properties. We then have defined
  separate selection rules (Specifications) that we apply to the collection and as output receive
  only the creatures that match the selection criteria.
- <p>
+
  http://martinfowler.com/apsupp/spec.pdf
 ++++
 
@@ -709,7 +707,7 @@ The central idea of the Specification pattern is to separate the statement of ho
 Tolerant Reader is an integration pattern that helps creating robust communication systems. The
  idea is to be as tolerant as possible when reading data from another service. This way, when the
  communication schema changes, the readers must not break.
- <p>
+
  In this example we use Java serialization to write representations of {@link RainbowFish} objects
  to file. {@link RainbowFish} is the initial version which we can easily read and write using
  {@link RainbowFishSerializer} methods. {@link RainbowFish} then evolves to {@link RainbowFishV2}
@@ -724,13 +722,13 @@ Tolerant Reader is an integration pattern that helps creating robust communicati
 ++++
 Model-View-Controller is a pattern for implementing user interfaces. It divides the application
  into three interconnected parts namely the model, the view and the controller.
- <p>
+
  The central component of MVC, the model, captures the behavior of the application in terms of its
  problem domain, independent of the user interface. The model directly manages the data, logic and
  rules of the application. A view can be any output representation of information, such as a chart
  or a diagram The third part, the controller, accepts input and converts it to commands for the
  model or view.
- <p>
+
  In this example we have a giant ({@link GiantModel}) with statuses for health, fatigue and
  nourishment. {@link GiantView} can display the giant with its current status.
  {@link GiantController} receives input affecting the model and delegates redrawing the giant to
@@ -745,12 +743,12 @@ Flux is the application architecture that Facebook uses for building client-side
  a React view, the view propagates an action through a central dispatcher, to the various stores
  that hold the application's data and business logic, which updates all of the views that are
  affected.
- <p>
+
  This example has two views: menu and content. They represent typical main menu and content area
  of a web page. When menu item is clicked it triggers events through the dispatcher. The events
  are received and handled by the stores updating their data as needed. The stores then notify the
  views that they should rerender themselves.
- <p>
+
  http://facebook.github.io/flux/docs/overview.html
 ++++
 
@@ -759,15 +757,15 @@ Flux is the application architecture that Facebook uses for building client-side
 ++++
 When a message with a parameter is sent to an object, the resultant behaviour is defined by the implementation of
  that method in the receiver. Sometimes the behaviour must also be determined by the type of the parameter.
- <p>
+
  One way to implement this would be to create multiple instanceof-checks for the methods parameter. However, this
  creates a maintenance issue. When new types are added we would also need to change the method's implementation and
  add a new instanceof-check. This violates the single responsibility principle - a class should have only one reason
  to change.
- <p>
+
  Instead of the instanceof-checks a better way is to make another virtual call on the parameter object. This way new
  functionality can be easily added without the need to modify existing implementation (open-closed principle).
- <p>
+
  In this example we have hierarchy of objects ({@link GameObject}) that can collide to each other. Each object has its
  own coordinates which are checked against the other objects' coordinates. If there is an overlap, then the objects
  collide utilizing the Double Dispatch pattern.
@@ -779,7 +777,7 @@ When a message with a parameter is sent to an object, the resultant behaviour is
 Whereas Singleton design pattern introduces single globally accessible object the Multiton
  pattern defines many globally accessible objects. The client asks for the correct instance from
  the Multiton by passing an enumeration as parameter.
- <p>
+
  In this example {@link Nazgul} is the Multiton and we can ask single {@link Nazgul} from it using
  {@link NazgulName}. The {@link Nazgul}s are statically initialized and stored in concurrent hash
  map.
@@ -790,10 +788,10 @@ Whereas Singleton design pattern introduces single globally accessible object th
 ++++
 Resource Acquisition Is Initialization pattern was developed for exception safe resource
  management by C++ creator Bjarne Stroustrup.
- <p>
+
  In RAII resource is tied to object lifetime: resource allocation is done during object creation
  while resource deallocation is done during object destruction.
- <p>
+
  In Java RAII is achieved with try-with-resources statement and interfaces {@link Closeable} and
  {@link AutoCloseable}. The try-with-resources statement ensures that each resource is closed at
  the end of the statement. Any object that implements {@link java.lang.AutoCloseable}, which
@@ -802,7 +800,7 @@ Resource Acquisition Is Initialization pattern was developed for exception safe 
  In this example, {@link SlidingDoor} implements {@link AutoCloseable} and {@link TreasureChest}
  implements {@link Closeable}. Running the example, we can observe that both resources are
  automatically closed.
- <p>
+
  http://docs.oracle.com/javase/7/docs/technotes/guides/language/try-with-resources.html
 ++++
 
@@ -815,7 +813,7 @@ Thread Pool pattern is where a number of threads are created to perform a number
  threads. As soon as a thread completes its task, it will request the next task from the queue
  until all tasks have been completed. The thread can then terminate, or sleep until there are new
  tasks available.
- <p>
+
  In this example we create a list of tasks presenting work to be done. Each task is then wrapped
  into a {@link Worker} object that implements {@link Runnable}. We create an
  {@link ExecutorService} with fixed number of threads (Thread Pool) and use them to execute the
@@ -827,7 +825,7 @@ Thread Pool pattern is where a number of threads are created to perform a number
 ++++
 Twin pattern is a design pattern which provides a standard solution to simulate multiple
  inheritance in java.
- <p>
+
  In this example, the essence of the Twin pattern is the {@link BallItem} class and
  {@link BallThread} class represent the twin objects to coordinate with each other(via the twin
  reference) like a single class inheriting from {@link GameItem} and {@link Thread}.
@@ -840,7 +838,7 @@ The Private Class Data design pattern seeks to reduce exposure of attributes by 
  visibility. It reduces the number of class attributes by encapsulating them in single data
  object. It allows the class designer to remove write privilege of attributes that are intended to
  be set only during construction, even from methods of the target class.
- <p>
+
  In the example we have normal {@link Stew} class with some ingredients given in constructor. Then
  we have methods to enumerate the ingredients and to taste the stew. The method for tasting the
  stew alters the private members of the {@link Stew} class.
@@ -857,7 +855,7 @@ When it is necessary to work with a large number of objects that are particularl
  instantiate and each object is only needed for a short period of time, the performance of an
  entire application may be adversely affected. An object pool design pattern may be deemed
  desirable in cases such as these.
- <p>
+
  The object pool design pattern creates a set of objects that may be reused. When a new object is
  needed, it is requested from the pool. If a previously prepared object is available it is
  returned immediately, avoiding the instantiation cost. If no objects are present in the pool, a
@@ -865,7 +863,7 @@ When it is necessary to work with a large number of objects that are particularl
  returned to the pool, allowing it to be used again in the future without repeating the
  computationally expensive instantiation process. It is important to note that once an object has
  been used and returned, existing references will become invalid.
- <p>
+
  In this example we have created {@link OliphauntPool} inheriting from generic {@link ObjectPool}.
  {@link Oliphaunt}s can be checked out from the pool and later returned to it. The pool tracks
  created instances and their status (available, inUse).
@@ -878,17 +876,17 @@ Dependency Injection pattern deals with how objects handle their dependencies. T
  implements so called inversion of control principle. Inversion of control has two specific rules:
  - High-level modules should not depend on low-level modules. Both should depend on abstractions.
  - Abstractions should not depend on details. Details should depend on abstractions.
- <p>
+
  In this example we show you three different wizards. The first one ({@link SimpleWizard}) is a
  naive implementation violating the inversion of control principle. It depends directly on a
  concrete implementation which cannot be changed.
- <p>
+
  The second and third wizards({@link AdvancedWizard} and {@link AdvancedSorceress}) are more flexible.
  They do not depend on any concrete implementation but abstraction. They utilizes Dependency Injection
  pattern allowing their {@link Tobacco} dependency to be injected through constructor ({@link AdvancedWizard})
  or setter ({@link AdvancedSorceress}). This way, handling the dependency is no longer the wizard's
  responsibility. It is resolved outside the wizard class.
- <p>
+
  The fourth example takes the pattern a step further. It uses Guice framework for Dependency
  Injection. {@link TobaccoModule} binds a concrete implementation to abstraction. Injector is then
  used to create {@link GuiceWizard} object with correct dependencies.
@@ -899,14 +897,14 @@ Dependency Injection pattern deals with how objects handle their dependencies. T
 ++++
 The Front Controller is a presentation tier pattern. Essentially it defines a controller that
  handles all requests for a web site.
- <p>
+
  The Front Controller pattern consolidates request handling through a single handler object (
  {@link FrontController}). This object can carry out the common the behavior such as
  authorization, request logging and routing requests to corresponding views.
- <p>
+
  Typically the requests are mapped to command objects ({@link Command}) which then display the
  correct view ({@link View}).
- <p>
+
  In this example we have implemented two views: {@link ArcherView} and {@link CatapultView}. These
  are displayed by sending correct request to the {@link FrontController} object. For example, the
  {@link ArcherView} gets displayed when {@link FrontController} receives request "Archer". When
@@ -923,7 +921,7 @@ Repository pattern mediates between the domain and data mapping layers using a c
  query construction code is concentrated. This becomes more important when there are a large
  number of domain classes or heavy querying. In these cases particularly, adding this layer helps
  minimize duplicate query logic.
- <p>
+
  In this example we utilize Spring Data to automatically generate a repository for us from the
  {@link Person} domain object. Using the {@link PersonRepository} we perform CRUD operations on
  the entity, moreover, the query by {@link org.springframework.data.jpa.domain.Specification} are
@@ -938,16 +936,16 @@ This application demonstrates the async method invocation pattern. Key parts of 
  <code>AsyncResult</code> which is an intermediate container for an asynchronously evaluated value,
  <code>AsyncCallback</code> which can be provided to be executed on task completion and <code>AsyncExecutor</code>
  that manages the execution of the async tasks.
- <p>
+
  The main method shows example flow of async invocations. The main thread starts multiple tasks with variable
  durations and then continues its own work. When the main thread has done it's job it collects the results of the
  async tasks. Two of the tasks are handled with callbacks, meaning the callbacks are executed immediately when the
  tasks complete.
- <p>
+
  Noteworthy difference of thread usage between the async results and callbacks is that the async results are collected
  in the main thread but the callbacks are executed within the worker threads. This should be noted when working with
  thread pools.
- <p>
+
  Java provides its own implementations of async method invocation pattern. FutureTask, CompletableFuture and
  ExecutorService are the real world implementations of this pattern. But due to the nature of parallel programming,
  the implementations are not trivial. This example does not take all possible scenarios into account but rather
@@ -960,7 +958,7 @@ This application demonstrates the async method invocation pattern. Key parts of 
 The MonoState pattern ensures that all instances of the class will have the same state. This can
  be used a direct replacement of the Singleton pattern.
  
- <p>
+
  In the following example, The {@link LoadBalancer} class represents the app's logic. It contains
  a series of Servers, which can handle requests of type {@link Request}. Two instances of
  LoadBalacer are created. When a request is made to a server via the first LoadBalancer the state
@@ -968,7 +966,7 @@ The MonoState pattern ensures that all instances of the class will have the same
  Server 1, the second LoadBalancer on a new request will select the Second server. If a third
  LoadBalancer is created and a new request is made to it, then it will select the third server as
  the second load balancer has already selected the second server.
- <p>
+
  .
 ++++
 
@@ -977,14 +975,14 @@ The MonoState pattern ensures that all instances of the class will have the same
 ++++
 Step Builder Pattern
 
- <p>
+
  <b>Intent</b> <br/>
  An extension of the Builder pattern that fully guides the user through the creation of the object
  with no chances of confusion. <br/>
  The user experience will be much more improved by the fact that he will only see the next step
  methods available, NO build method until is the right time to build the object.
 
- <p>
+
  <b>Implementation</b>
  <ul>
  The concept is simple:
@@ -997,13 +995,13 @@ Step Builder Pattern
  <li>Last step is the BuildStep, in charge of creating the object you need to build.</li>
  </ul>
 
- <p>
+
  <b>Applicability</b> <br/>
  Use the Step Builder pattern when the algorithm for creating a complex object should be
  independent of the parts that make up the object and how they're assembled the construction
  process must allow different representations for the object that's constructed when in the
  process of constructing the order is important.
- <p>
+
  http://rdafbn.blogspot.co.uk/2012/07/step-builder-pattern_28.html
 ++++
 
@@ -1015,11 +1013,11 @@ The Business Delegate pattern adds an abstraction layer between the presentation
  encapsulates knowledge about how to locate, connect to, and interact with the business objects
  that make up the application.
  
- <p>Some of the services the Business Delegate uses are instantiated directly, and some can be
+ Some of the services the Business Delegate uses are instantiated directly, and some can be
  retrieved through service lookups. The Business Delegate itself may contain business logic too
  potentially tying together multiple service calls, exception handling, retrying etc.
  
- <p>In this example the client ({@link Client}) utilizes a business delegate (
+ In this example the client ({@link Client}) utilizes a business delegate (
  {@link BusinessDelegate}) to execute a task. The Business Delegate then selects the appropriate
  service and makes the service call.
 ++++
@@ -1030,19 +1028,19 @@ The Business Delegate pattern adds an abstraction layer between the presentation
 This application demonstrates Half-Sync/Half-Async pattern. Key parts of the pattern are
  {@link AsyncTask} and {@link AsynchronousService}.
  
- <p>
+
  <i>PROBLEM</i> <br/>
  A concurrent system have a mixture of short duration, mid duration and long duration tasks. Mid
  or long duration tasks should be performed asynchronously to meet quality of service
  requirements.
  
- <p>
+
  <i>INTENT</i> <br/>
  The intent of this pattern is to separate the the synchronous and asynchronous processing in the
  concurrent application by introducing two intercommunicating layers - one for sync and one for
  async. This simplifies the programming without unduly affecting the performance.
  
- <p>
+
  <i>APPLICABILITY</i> <br/>
  UNIX network subsystems - In operating systems network operations are carried out
  asynchronously with help of hardware level interrupts.<br/>
@@ -1054,7 +1052,7 @@ This application demonstrates Half-Sync/Half-Async pattern. Key parts of the pat
  calls, such as downloading a file, in background threads so that the UI thread remains free to
  respond to user inputs.<br/>
  
- <p>
+
  <i>IMPLEMENTATION</i> <br/>
  The main method creates an asynchronous service which does not block the main thread while the
  task is being performed. The main thread continues its work which is similar to Async Method
@@ -1070,21 +1068,21 @@ This application demonstrates Half-Sync/Half-Async pattern. Key parts of the pat
 ++++
 Layers is an architectural style where software responsibilities are divided among the different layers of the
  application.
- <p>
+
  This example demonstrates a traditional 3-layer architecture consisting of data access layer, business layer and
  presentation layer.
- <p>
+
  The data access layer is formed of Spring Data repositories <code>CakeDao</code>, <code>CakeToppingDao</code> and
  <code>CakeLayerDao</code>. The repositories can be used for CRUD operations on cakes, cake toppings and cake layers
  respectively.
- <p>
+
  The business layer is built on top of the data access layer. <code>CakeBakingService</code> offers methods to
  retrieve available cake toppings and cake layers and baked cakes. Also the service is used to create new cakes out of
  cake toppings and cake layers.
- <p>
+
  The presentation layer is built on the business layer and in this example it simply lists the cakes that have been
  baked.
- <p>
+
  We have applied so called strict layering which means that the layers can only access the classes directly beneath
  them. This leads the solution to create an additional set of DTOs ( <code>CakeInfo</code>,
  <code>CakeToppingInfo</code>, <code>CakeLayerInfo</code>) to translate data between layers. In other words,
@@ -1101,7 +1099,7 @@ Layers is an architectural style where software responsibilities are divided amo
 When two applications communicate with each other using a messaging system they first need to
  establish a communication channel that will carry the data. Message Channel decouples Message
  producers and consumers.
- <p>
+
  The sending application doesn't necessarily know what particular application will end up
  retrieving it, but it can be assured that the application that retrieves the information is
  interested in that information. This is because the messaging system has different Message
@@ -1111,7 +1109,7 @@ When two applications communicate with each other using a messaging system they 
  Likewise, an application that wants to receive particular information doesn't pull info off some
  random channel; it selects what channel to get information from based on what type of information
  it wants.
- <p>
+
  In this example we use Apache Camel to establish two different Message Channels. The first one
  reads from standard input and delivers messages to Direct endpoint. The second Message Channel is
  established from the Direct component to console output. No actual messages are sent, only the
@@ -1124,7 +1122,7 @@ When two applications communicate with each other using a messaging system they 
 The Fluent Interface pattern is useful when you want to provide an easy readable, flowing API.
  Those interfaces tend to mimic domain specific languages, so they can nearly be read as human
  languages.
- <p>
+
  In this example two implementations of a {@link FluentIterable} interface are given. The
  {@link SimpleFluentIterable} evaluates eagerly and would be too costly for real world
  applications. The {@link LazyFluentIterable} is evaluated on termination. Their usage is
@@ -1138,13 +1136,13 @@ The Fluent Interface pattern is useful when you want to provide an easy readable
 This application demonstrates Reactor pattern. The example demonstrated is a Distributed Logging
  Service where it listens on multiple TCP or UDP sockets for incoming log requests.
  
- <p>
+
  <i>INTENT</i> <br/>
  The Reactor design pattern handles service requests that are delivered concurrently to an
  application by one or more clients. The application can register specific handlers for processing
  which are called by reactor on specific events.
  
- <p>
+
  <i>PROBLEM</i> <br/>
  Server applications in a distributed system must handle multiple clients that send them service
  requests. Following forces need to be resolved:
@@ -1155,32 +1153,32 @@ This application demonstrates Reactor pattern. The example demonstrated is a Dis
  <li>Adaptability</li>
  </ul>
  
- <p>
+
  <i>PARTICIPANTS</i> <br/>
  <ul>
  <li>Synchronous Event De-multiplexer</li> {@link NioReactor} plays the role of synchronous event
  de-multiplexer. It waits for events on multiple channels registered to it in an event loop.
  
- <p>
+
  <li>Initiation Dispatcher</li> {@link NioReactor} plays this role as the application specific
  {@link ChannelHandler}s are registered to the reactor.
  
- <p>
+
  <li>Handle</li> {@link AbstractNioChannel} acts as a handle that is registered to the reactor.
  When any events occur on a handle, reactor calls the appropriate handler.
  
- <p>
+
  <li>Event Handler</li> {@link ChannelHandler} acts as an event handler, which is bound to a
  channel and is called back when any event occurs on any of its associated handles. Application
  logic resides in event handlers.
  </ul>
  
- <p>
+
  The application utilizes single thread to listen for requests on all ports. It does not create a
  separate thread for each client, which provides better scalability under load (number of clients
  increase).
  
- <p>
+
  The example uses Java NIO framework to implement the Reactor.
 ++++
 
@@ -1202,7 +1200,7 @@ The Caching pattern describes how to avoid expensive re-acquisition of resources
  should be written back to the backing store (i.e. Database) and help keep both data sources
  synchronized/up-to-date. This pattern can improve performance and also helps to maintain
  consistency between data held in the cache and the data in the underlying data store.
- <p>
+
  In this example, the user account ({@link UserAccount}) entity is used as the underlying
  application data. The cache itself is implemented as an internal (Java) data structure. It adopts
  a Least-Recently-Used (LRU) strategy for evicting data from itself when its full. The four
@@ -1225,14 +1223,14 @@ There are well-established patterns for implementing broadcasting. The Observer 
  the subject can easily provide event notification to all interested observers no matter how many
  observers there are (even none). The Publish-Subscribe pattern expands upon Observer by adding
  the notion of an event channel for communicating event notifications.
- <p>
+
  A Publish-Subscribe Channel works like this: It has one input channel that splits into multiple
  output channels, one for each subscriber. When an event is published into the channel, the
  Publish-Subscribe Channel delivers a copy of the message to each of the output channels. Each
  output end of the channel has only one subscriber, which is allowed to consume a message only
  once. In this way, each subscriber gets the message only once, and consumed copies disappear from
  their channels.
- <p>
+
  In this example we use Apache Camel to establish a Publish-Subscribe Channel from "direct-origin"
  to "mock:foo", "mock:bar" and "stream:out".
 ++++
@@ -1257,7 +1255,7 @@ The delegate pattern provides a mechanism to abstract away the implementation an
 ++++
 An event-driven architecture (EDA) is a framework that orchestrates behavior around the
  production, detection and consumption of events as well as the responses they evoke. An event is
- any identifiable occurrence that has significance for system hardware or software. <p/> The
+ any identifiable occurrence that has significance for system hardware or software.  The
  example below uses an {@link EventDispatcher} to link/register {@link Event} objects to their
  respective handlers once an {@link Event} is dispatched, it's respective handler is invoked and
  the {@link Event} is handled accordingly.
@@ -1274,14 +1272,14 @@ With the Microservices pattern, a client may need data from multiple different m
  combined sometime in the future) or if the location (host and port) of a microservice changes,
  then every client that makes use of those microservices must be updated.
 
- <p>
+
  The intent of the API Gateway pattern is to alleviate some of these issues. In the API Gateway
  pattern, an additional entity (the API Gateway) is placed between the client and the
  microservices. The job of the API Gateway is to aggregate the calls to the microservices.
  Rather than the client calling each microservice individually, the client calls the API Gateway
  a single time. The API Gateway then calls each of the microservices that the client needs.
 
- <p>
+
  This implementation shows what the API Gateway pattern could look like for an e-commerce site.
  The {@link ApiGateway} makes calls to the Image and Price microservices using the
  {@link ImageClientImpl} and {@link PriceClientImpl} respectively. Customers viewing the site on a
@@ -1299,7 +1297,7 @@ Factory-kit is a creational pattern which defines a factory of immutable content
  with separated builder and factory interfaces to deal with the problem of
  creating one of the objects specified directly in the factory-kit instance.
 
- <p>
+
  In the given example {@link WeaponFactory} represents the factory-kit, that contains
  four {@link Builder}s for creating new objects of
  the classes implementing {@link Weapon} interface.
@@ -1349,7 +1347,7 @@ The Module pattern can be considered a Creational pattern and a Structural patte
  An object that applies this pattern can provide the equivalent of a namespace, providing the
  initialization and finalization process of a static class or a class with static members with
  cleaner, more concise syntax and semantics.
- <p>
+
  The below example demonstrates a use case for testing two different modules: File Logger and
  Console Logger
 ++++
@@ -1363,11 +1361,11 @@ The Monad pattern defines a monad structure, that enables chaining operations
  <br>bind - that takes monadic object and a function from plain object to the
  monadic value and returns monadic value.
  <br>return - that takes plain type object and returns this object wrapped in a monadic value.
- <p>
+
  In the given example, the Monad pattern is represented as a {@link Validator} that takes an instance
  of a plain object with {@link Validator#of(Object)}
  and validates it {@link Validator#validate(Function, Predicate, String)} against given predicates.
- <p>As a validation result {@link Validator#get()} it either returns valid object {@link Validator#t}
+ As a validation result {@link Validator#get()} it either returns valid object {@link Validator#t}
  or throws a list of exceptions {@link Validator#exceptions} collected during validation.
 ++++
 
@@ -1394,7 +1392,7 @@ Mute pattern is utilized when we need to suppress an exception due to an API fla
 === Mutex
 ++++
 A Mutex prevents multiple threads from accessing a resource simultaneously.
- <p>
+
  In this example we have two thieves who are taking beans from a jar.
  Only one thief can take a bean at a time. This is ensured by a Mutex lock
  which must be acquired in order to access the jar. Each thief attempts to
@@ -1408,7 +1406,7 @@ A Mutex prevents multiple threads from accessing a resource simultaneously.
 === Semaphore
 ++++
 A Semaphore mediates access by a group of threads to a pool of resources.
- <p>
+
  In this example a group of customers are taking fruit from a fruit shop.
  There is a bowl each of apples, oranges and lemons. Only one customer can 
  access a bowl simultaneously. A Semaphore is used to indicate how many 
@@ -1422,26 +1420,26 @@ A Semaphore mediates access by a group of threads to a pool of resources.
 ++++
 Hexagonal Architecture pattern decouples the application core from the
  services it uses. This allows the services to be plugged in and the 
- application will run with or without the services.<p>
+ application will run with or without the services.
  
  The core logic, or business logic, of an application consists of the 
  algorithms that are essential to its purpose. They implement the use 
  cases that are the heart of the application. When you change them, you 
- change the essence of the application.<p>
+ change the essence of the application.
  
  The services are not essential. They can be replaced without changing 
  the purpose of the application. Examples: database access and other 
  types of storage, user interface components, e-mail and other 
- communication components, hardware devices.<p>
+ communication components, hardware devices.
  
  This example demonstrates Hexagonal Architecture with a lottery system.
  The application core is separate from the services that drive it and
- from the services it uses.<p>
+ from the services it uses.
  
  The primary ports for the application are console interfaces
  {@link ConsoleAdministration} through which the lottery round is
  initiated and run and {@link ConsoleLottery} that allows players to
- submit lottery tickets for the draw.<p>
+ submit lottery tickets for the draw.
  
  The secondary ports that application core uses are {@link WireTransfers}
  which is a banking service, {@link LotteryEventLog} that delivers
@@ -1455,8 +1453,8 @@ Hexagonal Architecture pattern decouples the application core from the
 The Abstract Document pattern enables handling additional, non-static
  properties. This pattern uses concept of traits to enable type safety and
  separate properties of different classes into set of interfaces.
- <p>
- <p>
+
+
  In Abstract Document pattern,({@link AbstractDocument}) fully implements
  {@link Document}) interface. Traits are then defined to enable access to
  properties in usual, static way.
@@ -1474,19 +1472,19 @@ Spring Boot EntryPoint Class
 The Promise object is used for asynchronous computations. A Promise represents an operation
   that hasn't completed yet, but is expected in the future.
 
- <p>A Promise represents a proxy for a value not necessarily known when the promise is created. It
+ A Promise represents a proxy for a value not necessarily known when the promise is created. It
  allows you to associate dependent promises to an asynchronous action's eventual success value or
  failure reason. This lets asynchronous methods return values like synchronous methods: instead 
  of the final value, the asynchronous method returns a promise of having a value at some point 
  in the future.
 
- <p>Promises provide a few advantages over callback objects:
+ Promises provide a few advantages over callback objects:
  <ul>
  <li> Functional composition and error handling
  <li> Prevents callback hell and provides callback aggregation
  </ul>
 
- <p>
+
  In this application the usage of promise is demonstrated with two examples:
  <ul>
  <li>Count Lines: In this example a file is downloaded and its line count is calculated.
@@ -1507,7 +1505,7 @@ Page Object pattern wraps an UI component with an application specific API allow
  the actual test cases where as the manipulation of the UI can be left to the internals of the page object
  itself.
 
- <p>
+
  Due to this reason, it has become very popular within the test automation community.
  In particular, it is very common in that the page object is used to represent the html pages of a
  web application that is under test. This web application is referred to as AUT (Application Under Test).
@@ -1516,7 +1514,7 @@ Page Object pattern wraps an UI component with an application specific API allow
  therefore only be responsible for particular test cases and page object would be used by the test class
  for UI manipulation required for the tests.
 
- <p>
+
  In this implementation rather than using Selenium, the HtmlUnit library is used as a replacement to
  represent the specific html elements and to drive the browser. The purpose of this example is just to
  provide a simple version that showcase the intentions of this pattern and how this pattern is used
@@ -1564,12 +1562,12 @@ Event or message queues provide an asynchronous communications protocol, meaning
 ++++
 Many solutions in the cloud involve running tasks that invoke services. In this environment, 
  if a service is subjected to intermittent heavy loads, it can cause performance or reliability issues.
- <p>
+
  A service could be a component that is part of the same solution as the tasks that utilize it, or it 
  could be a third-party service providing access to frequently used resources such as a cache or a storage service.
  If the same service is utilized by a number of tasks running concurrently, it can be difficult to predict the 
  volume of requests to which the service might be subjected at any given point in time.
- <p>
+
  We will build a queue-based-load-leveling to solve above problem. 
  Refactor the solution and introduce a queue between the task and the service. 
  The task and the service run asynchronously. The task posts a message containing the data required 
@@ -1577,11 +1575,11 @@ Many solutions in the cloud involve running tasks that invoke services. In this 
  by the service. The service retrieves the messages from the queue and processes them. 
  Requests from a number of tasks, which can be generated at a highly variable rate, can be passed 
  to the service through the same message queue.
- <p>
+
  The queue effectively decouples the tasks from the service, and the service can handle the messages 
  at its own pace irrespective of the volume of requests from concurrent tasks. Additionally, 
  there is no delay to a task if the service is not available at the time it posts a message to the queue.
- <p>
+
  In this example we have a class {@link MessageQueue} to hold the message {@link Message} objects. 
  All the worker threads {@link TaskGenerator} will submit the messages to the MessageQueue. 
  The service executor class {@link ServiceExecutor} will pick up one task at a time from the Queue and 
@@ -1592,28 +1590,28 @@ Many solutions in the cloud involve running tasks that invoke services. In this 
 === Data-Bus
 ++++
 The Data Bus pattern
- <p>
- <p>{@see http://wiki.c2.com/?DataBusPattern}</p>
- <p>
- <p>The Data-Bus pattern provides a method where different parts of an application may
+
+ {@see http://wiki.c2.com/?DataBusPattern}</p>
+
+ The Data-Bus pattern provides a method where different parts of an application may
  pass messages between each other without needing to be aware of the other's existence.</p>
- <p>Similar to the {@code ObserverPattern}, members register themselves with the {@link DataBus}
+ Similar to the {@code ObserverPattern}, members register themselves with the {@link DataBus}
  and may then receive each piece of data that is published to the Data-Bus. The member
  may react to any given message or not.</p>
- <p>It allows for Many-to-Many distribution of data, as there may be any number of
+ It allows for Many-to-Many distribution of data, as there may be any number of
  publishers to a Data-Bus, and any number of members receiving the data. All members
  will receive the same data, the order each receives a given piece of data, is an
  implementation detail.</p>
- <p>Members may unsubscribe from the Data-Bus to stop receiving data.</p>
- <p>This example of the pattern implements a Synchronous Data-Bus, meaning that
+ Members may unsubscribe from the Data-Bus to stop receiving data.</p>
+ This example of the pattern implements a Synchronous Data-Bus, meaning that
  when data is published to the Data-Bus, the publish method will not return until
  all members have received the data and returned.</p>
- <p>The {@link DataBus} class is a Singleton.</p>
- <p>Members of the Data-Bus must implement the {@link Member} interface.</p>
- <p>Data to be published via the Data-Bus must implement the {@link DataType} interface.</p>
- <p>The {@code data} package contains example {@link DataType} implementations.</p>
- <p>The {@code members} package contains example {@link Member} implementations.</p>
- <p>The {@link StatusMember} demonstrates using the DataBus to publish a message
+ The {@link DataBus} class is a Singleton.</p>
+ Members of the Data-Bus must implement the {@link Member} interface.</p>
+ Data to be published via the Data-Bus must implement the {@link DataType} interface.</p>
+ The {@code data} package contains example {@link DataType} implementations.</p>
+ The {@code members} package contains example {@link Member} implementations.</p>
+ The {@link StatusMember} demonstrates using the DataBus to publish a message
  to the Data-Bus when it receives a message.</p>
 ++++
 
@@ -1698,7 +1696,7 @@ The Data Transfer Object pattern is a design pattern in which an data transfer o
 Throttling pattern is a design pattern to throttle or limit the use of resources or even a complete service by
  users or a particular tenant. This can allow systems to continue to function and meet service level agreements,
  even when an increase in demand places load on resources.
- <p>
+
      In this example we have ({@link App}) as the initiating point of the service.
      This is a time based throttling, i.e. only a certain number of calls are allowed per second.
  </p>
@@ -1712,8 +1710,8 @@ Throttling pattern is a design pattern to throttle or limit the use of resources
 The Partial response pattern is a design pattern in which client specifies fields to fetch to serve.
  Here {@link App} is playing as client for {@link VideoResource} server.
  Client ask for specific fields information in video to server.
- <p>
- <p>
+
+
  {@link VideoResource} act as server to serve video information.
 ++++
 
@@ -1724,7 +1722,7 @@ In most integration cases there is a need to monitor the messages flowing throug
  by intercepting the message and redirecting it to a different location like console, filesystem or the database.
  It is important that such functionality should not modify the original message and influence the processing path.
 
- <p>
+
  Wire Tap allows you to route messages to a separate location while they are being forwarded to the ultimate
  destination. It basically consumes messages of the input channel and publishes the unmodified message to both
  output channels.
@@ -1740,7 +1738,7 @@ It is very common in integration systems that incoming messages consists of many
  pattern comes in handy. It will take the whole document, split it based on given criteria and send individual
  items to the endpoint.
 
- <p>
+
  Splitter allows you to split messages based on defined criteria. It takes original message, process it and send
  multiple parts to the output channel. It is not defined if it should keep the order of items though.
  </p>

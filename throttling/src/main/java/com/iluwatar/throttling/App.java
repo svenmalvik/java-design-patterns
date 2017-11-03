@@ -37,7 +37,7 @@ import java.util.concurrent.TimeUnit;
  * Throttling pattern is a design pattern to throttle or limit the use of resources or even a complete service by
  * users or a particular tenant. This can allow systems to continue to function and meet service level agreements,
  * even when an increase in demand places load on resources.
- * <p>
+ *
  *     In this example we have ({@link App}) as the initiating point of the service.
  *     This is a time based throttling, i.e. only a certain number of calls are allowed per second.
  * </p>

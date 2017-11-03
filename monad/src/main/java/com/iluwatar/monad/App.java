@@ -36,11 +36,11 @@ import java.util.function.Predicate;
  * <br>bind - that takes monadic object and a function from plain object to the
  * monadic value and returns monadic value.
  * <br>return - that takes plain type object and returns this object wrapped in a monadic value.
- * <p>
+ *
  * In the given example, the Monad pattern is represented as a {@link Validator} that takes an instance
  * of a plain object with {@link Validator#of(Object)}
  * and validates it {@link Validator#validate(Function, Predicate, String)} against given predicates.
- * <p>As a validation result {@link Validator#get()} it either returns valid object {@link Validator#t}
+ * As a validation result {@link Validator#get()} it either returns valid object {@link Validator#t}
  * or throws a list of exceptions {@link Validator#exceptions} collected during validation.
  *
  * @pattern Monad

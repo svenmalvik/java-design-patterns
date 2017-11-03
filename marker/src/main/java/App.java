@@ -30,7 +30,7 @@ import org.slf4j.LoggerFactory;
  * Like in case of serialization , objects that need to be serialized must implement serializable interface
  * (it is empty interface) and down the line writeObject() method must be checking
  * if it is a instance of serializable or not.
- * <p>
+ *
  * Marker interface vs annotation
  * Marker interfaces and marker annotations both have their uses,
  * neither of them is obsolete or always better then the other one.

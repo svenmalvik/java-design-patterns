@@ -36,14 +36,14 @@ import org.slf4j.LoggerFactory;
  * the subject can easily provide event notification to all interested observers no matter how many
  * observers there are (even none). The Publish-Subscribe pattern expands upon Observer by adding
  * the notion of an event channel for communicating event notifications.
- * <p>
+ *
  * A Publish-Subscribe Channel works like this: It has one input channel that splits into multiple
  * output channels, one for each subscriber. When an event is published into the channel, the
  * Publish-Subscribe Channel delivers a copy of the message to each of the output channels. Each
  * output end of the channel has only one subscriber, which is allowed to consume a message only
  * once. In this way, each subscriber gets the message only once, and consumed copies disappear from
  * their channels.
- * <p>
+ *
  * In this example we use Apache Camel to establish a Publish-Subscribe Channel from "direct-origin"
  * to "mock:foo", "mock:bar" and "stream:out".
  * 

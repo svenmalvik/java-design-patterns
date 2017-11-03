@@ -33,7 +33,7 @@ import org.springframework.context.ConfigurableApplicationContext;
  * by intercepting the message and redirecting it to a different location like console, filesystem or the database.
  * It is important that such functionality should not modify the original message and influence the processing path.
  *
- * <p>
+ *
  * Wire Tap allows you to route messages to a separate location while they are being forwarded to the ultimate
  * destination. It basically consumes messages of the input channel and publishes the unmodified message to both
  * output channels.
