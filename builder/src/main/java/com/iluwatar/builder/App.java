@@ -48,7 +48,8 @@ import org.slf4j.LoggerFactory;
  * additional configuration for the {@link Hero} object can be done using the fluent
  * {@link Builder} interface. When configuration is ready the build method is called to receive
  * the final {@link Hero} object.
- * 
+ *
+ * @pattern Builder
  */
 public class App {
 

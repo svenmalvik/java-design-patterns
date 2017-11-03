@@ -40,6 +40,8 @@ import org.slf4j.LoggerFactory;
  * to allow for the possibility of adding more information to the marker in the future,
  * or to fit the marker into a framework that already makes heavy use of annotation types,
  * then a marker annotation is the correct choice
+ *
+ * @pattern Marker
  */
 public class App {
 

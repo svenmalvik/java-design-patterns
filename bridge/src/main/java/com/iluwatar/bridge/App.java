@@ -36,7 +36,8 @@ import org.slf4j.LoggerFactory;
  * <p>
  * In this example we have two class hierarchies. One of weapons and another one of enchantments. We can easily
  * combine any weapon with any enchantment using composition instead of creating deep class hierarchy.
- * 
+ *
+ * @pattern Bridge
  */
 public class App {
 

@@ -39,6 +39,8 @@ import java.util.concurrent.TimeUnit;
  * the state is changed into WASHING that any other thread can't invoke this action on this and then do the job.
  * On the other hand if it have been already washing and any other thread execute wash()
  * it can't do that once again and returns doing nothing.
+ *
+ * @pattern Balking
  */
 
 public class App {

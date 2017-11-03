@@ -43,6 +43,8 @@ import java.util.Map;
  * In Abstract Document pattern,({@link AbstractDocument}) fully implements
  * {@link Document}) interface. Traits are then defined to enable access to
  * properties in usual, static way.
+ *
+ * @pattern Abstract Document
  */
 public class App {
 

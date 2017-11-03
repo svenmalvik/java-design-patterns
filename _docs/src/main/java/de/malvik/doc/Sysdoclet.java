@@ -24,11 +24,11 @@ package de.malvik.doc;
 
 import com.sun.javadoc.ClassDoc;
 import com.sun.javadoc.RootDoc;
+import com.sun.javadoc.Tag;
 import io.github.swagger2markup.markup.builder.MarkupBlockStyle;
 import io.github.swagger2markup.markup.builder.MarkupDocBuilder;
 import io.github.swagger2markup.markup.builder.MarkupDocBuilders;
 import org.asciidoctor.Asciidoctor;
-import org.asciidoctor.AttributesBuilder;
 import org.asciidoctor.SafeMode;
 
 import java.io.File;
@@ -62,7 +62,9 @@ public class Sysdoclet {
                 .filter(c -> c.name().endsWith("App"))
                 .forEach(classDoc -> {
                     String s = classDoc.commentText();
-                    docBuilders.sectionTitleLevel2(classDoc.qualifiedTypeName());
+                    Tag[] tags = classDoc.tags("@pattern");
+                    String pattern = tags.length > 0 ? tags[0].text() : classDoc.qualifiedName();
+                    docBuilders.sectionTitleLevel2(pattern);
                     docBuilders.block(s, MarkupBlockStyle.PASSTHROUGH);
                 });
     }

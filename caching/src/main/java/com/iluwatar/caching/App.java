@@ -60,6 +60,7 @@ import org.slf4j.LoggerFactory;
  * @See LRUCache
  * @see CachingPolicy
  *
+ * @pattern Caching
  */
 public class App {
 
