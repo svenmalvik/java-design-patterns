@@ -32,7 +32,7 @@ import org.apache.log4j.Logger;
  *
  * The below example demonstrates basic CRUD operations: Create, Read, Update, and Delete.
  *
- * @pattern Data Mapper
+ * @pattern Data-Mapper
  */
 public final class App {
 

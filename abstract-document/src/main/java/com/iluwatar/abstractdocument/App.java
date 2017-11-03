@@ -44,7 +44,7 @@ import java.util.Map;
  * {@link Document}) interface. Traits are then defined to enable access to
  * properties in usual, static way.
  *
- * @pattern Abstract Document
+ * @pattern Abstract-Document
  */
 public class App {
 

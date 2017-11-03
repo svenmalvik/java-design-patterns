@@ -66,7 +66,7 @@ import java.util.concurrent.LinkedBlockingQueue;
  * tasks are executed. Our implementation is just one simple way of implementing this pattern, there
  * are many variants possible as described in its applications.
  *
- * @pattern Half-Sync/Half-Async
+ * @pattern Half-Sync-Half-Async
  */
 public class App {
 

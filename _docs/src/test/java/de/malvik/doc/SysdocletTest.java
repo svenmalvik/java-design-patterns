@@ -34,8 +34,8 @@ public class SysdocletTest {
     @Test
     public void invokeDoclet() {
         final EasyDoclet easyDoclet = new EasyDoclet(
-                new File("C:\\git\\java-design-patterns\\abstract-factory"),
-                new File("C:\\git\\java-design-patterns\\abstract-factory\\src\\main\\java\\com\\iluwatar\\abstractfactory\\App.java"));
+                new File("C:\\git\\java-design-patterns\\bridge"),
+                new File("C:\\git\\java-design-patterns\\bridge\\src\\main\\java\\com\\iluwatar\\bridge\\App.java"));
 
         Sysdoclet.start(easyDoclet.getRootDoc());
     }

@@ -25,6 +25,7 @@ package de.malvik.doc;
 import com.sun.javadoc.ClassDoc;
 import com.sun.javadoc.RootDoc;
 import com.sun.javadoc.Tag;
+import io.github.swagger2markup.markup.builder.MarkupAdmonition;
 import io.github.swagger2markup.markup.builder.MarkupBlockStyle;
 import io.github.swagger2markup.markup.builder.MarkupDocBuilder;
 import io.github.swagger2markup.markup.builder.MarkupDocBuilders;
@@ -43,6 +44,7 @@ import static org.asciidoctor.OptionsBuilder.options;
 /**
  * Created by smalvik on 30.10.2017.
  */
+
 public class Sysdoclet {
 
     private static MarkupDocBuilder docBuilders = MarkupDocBuilders.documentBuilder(ASCIIDOC);
@@ -66,6 +68,19 @@ public class Sysdoclet {
                     String pattern = tags.length > 0 ? tags[0].text() : classDoc.qualifiedName();
                     docBuilders.sectionTitleLevel2(pattern);
                     docBuilders.block(s, MarkupBlockStyle.PASSTHROUGH);
+
+                    String qn = classDoc.qualifiedTypeName();
+                    String module = qn.substring("com.iluwatar".length()+1, qn.indexOf("App")-1).replace('.', '-');
+
+/*                    docBuilders.block(
+                            "include::C:/git/java-design-patterns/"
+                                    + "bridge" + "/src/main/java/"
+                                    + qn.replace('.', '/') + ".java[tags=code]",
+                            MarkupBlockStyle.LISTING, "App.java", MarkupAdmonition.JAVA);*/
+
+                    docBuilders.block(
+                            "include::App.java[tags=code]",
+                            MarkupBlockStyle.LISTING, "App.java", MarkupAdmonition.JAVA);
                 });
     }
 

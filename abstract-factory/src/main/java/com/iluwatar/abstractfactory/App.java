@@ -38,7 +38,7 @@ import org.slf4j.LoggerFactory;
  * {@link ElfKingdomFactory}, {@link OrcKingdomFactory}). The example uses both concrete implementations to create a
  * king, a castle and an army.
  *
- * @pattern Abstract Factory
+ * @pattern Abstract-Factory
  */
 public class App {
 
