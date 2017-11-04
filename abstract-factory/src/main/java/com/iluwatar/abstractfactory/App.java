@@ -44,6 +44,7 @@ public class App {
 
   private static final Logger LOGGER = LoggerFactory.getLogger(App.class);
 
+  // tag::code[]
   private King king;
   private Castle castle;
   private Army army;
@@ -116,5 +117,5 @@ public class App {
     LOGGER.info(app.getKing().getDescription());
 
   }
-
+// end::code[]
 }

@@ -73,6 +73,7 @@ public class App {
    * @param args
    *          command line args
    */
+  // tag::code[]
   public static void main(String[] args) {
     int counterDateValues = 0;
     int counterExceptions = 0;
@@ -110,6 +111,7 @@ public class App {
     }
     executor.shutdown();
   }
+  // end::code[]
 
   /**
    * Print result (date values) of a thread execution and count dates

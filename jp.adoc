@@ -1,0 +1,88 @@
+
+== Java Design Patterns
+
+=== Abstract-Factory
+++++
+The Abstract Factory pattern provides a way to encapsulate a group of individual factories that have a common theme
+ without specifying their concrete classes. In normal usage, the client software creates a concrete implementation of
+ the abstract factory and then uses the generic interface of the factory to create the concrete objects that are part
+ of the theme. The client does not know (or care) which concrete objects it gets from each of these internal
+ factories, since it uses only the generic interfaces of their products. This pattern separates the details of
+ implementation of a set of objects from their general usage and relies on object composition, as object creation is
+ implemented in methods exposed in the factory interface.
+
+ The essence of the Abstract Factory pattern is a factory interface ({@link KingdomFactory}) and its implementations (
+ {@link ElfKingdomFactory}, {@link OrcKingdomFactory}). The example uses both concrete implementations to create a
+ king, a castle and an army.
+++++
+
+[source, java]
+.App.java
+----
+include::C:/git/java-design-patterns/abstract-factory/src/main/java/com/iluwatar/abstractfactory/App.java[tags=code]
+----
+
+
+=== TLS
+++++
+ThreadLocal pattern
+
+ This App shows how to create an isolated space per each thread. In this
+ example the usage of SimpleDateFormat is made to be thread-safe. This is an
+ example of the ThreadLocal pattern.
+
+ By applying the ThreadLocal pattern you can keep track of application
+ instances or locale settings throughout the handling of a request. The
+ ThreadLocal class works like a static variable, with the exception that it is
+ only bound to the current thread! This allows us to use static variables in a
+ thread-safe way.
+
+ In Java, thread-local variables are implemented by the ThreadLocal class
+ object. ThreadLocal holds a variable of type T, which is accessible via get/set
+ methods.
+
+ SimpleDateFormat is one of the basic Java classes and is not thread-safe. If
+ you do not isolate the instance of SimpleDateFormat per each thread then
+ problems arise. 
+
+ App converts the String date value 15/12/2015 to the Date format using the
+ Java class SimpleDateFormat. It does this 20 times using 4 threads, each doing 
+ it 5 times. With the usage of as ThreadLocal in DateFormatCallable everything 
+ runs well. But if you comment out the ThreadLocal variant (marked with "//TLTL") 
+ and comment in the non ThreadLocal variant (marked with "//NTLNTL") you can 
+ see what will happen without the ThreadLocal. Most likely you will get incorrect 
+ date values and / or exceptions.
+
+ This example clearly show what will happen when using non thread-safe classes
+ in a thread. In real life this may happen one in of 1.000 or 10.000 conversions
+ and those are really hard to find errors.
+++++
+
+[source, java]
+.App.java
+----
+include::C:/git/java-design-patterns/tls/src/main/java/com/iluwatar/tls/App.java[tags=code]
+----
+
+
+=== Bridge
+++++
+Composition over inheritance. The Bridge pattern can also be thought of as two layers of abstraction.
+ With Bridge, you can decouple an abstraction from its implementation so that the two can vary independently.
+
+ In Bridge pattern both abstraction ({@link Weapon}) and implementation (
+ {@link Enchantment}) have their own class hierarchies. The interface of the implementations
+ can be changed without affecting the clients.
+
+ In this example we have two class hierarchies. One of weapons and another one of enchantments. We can easily
+ combine any weapon with any enchantment using composition instead of creating deep class hierarchy.
+++++
+
+[source, java]
+.App.java
+----
+include::C:/git/java-design-patterns/bridge/src/main/java/com/iluwatar/bridge/App.java[tags=code]
+----
+
+
+

@@ -70,23 +70,26 @@ public class Sysdoclet {
                     docBuilders.block(s, MarkupBlockStyle.PASSTHROUGH);
 
                     String qn = classDoc.qualifiedTypeName();
-                    String module = qn.substring("com.iluwatar".length()+1, qn.indexOf("App")-1).replace('.', '-');
-
-/*                    docBuilders.block(
-                            "include::C:/git/java-design-patterns/"
-                                    + "bridge" + "/src/main/java/"
-                                    + qn.replace('.', '/') + ".java[tags=code]",
-                            MarkupBlockStyle.LISTING, "App.java", MarkupAdmonition.JAVA);*/
+                    String module = pattern.toLowerCase();//qn.substring("com.iluwatar".length()+1, qn.indexOf("App")-1).replace('.', '-');
 
                     docBuilders.block(
-                            "include::App.java[tags=code]",
+                            "include::"
+                                    + getOutputLocation()
+                                    + "/"
+                                    + module
+                                    + "/src/main/java/"
+                                    + qn.replace('.', '/') + ".java[tags=code]",
                             MarkupBlockStyle.LISTING, "App.java", MarkupAdmonition.JAVA);
+
+                    /*docBuilders.block(
+                            "include::" + getOutputLocation() + "/bridge/src/main/java/com/iluwatar/bridge/App.java[tags=code]",
+                            MarkupBlockStyle.LISTING, "App.java", MarkupAdmonition.JAVA);*/
                 });
     }
 
     private static void writeAdoc(MarkupDocBuilder docBuilders) {
         docBuilders.writeToFile(
-                new File(getOutputLocation() + "/generated", "jp").toPath(),
+                new File(getOutputLocation(), "jp").toPath(),
                 Charset.forName("UTF-8"),
                 StandardOpenOption.CREATE,
                 StandardOpenOption.TRUNCATE_EXISTING);
@@ -101,6 +104,6 @@ public class Sysdoclet {
     }
 
     private static String getOutputLocation() {
-        return "C:/git/java-design-patterns/_docs/asciidoc";
+        return "C:/git/java-design-patterns";
     }
 }
