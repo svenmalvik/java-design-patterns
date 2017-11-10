@@ -49,6 +49,8 @@ import org.slf4j.LoggerFactory;
  * 
  * 
  * @author hongshuwei@gmail.com
+ *
+ * @pattern Reader-Writer-Lock
  */
 public class App {
 

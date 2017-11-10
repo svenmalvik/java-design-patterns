@@ -38,6 +38,8 @@ import javax.sound.sampled.UnsupportedAudioFileException;
  * A queue stores a series of notifications or requests in first-in, first-out order.
  * Sending a notification enqueues the request and returns. The request processor then processes
  * items from the queue at a later time.
+ *
+ * @pattern Event-Queue
  */
 public class App {
   /**

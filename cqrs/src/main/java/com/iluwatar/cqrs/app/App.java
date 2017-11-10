@@ -46,6 +46,7 @@ import com.iluwatar.cqrs.util.HibernateUtil;
  * objects to a database. And a query side that uses native queries to get data from the database and return objects as
  * DTOs (Data transfer Objects).
  *
+ * @pattern Cqrs
  */
 public class App {
   private static final Logger LOGGER = LoggerFactory.getLogger(App.class);

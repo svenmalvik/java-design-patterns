@@ -34,6 +34,7 @@ import java.io.IOException;
  * user. The user specifies only what to do with the file by providing the {@link FileWriterAction}
  * implementation.
  *
+ * @pattern Execute-Around
  */
 public class App {
 

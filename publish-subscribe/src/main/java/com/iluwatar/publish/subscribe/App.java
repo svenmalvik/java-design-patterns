@@ -46,7 +46,8 @@ import org.slf4j.LoggerFactory;
  *
  * In this example we use Apache Camel to establish a Publish-Subscribe Channel from "direct-origin"
  * to "mock:foo", "mock:bar" and "stream:out".
- * 
+ *
+ * @pattern Publish-Subscribe
  */
 public class App {
 

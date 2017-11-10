@@ -31,9 +31,9 @@ import org.slf4j.LoggerFactory;
  * defined as a Lambdas expression.
  *
  */
-public class LambdasApp {
+public class LambdasAapp {
 
-  private static final Logger LOGGER = LoggerFactory.getLogger(LambdasApp.class);
+  private static final Logger LOGGER = LoggerFactory.getLogger(LambdasAapp.class);
 
   /**
    * Program entry point

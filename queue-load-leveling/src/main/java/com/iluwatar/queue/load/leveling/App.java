@@ -56,7 +56,8 @@ import org.slf4j.LoggerFactory;
  * All the worker threads {@link TaskGenerator} will submit the messages to the MessageQueue. 
  * The service executor class {@link ServiceExecutor} will pick up one task at a time from the Queue and 
  * execute them.
- *  
+ *
+ * @pattern Queue-Load-Leveling
  */
 public class App {
   

@@ -82,7 +82,8 @@ import com.iluwatar.reactor.framework.ThreadPoolDispatcher;
  * 
  *
  * The example uses Java NIO framework to implement the Reactor.
- * 
+ *
+ * @pattern Reactor
  */
 public class App {
 

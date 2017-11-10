@@ -54,7 +54,7 @@ import org.slf4j.LoggerFactory;
  * (depending on the preferred caching policy/strategy).
  *
  * <i>App --> AppManager --> CacheStore/LRUCache/CachingPolicy --> DBManager</i>
- * </p>
+ *
  *
  * @see CacheStore
  * @See LRUCache

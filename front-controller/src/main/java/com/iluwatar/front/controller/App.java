@@ -39,6 +39,7 @@ package com.iluwatar.front.controller;
  * {@link ArcherView} gets displayed when {@link FrontController} receives request "Archer". When
  * the request is unknown, we display the error view {@link ErrorView}.
  *
+ * @pattern Front-Controller
  */
 public class App {
 

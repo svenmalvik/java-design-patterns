@@ -34,6 +34,7 @@ import org.slf4j.LoggerFactory;
  * Additional information and lazy loading flavours are described in
  * http://martinfowler.com/eaaCatalog/lazyLoad.html
  *
+ * @pattern Lazy-Loading
  */
 public class App {
 

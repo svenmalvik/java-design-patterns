@@ -56,6 +56,7 @@ import org.slf4j.LoggerFactory;
  * service). For persistence the example uses in-memory H2 database which is populated on each
  * application startup.
  *
+ * @pattern Service-Layer
  */
 public class App {
 

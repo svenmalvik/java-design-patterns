@@ -111,7 +111,7 @@ The intention of the Builder pattern is to find a solution to the telescoping co
 
 include::C:/git/java-design-patterns/builder/README.adoc[]
 
-== Factory Method
+== Factory-Method
 ++++
 The Factory Method is a creational design pattern which uses factory methods to deal with the
  problem of creating objects without specifying the exact class of object that will be created.
@@ -125,7 +125,7 @@ The Factory Method is a creational design pattern which uses factory methods to 
  their liking.
 ++++
 
-include::C:/git/java-design-patterns/factory method/README.adoc[]
+include::C:/git/java-design-patterns/factory-method/README.adoc[]
 
 == Prototype
 ++++
@@ -141,7 +141,7 @@ The Prototype pattern is a creational design pattern in software development. It
 
 include::C:/git/java-design-patterns/prototype/README.adoc[]
 
-== Singelton
+== Singleton
 ++++
 Singleton pattern ensures that the class can have only one existing instance per Java classloader
  instance and provides global access to it.
@@ -179,7 +179,7 @@ Singleton pattern ensures that the class can have only one existing instance per
  API level to work.
 ++++
 
-include::C:/git/java-design-patterns/singelton/README.adoc[]
+include::C:/git/java-design-patterns/singleton/README.adoc[]
 
 == Adapter
 ++++
@@ -436,7 +436,7 @@ The Memento pattern is a software design pattern that provides the ability to re
 
 include::C:/git/java-design-patterns/memento/README.adoc[]
 
-== com.iluwatar.model.view.presenter.App
+== Model-View-Presenter
 ++++
 The Model-View-Presenter(MVP) architectural pattern, helps us achieve what is called
  "The separation of concerns" principle. This is accomplished by separating the application's
@@ -451,7 +451,7 @@ The Model-View-Presenter(MVP) architectural pattern, helps us achieve what is ca
  and the Model.
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.model.view.presenter.app/README.adoc[]
+include::C:/git/java-design-patterns/model-view-presenter/README.adoc[]
 
 == Observer
 ++++
@@ -507,7 +507,7 @@ Template Method defines a skeleton for an algorithm. The algorithm subclasses pr
 
 include::C:/git/java-design-patterns/template-method/README.adoc[]
 
-== com.iluwatar.visitor.App
+== Visitor
 ++++
 Visitor pattern defines mechanism to apply operations on nodes in hierarchy. New operations can
  be added without altering the node interface.
@@ -517,9 +517,9 @@ Visitor pattern defines mechanism to apply operations on nodes in hierarchy. New
  {SergeantVisitor} on {Sergeant}s and so on.
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.visitor.app/README.adoc[]
+include::C:/git/java-design-patterns/visitor/README.adoc[]
 
-== com.iluwatar.doublechecked.locking.App
+== Double-Checked-Locking
 ++++
 Double Checked Locking is a concurrency design pattern used to reduce the overhead of acquiring a
  lock by first testing the locking criterion (the "lock hint") without actually acquiring the
@@ -531,7 +531,7 @@ Double Checked Locking is a concurrency design pattern used to reduce the overhe
  add item to inventory. In this method, the thread which gets the lock first adds the item.
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.doublechecked.locking.app/README.adoc[]
+include::C:/git/java-design-patterns/double-checked-locking/README.adoc[]
 
 == Servant
 ++++
@@ -568,7 +568,7 @@ Null Object pattern replaces null values with neutral objects. Many times this s
 
 include::C:/git/java-design-patterns/null-object/README.adoc[]
 
-== com.iluwatar.event.aggregator.App
+== Event-Aggregator
 ++++
 A system with lots of objects can lead to complexities when a client wants to subscribe to
  events. The client has to find and register for each object individually, if each object has
@@ -582,15 +582,7 @@ A system with lots of objects can lead to complexities when a client wants to su
  {KingJoffrey}.
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.event.aggregator.app/README.adoc[]
-
-== com.iluwatar.callback.LambdasApp
-++++
-This example generates the exact same output as {App} however the callback has been
- defined as a Lambdas expression.
-++++
-
-include::C:/git/java-design-patterns/com.iluwatar.callback.lambdasapp/README.adoc[]
+include::C:/git/java-design-patterns/event-aggregator/README.adoc[]
 
 == Callback
 ++++
@@ -601,7 +593,7 @@ Callback pattern is more native for functional languages where functions are tre
 
 include::C:/git/java-design-patterns/callback/README.adoc[]
 
-== com.iluwatar.execute.around.App
+== Execute-Around
 ++++
 The Execute Around idiom specifies some code to be executed before and after a method. Typically
  the idiom is used when the API has methods to be executed in pairs, such as resource
@@ -612,7 +604,7 @@ The Execute Around idiom specifies some code to be executed before and after a m
  implementation.
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.execute.around.app/README.adoc[]
+include::C:/git/java-design-patterns/execute-around/README.adoc[]
 
 == Property
 ++++
@@ -629,7 +621,7 @@ The Property pattern is also known as Prototype inheritance.
 
 include::C:/git/java-design-patterns/property/README.adoc[]
 
-== com.iluwatar.intercepting.filter.App
+== Intercepting-Filter
 ++++
 When a request enters a Web application, it often must pass several entrance tests prior to the
  main processing stage. For example, - Has the client been authenticated? - Does the client have a
@@ -652,9 +644,9 @@ When a request enters a Web application, it often must pass several entrance tes
  {Filter}. Each field has its own corresponding {Filter}
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.intercepting.filter.app/README.adoc[]
+include::C:/git/java-design-patterns/intercepting-filter/README.adoc[]
 
-== com.iluwatar.producer.consumer.App
+== Producer-Consumer
 ++++
 Producer Consumer Design pattern is a classic concurrency or threading pattern which reduces coupling between
  Producer and Consumer by separating Identification of work with Execution of Work.
@@ -664,9 +656,9 @@ Producer Consumer Design pattern is a classic concurrency or threading pattern w
  consuming item. by using producer consumer pattern both Producer and Consumer Thread can work with different speed.
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.producer.consumer.app/README.adoc[]
+include::C:/git/java-design-patterns/producer-consumer/README.adoc[]
 
-== com.iluwatar.poison.pill.App
+== Poison-Pill
 ++++
 One of the possible approaches to terminate Producer-Consumer pattern is using the Poison Pill
  idiom. If you use Poison Pill as the termination signal then Producer is responsible to notify
@@ -679,9 +671,9 @@ One of the possible approaches to terminate Producer-Consumer pattern is using t
  shared object-marker (with name "Poison" or "Poison Pill") is more clear and self describing.
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.poison.pill.app/README.adoc[]
+include::C:/git/java-design-patterns/poison-pill/README.adoc[]
 
-== com.iluwatar.reader.writer.lock.App
+== Reader-Writer-Lock
 ++++
 In a multiple thread applications, the threads may try to synchronize the shared resources
  regardless of read or write operation. It leads to a low performance especially in a "read more
@@ -697,9 +689,9 @@ In a multiple thread applications, the threads may try to synchronize the shared
  This example use two mutex to demonstrate the concurrent access of multiple readers and writers.
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.reader.writer.lock.app/README.adoc[]
+include::C:/git/java-design-patterns/reader-writer-lock/README.adoc[]
 
-== com.iluwatar.lazy.loading.App
+== Lazy-Loading
 ++++
 Lazy loading idiom defers object creation until needed.
 
@@ -709,9 +701,9 @@ Lazy loading idiom defers object creation until needed.
  http://martinfowler.com/eaaCatalog/lazyLoad.html
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.lazy.loading.app/README.adoc[]
+include::C:/git/java-design-patterns/lazy-loading/README.adoc[]
 
-== com.iluwatar.servicelayer.app.App
+== Service-Layer
 ++++
 Service layer defines an application's boundary with a layer of services that establishes a set
  of available operations and coordinates the application's response in each operation.
@@ -730,9 +722,9 @@ Service layer defines an application's boundary with a layer of services that es
  application startup.
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.servicelayer.app.app/README.adoc[]
+include::C:/git/java-design-patterns/service-layer/README.adoc[]
 
-== com.iluwatar.specification.app.App
+== Specification
 ++++
 The central idea of the Specification pattern is to separate the statement of how to match a
  candidate, from the candidate object that it is matched against. As well as its usefulness in
@@ -745,7 +737,7 @@ The central idea of the Specification pattern is to separate the statement of ho
  http://martinfowler.com/apsupp/spec.pdf
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.specification.app.app/README.adoc[]
+include::C:/git/java-design-patterns/specification/README.adoc[]
 
 == Tolerant-Reader
 ++++
@@ -764,7 +756,7 @@ Tolerant Reader is an integration pattern that helps creating robust communicati
 
 include::C:/git/java-design-patterns/tolerant-reader/README.adoc[]
 
-== com.iluwatar.model.view.controller.App
+== Model-View-Controller
 ++++
 Model-View-Controller is a pattern for implementing user interfaces. It divides the application
  into three interconnected parts namely the model, the view and the controller.
@@ -781,9 +773,9 @@ Model-View-Controller is a pattern for implementing user interfaces. It divides 
  the view.
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.model.view.controller.app/README.adoc[]
+include::C:/git/java-design-patterns/model-view-controller/README.adoc[]
 
-== com.iluwatar.flux.app.App
+== Flux
 ++++
 Flux is the application architecture that Facebook uses for building client-side web
  applications. Flux eschews MVC in favor of a unidirectional data flow. When a user interacts with
@@ -799,7 +791,7 @@ Flux is the application architecture that Facebook uses for building client-side
  http://facebook.github.io/flux/docs/overview.html
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.flux.app.app/README.adoc[]
+include::C:/git/java-design-patterns/flux/README.adoc[]
 
 == Double-Dispatch
 ++++
@@ -834,7 +826,7 @@ Whereas Singleton design pattern introduces single globally accessible object th
 
 include::C:/git/java-design-patterns/multiton/README.adoc[]
 
-== com.iluwatar.resource.acquisition.is.initialization.App
+== Resource-Acquisition-Is-Initialization
 ++++
 Resource Acquisition Is Initialization pattern was developed for exception safe resource
  management by C++ creator Bjarne Stroustrup.
@@ -854,7 +846,7 @@ Resource Acquisition Is Initialization pattern was developed for exception safe 
  http://docs.oracle.com/javase/7/docs/technotes/guides/language/try-with-resources.html
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.resource.acquisition.is.initialization.app/README.adoc[]
+include::C:/git/java-design-patterns/resource-acquisition-is-initialization/README.adoc[]
 
 == Thread-Pool
 ++++
@@ -903,7 +895,7 @@ The Private Class Data design pattern seeks to reduce exposure of attributes by 
 
 include::C:/git/java-design-patterns/private-class-data/README.adoc[]
 
-== com.iluwatar.object.pool.App
+== Object-Pool
 ++++
 When it is necessary to work with a large number of objects that are particularly expensive to
  instantiate and each object is only needed for a short period of time, the performance of an
@@ -923,9 +915,9 @@ When it is necessary to work with a large number of objects that are particularl
  created instances and their status (available, inUse).
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.object.pool.app/README.adoc[]
+include::C:/git/java-design-patterns/object-pool/README.adoc[]
 
-== com.iluwatar.dependency.injection.App
+== Dependency-Injection
 ++++
 Dependency Injection pattern deals with how objects handle their dependencies. The pattern
  implements so called inversion of control principle. Inversion of control has two specific rules:
@@ -947,9 +939,9 @@ Dependency Injection pattern deals with how objects handle their dependencies. T
  used to create {GuiceWizard} object with correct dependencies.
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.dependency.injection.app/README.adoc[]
+include::C:/git/java-design-patterns/dependency-injection/README.adoc[]
 
-== com.iluwatar.front.controller.App
+== Front-Controller
 ++++
 The Front Controller is a presentation tier pattern. Essentially it defines a controller that
  handles all requests for a web site.
@@ -967,7 +959,7 @@ The Front Controller is a presentation tier pattern. Essentially it defines a co
  the request is unknown, we display the error view {ErrorView}.
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.front.controller.app/README.adoc[]
+include::C:/git/java-design-patterns/front-controller/README.adoc[]
 
 == Repository
 ++++
@@ -988,7 +980,7 @@ Repository pattern mediates between the domain and data mapping layers using a c
 
 include::C:/git/java-design-patterns/repository/README.adoc[]
 
-== com.iluwatar.async.method.invocation.App
+== Async-Method-Invocation
 ++++
 This application demonstrates the async method invocation pattern. Key parts of the pattern are
  <code>AsyncResult</code> which is an intermediate container for an asynchronously evaluated value,
@@ -1010,7 +1002,7 @@ This application demonstrates the async method invocation pattern. Key parts of 
  provides a simple version that helps to understand the pattern.
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.async.method.invocation.app/README.adoc[]
+include::C:/git/java-design-patterns/async-method-invocation/README.adoc[]
 
 == Monostate
 ++++
@@ -1067,7 +1059,7 @@ Step Builder Pattern
 
 include::C:/git/java-design-patterns/step-builder/README.adoc[]
 
-== com.iluwatar.business.delegate.App
+== Business-Delegate
 ++++
 The Business Delegate pattern adds an abstraction layer between the presentation and business
  tiers. By using the pattern we gain loose coupling between the tiers. The Business Delegate
@@ -1083,7 +1075,7 @@ The Business Delegate pattern adds an abstraction layer between the presentation
  service and makes the service call.
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.business.delegate.app/README.adoc[]
+include::C:/git/java-design-patterns/business-delegate/README.adoc[]
 
 == Half-Sync-Half-Async
 ++++
@@ -1158,7 +1150,7 @@ Layers is an architectural style where software responsibilities are divided amo
 
 include::C:/git/java-design-patterns/layers/README.adoc[]
 
-== com.iluwatar.message.channel.App
+== Message-Channel
 ++++
 When two applications communicate with each other using a messaging system they first need to
  establish a communication channel that will carry the data. Message Channel decouples Message
@@ -1180,9 +1172,9 @@ When two applications communicate with each other using a messaging system they 
  established routes are printed to standard output.
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.message.channel.app/README.adoc[]
+include::C:/git/java-design-patterns/message-channel/README.adoc[]
 
-== com.iluwatar.fluentinterface.app.App
+== Fluentinterface
 ++++
 The Fluent Interface pattern is useful when you want to provide an easy readable, flowing API.
  Those interfaces tend to mimic domain specific languages, so they can nearly be read as human
@@ -1195,9 +1187,9 @@ The Fluent Interface pattern is useful when you want to provide an easy readable
  printed afterwards.
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.fluentinterface.app.app/README.adoc[]
+include::C:/git/java-design-patterns/fluentinterface/README.adoc[]
 
-== com.iluwatar.reactor.app.App
+== Reactor
 ++++
 This application demonstrates Reactor pattern. The example demonstrated is a Distributed Logging
  Service where it listens on multiple TCP or UDP sockets for incoming log requests.
@@ -1248,7 +1240,7 @@ This application demonstrates Reactor pattern. The example demonstrated is a Dis
  The example uses Java NIO framework to implement the Reactor.
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.reactor.app.app/README.adoc[]
+include::C:/git/java-design-patterns/reactor/README.adoc[]
 
 == Caching
 ++++
@@ -1279,12 +1271,11 @@ The Caching pattern describes how to avoid expensive re-acquisition of resources
  (depending on the preferred caching policy/strategy).
 
  <i>App --> AppManager --> CacheStore/LRUCache/CachingPolicy --> DBManager</i>
- </p>
 ++++
 
 include::C:/git/java-design-patterns/caching/README.adoc[]
 
-== com.iluwatar.publish.subscribe.App
+== Publish-Subscribe
 ++++
 There are well-established patterns for implementing broadcasting. The Observer pattern describes
  the need to decouple observers from their subject (that is, the originator of the event) so that
@@ -1303,9 +1294,9 @@ There are well-established patterns for implementing broadcasting. The Observer 
  to "mock:foo", "mock:bar" and "stream:out".
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.publish.subscribe.app/README.adoc[]
+include::C:/git/java-design-patterns/publish-subscribe/README.adoc[]
 
-== com.iluwatar.delegation.simple.App
+== Delegation
 ++++
 The delegate pattern provides a mechanism to abstract away the implementation and control of the desired action.
  The class being called in this case {PrinterController} is not responsible for the actual desired action,
@@ -1319,7 +1310,7 @@ The delegate pattern provides a mechanism to abstract away the implementation an
  that they were instantiated with. Therefore delegating the behaviour to another class.
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.delegation.simple.app/README.adoc[]
+include::C:/git/java-design-patterns/delegation/README.adoc[]
 
 == Event-Driven-Architecture
 ++++
@@ -1333,7 +1324,7 @@ An event-driven architecture (EDA) is a framework that orchestrates behavior aro
 
 include::C:/git/java-design-patterns/event-driven-architecture/README.adoc[]
 
-== com.iluwatar.api.gateway.App
+== Api-Gateway
 ++++
 With the Microservices pattern, a client may need data from multiple different microservices.
  If the client called each microservice directly, that could contribute to longer load times,
@@ -1361,7 +1352,7 @@ With the Microservices pattern, a client may need data from multiple different m
  {MobileProduct}.
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.api.gateway.app/README.adoc[]
+include::C:/git/java-design-patterns/api-gateway/README.adoc[]
 
 == Factory-Kit
 ++++
@@ -1396,7 +1387,7 @@ The Feature Toggle pattern allows for complete code executions to be turned on o
 
 include::C:/git/java-design-patterns/feature-toggle/README.adoc[]
 
-== com.iluwatar.value.object.App
+== Value-Object
 ++++
 A Value Object are objects which follow value semantics rather than reference semantics. This
  means value objects' equality are not based on identity. Two value objects are equal when they
@@ -1413,7 +1404,7 @@ A Value Object are objects which follow value semantics rather than reference se
  Colebourne's term VALJO : http://blog.joda.org/2014/03/valjos-value-java-objects.html
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.value.object.app/README.adoc[]
+include::C:/git/java-design-patterns/value-object/README.adoc[]
 
 == Module
 ++++
@@ -1631,7 +1622,7 @@ This application demonstrates the <b>Event-based Asynchronous</b> pattern. Essen
 
 include::C:/git/java-design-patterns/event-asynchronous/README.adoc[]
 
-== com.iluwatar.event.queue.App
+== Event-Queue
 ++++
 Event or message queues provide an asynchronous communications protocol, meaning that the sender
  and receiver of the message do not need to interact with the message queue at the same time. 
@@ -1643,9 +1634,9 @@ Event or message queues provide an asynchronous communications protocol, meaning
  items from the queue at a later time.
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.event.queue.app/README.adoc[]
+include::C:/git/java-design-patterns/event-queue/README.adoc[]
 
-== com.iluwatar.queue.load.leveling.App
+== Queue-Load-Leveling
 ++++
 Many solutions in the cloud involve running tasks that invoke services. In this environment, 
  if a service is subjected to intermittent heavy loads, it can cause performance or reliability issues.
@@ -1673,34 +1664,34 @@ Many solutions in the cloud involve running tasks that invoke services. In this 
  execute them.
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.queue.load.leveling.app/README.adoc[]
+include::C:/git/java-design-patterns/queue-load-leveling/README.adoc[]
 
 == Data-Bus
 ++++
 The Data Bus pattern
 
- {@see http://wiki.c2.com/?DataBusPattern}</p>
+ {@see http://wiki.c2.com/?DataBusPattern}
 
  The Data-Bus pattern provides a method where different parts of an application may
- pass messages between each other without needing to be aware of the other's existence.</p>
+ pass messages between each other without needing to be aware of the other's existence.
  Similar to the {@code ObserverPattern}, members register themselves with the {DataBus}
  and may then receive each piece of data that is published to the Data-Bus. The member
- may react to any given message or not.</p>
+ may react to any given message or not.
  It allows for Many-to-Many distribution of data, as there may be any number of
  publishers to a Data-Bus, and any number of members receiving the data. All members
  will receive the same data, the order each receives a given piece of data, is an
- implementation detail.</p>
- Members may unsubscribe from the Data-Bus to stop receiving data.</p>
+ implementation detail.
+ Members may unsubscribe from the Data-Bus to stop receiving data.
  This example of the pattern implements a Synchronous Data-Bus, meaning that
  when data is published to the Data-Bus, the publish method will not return until
- all members have received the data and returned.</p>
- The {DataBus} class is a Singleton.</p>
- Members of the Data-Bus must implement the {Member} interface.</p>
- Data to be published via the Data-Bus must implement the {DataType} interface.</p>
- The {@code data} package contains example {DataType} implementations.</p>
- The {@code members} package contains example {Member} implementations.</p>
+ all members have received the data and returned.
+ The {DataBus} class is a Singleton.
+ Members of the Data-Bus must implement the {Member} interface.
+ Data to be published via the Data-Bus must implement the {DataType} interface.
+ The {@code data} package contains example {DataType} implementations.
+ The {@code members} package contains example {Member} implementations.
  The {StatusMember} demonstrates using the DataBus to publish a message
- to the Data-Bus when it receives a message.</p>
+ to the Data-Bus when it receives a message.
 ++++
 
 include::C:/git/java-design-patterns/data-bus/README.adoc[]
@@ -1717,7 +1708,7 @@ include::C:/git/java-design-patterns/converter/README.adoc[]
 
 == com.iluwatar.guarded.suspension.App
 ++++
-Created by robertt240 on 1/26/17.
+Guarded-Suspension
 ++++
 
 include::C:/git/java-design-patterns/com.iluwatar.guarded.suspension.app/README.adoc[]
@@ -1737,7 +1728,7 @@ In Balking Design Pattern if an object’s method is invoked when it is in an in
 
 include::C:/git/java-design-patterns/balking/README.adoc[]
 
-== com.iluwatar.cqrs.app.App
+== Cqrs
 ++++
 CQRS : Command Query Responsibility Segregation. A pattern used to separate query services from commands or writes
  services. The pattern is very simple but it has many consequences. For example, it can be used to tackle down a
@@ -1749,9 +1740,9 @@ CQRS : Command Query Responsibility Segregation. A pattern used to separate quer
  DTOs (Data transfer Objects).
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.cqrs.app.app/README.adoc[]
+include::C:/git/java-design-patterns/cqrs/README.adoc[]
 
-== com.iluwatar.event.sourcing.app.App
+== Event-Sourcing
 ++++
 Event Sourcing : Instead of storing just the current state of the data in a domain, use an
  append-only store to record the full series of actions taken on that data. The store acts as the
@@ -1770,21 +1761,21 @@ Event Sourcing : Instead of storing just the current state of the data in a doma
  Created by Serdar Hamzaogullari on 06.08.2017.
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.event.sourcing.app.app/README.adoc[]
+include::C:/git/java-design-patterns/event-sourcing/README.adoc[]
 
-== com.iluwatar.datatransfer.CustomerClientApp
+== Data-Transfer-Object
 ++++
 The Data Transfer Object pattern is a design pattern in which an data transfer object is used to serve related
  information together to avoid multiple call for each piece of information.
- <p>
+
  In this example, ({CustomerClientApp}) as as customer details consumer i.e. client to request for
  customer details to server.
- <p>
- CustomerResource ({CustomerResource}) act as server to serve customer information.
- And The CustomerDto ({CustomerDto} is data transfer object to share customer information.
+
+ CustomerResource {CustomerResource} act as server to serve customer information.
+ And The CustomerDto {CustomerDto} is data transfer object to share customer information.
 ++++
 
-include::C:/git/java-design-patterns/com.iluwatar.datatransfer.customerclientapp/README.adoc[]
+include::C:/git/java-design-patterns/data-transfer-object/README.adoc[]
 
 == Throttling
 ++++
@@ -1794,7 +1785,7 @@ Throttling pattern is a design pattern to throttle or limit the use of resources
 
      In this example we have {App} as the initiating point of the service.
      This is a time based throttling, i.e. only a certain number of calls are allowed per second.
- </p>
+
  {Tenant} is the Tenant POJO class with which many tenants can be created
  {B2BService} is the service which is consumed by the tenants and is throttled.
 ++++
@@ -1813,7 +1804,7 @@ The Partial response pattern is a design pattern in which client specifies field
 
 include::C:/git/java-design-patterns/partial-response/README.adoc[]
 
-== Wiretap
+== Ejp-Wire-Tap
 ++++
 In most integration cases there is a need to monitor the messages flowing through the system. It is usually achieved
  by intercepting the message and redirecting it to a different location like console, filesystem or the database.
@@ -1823,10 +1814,9 @@ In most integration cases there is a need to monitor the messages flowing throug
  Wire Tap allows you to route messages to a separate location while they are being forwarded to the ultimate
  destination. It basically consumes messages of the input channel and publishes the unmodified message to both
  output channels.
- </p>
 ++++
 
-include::C:/git/java-design-patterns/wiretap/README.adoc[]
+include::C:/git/java-design-patterns/ejp-wire-tap/README.adoc[]
 
 == Eip-Splitter
 ++++
@@ -1839,7 +1829,6 @@ It is very common in integration systems that incoming messages consists of many
 
  Splitter allows you to split messages based on defined criteria. It takes original message, process it and send
  multiple parts to the output channel. It is not defined if it should keep the order of items though.
- </p>
 ++++
 
 include::C:/git/java-design-patterns/eip-splitter/README.adoc[]

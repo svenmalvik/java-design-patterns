@@ -38,7 +38,7 @@ import org.springframework.context.ConfigurableApplicationContext;
  *
  * Splitter allows you to split messages based on defined criteria. It takes original message, process it and send
  * multiple parts to the output channel. It is not defined if it should keep the order of items though.
- * </p>
+ *
  *
  * @pattern Eip-Splitter
  */

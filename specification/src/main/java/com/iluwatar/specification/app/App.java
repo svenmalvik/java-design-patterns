@@ -52,6 +52,7 @@ import org.slf4j.LoggerFactory;
  *
  * http://martinfowler.com/apsupp/spec.pdf
  *
+ * @pattern Specification
  */
 public class App {
   

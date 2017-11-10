@@ -50,6 +50,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * However, mobile users only see price information; they do not see a product image. For mobile
  * users, the {@link ApiGateway} only retrieves price information, which it uses to populate the
  * {@link MobileProduct}.
+ *
+ * @pattern Api-Gateway
  */
 @SpringBootApplication
 public class App {

@@ -48,6 +48,8 @@ import org.slf4j.LoggerFactory;
  * printed so a user can view the last state is same with the state before system shot down.
  *
  * Created by Serdar Hamzaogullari on 06.08.2017.
+ *
+ * @pattern Event-Sourcing
  */
 public class App {
 

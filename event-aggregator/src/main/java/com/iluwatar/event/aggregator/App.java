@@ -38,6 +38,7 @@ import java.util.List;
  * {@link KingsHand}. {@link KingsHand}, the event aggregator, then delivers the events to
  * {@link KingJoffrey}.
  *
+ * @pattern Event-Aggregator
  */
 public class App {
 

@@ -35,7 +35,8 @@ package com.iluwatar.model.view.presenter;
  *
  * Finally, please notice the wiring between the Presenter and the View and between the Presenter
  * and the Model.
- * 
+ *
+ * @pattern Model-View-Presenter
  */
 public class App {
 

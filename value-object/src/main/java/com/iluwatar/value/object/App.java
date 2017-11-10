@@ -38,7 +38,9 @@ import org.slf4j.LoggerFactory;
  * A Value Object must check equality with equals() not == 
  * 
  * For more specific and strict rules to implement value objects check the rules from Stephen
- * Colebourne's term VALJO : http://blog.joda.org/2014/03/valjos-value-java-objects.html 
+ * Colebourne's term VALJO : http://blog.joda.org/2014/03/valjos-value-java-objects.html
+ *
+ * @pattern Value-Object
  */
 public class App {
 

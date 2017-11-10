@@ -35,6 +35,8 @@ package com.iluwatar.business.delegate;
  * In this example the client {@link Client} utilizes a business delegate (
  * {@link BusinessDelegate} to execute a task. The Business Delegate then selects the appropriate
  * service and makes the service call.
+ *
+ * @pattern Business-Delegate
  */
 public class App {
 

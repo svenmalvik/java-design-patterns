@@ -46,6 +46,7 @@ package com.iluwatar.intercepting.filter;
  *
  * 
  * @author joshzambales
+ * @pattern Intercepting-Filter
  *
  */
 public class App {

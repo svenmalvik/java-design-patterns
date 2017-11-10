@@ -38,6 +38,7 @@ package com.iluwatar.model.view.controller;
  * {@link GiantController} receives input affecting the model and delegates redrawing the giant to
  * the view.
  *
+ * @pattern Model-View-Controller
  */
 public class App {
 

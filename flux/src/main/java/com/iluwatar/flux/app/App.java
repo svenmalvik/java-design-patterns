@@ -44,6 +44,7 @@ import com.iluwatar.flux.view.MenuView;
  *
  * http://facebook.github.io/flux/docs/overview.html
  *
+ * @pattern Flux
  */
 public class App {
 

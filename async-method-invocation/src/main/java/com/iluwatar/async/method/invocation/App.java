@@ -54,6 +54,8 @@ import java.util.concurrent.Callable;
  * @see java.util.concurrent.FutureTask
  * @see java.util.concurrent.CompletableFuture
  * @see java.util.concurrent.ExecutorService
+ *
+ * @pattern Async-Method-Invocation
  */
 public class App {
 

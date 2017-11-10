@@ -44,6 +44,7 @@ import org.slf4j.LoggerFactory;
  * {@link Oliphaunt}s can be checked out from the pool and later returned to it. The pool tracks
  * created instances and their status (available, inUse).
  *
+ * @pattern Object-Pool
  */
 public class App {
 

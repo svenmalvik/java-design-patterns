@@ -61,7 +61,7 @@ import org.slf4j.LoggerFactory;
  * {@link InitializingOnDemandHolderIdiom}. However, this implementation requires at least Java 8
  * API level to work.
  *
- * @pattern Singelton
+ * @pattern Singleton
  */
 public class App {
 

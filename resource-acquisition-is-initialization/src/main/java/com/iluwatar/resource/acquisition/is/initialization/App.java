@@ -44,6 +44,7 @@ import org.slf4j.LoggerFactory;
  *
  * http://docs.oracle.com/javase/7/docs/technotes/guides/language/try-with-resources.html
  *
+ * @pattern Resource-Acquisition-Is-Initialization
  */
 public class App {
 
