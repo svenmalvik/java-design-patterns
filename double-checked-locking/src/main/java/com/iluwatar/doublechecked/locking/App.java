@@ -56,7 +56,7 @@ public class App {
     for (int i = 0; i < 3; i++) {
       executorService.execute(() -> {
         while (inventory.addItem(new Item())) {};
-      }.
+      });
     }
 
     executorService.shutdown();

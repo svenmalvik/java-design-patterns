@@ -72,7 +72,7 @@ public class App {
       if (o1 != o2 && o1.intersectsWith(o2)) {
         o1.collision(o2);
       }
-    }.;
+    }));
     LOGGER.info("");
 
     // output eventual object statuses

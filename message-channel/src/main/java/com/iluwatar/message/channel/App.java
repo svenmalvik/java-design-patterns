@@ -67,7 +67,7 @@ public class App {
         from("stream:in").to("direct:greetings");
         from("direct:greetings").to("stream:out");
       }
-    }.
+    });
 
     context.start();
     context.getRoutes().stream().forEach(r -> LOGGER.info(r.toString()));

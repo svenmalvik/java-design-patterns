@@ -78,8 +78,8 @@ The Abstract Factory pattern provides a way to encapsulate a group of individual
  implementation of a set of objects from their general usage and relies on object composition, as object creation is
  implemented in methods exposed in the factory interface.
 
- The essence of the Abstract Factory pattern is a factory interface ({KingdomFactory}) and its implementations (
- {ElfKingdomFactory}, {OrcKingdomFactory}). The example uses both concrete implementations to create a
+ The essence of the Abstract Factory pattern is a factory interface {KingdomFactory} and its implementations (
+ {ElfKingdomFactory}, {OrcKingdomFactory}. The example uses both concrete implementations to create a
  king, a castle and an army.
 ++++
 
@@ -119,9 +119,9 @@ The Factory Method is a creational design pattern which uses factory methods to 
  and implemented by child classes, or implemented in a base class and optionally overridden by
  derived classes—rather than by calling a constructor.
 
- In this Factory Method example we have an interface ({Blacksmith}) with a method for
- creating objects ({Blacksmith#manufactureWeapon}). The concrete subclasses (
- {OrcBlacksmith}, {ElfBlacksmith}) then override the method to produce objects of
+ In this Factory Method example we have an interface {Blacksmith} with a method for
+ creating objects {Blacksmith#manufactureWeapon}. The concrete subclasses (
+ {OrcBlacksmith}, {ElfBlacksmith} then override the method to produce objects of
  their liking.
 ++++
 
@@ -135,7 +135,7 @@ The Prototype pattern is a creational design pattern in software development. It
  application, like the abstract factory pattern does. - avoid the inherent cost of creating a new
  object in the standard way (e.g., using the 'new' keyword)
 
- In this example we have a factory class ({HeroFactoryImpl}) producing objects by cloning
+ In this example we have a factory class {HeroFactoryImpl} producing objects by cloning
  the existing ones. The factory's prototype objects are given as constructor parameters.
 ++++
 
@@ -194,8 +194,8 @@ An adapter helps two incompatible interfaces to work together. This is the real 
  object. This example uses the object adapter approach.
 
 
- The Adapter ({FishingBoatAdapter}) converts the interface of the adaptee class (
- {FishingBoat}) into a suitable one expected by the client ( {RowingBoat} ).
+ The Adapter {FishingBoatAdapter} converts the interface of the adaptee class (
+ {FishingBoat} into a suitable one expected by the client {RowingBoat} ).
 
 
  The story of this implementation is this. <br>
@@ -212,8 +212,8 @@ include::C:/git/java-design-patterns/adapter/README.adoc[]
 Composition over inheritance. The Bridge pattern can also be thought of as two layers of abstraction.
  With Bridge, you can decouple an abstraction from its implementation so that the two can vary independently.
 
- In Bridge pattern both abstraction ({Weapon}) and implementation (
- {Enchantment}) have their own class hierarchies. The interface of the implementations
+ In Bridge pattern both abstraction {Weapon} and implementation (
+ {Enchantment} have their own class hierarchies. The interface of the implementations
  can be changed without affecting the clients.
 
  In this example we have two class hierarchies. One of weapons and another one of enchantments. We can easily
@@ -231,7 +231,7 @@ The Composite pattern is a partitioning design pattern. The Composite pattern de
  uniformly.
 
  In this example we have sentences composed of words composed of letters. All of the objects can
- be treated through the same interface ({LetterComposite}).
+ be treated through the same interface {LetterComposite}.
 ++++
 
 include::C:/git/java-design-patterns/composite/README.adoc[]
@@ -289,7 +289,7 @@ The Facade design pattern is often used when a system is very complex or difficu
  members required by client. These members access the system on behalf of the facade client and
  hide the implementation details.
 
- In this example the Facade is ({DwarvenGoldmineFacade}) and it provides a simpler interface
+ In this example the Facade is {DwarvenGoldmineFacade} and it provides a simpler interface
  to the goldmine subsystem.
 ++++
 
@@ -323,8 +323,8 @@ A proxy, in its most general form, is a class functioning as an interface to som
  wrapper class as the proxy. The wrapper class, which is the proxy, can add additional
  functionality to the object of interest without changing the object's code.
 
- In this example the proxy ({WizardTowerProxy}) controls access to the actual object (
- {IvoryTower}).
+ In this example the proxy {WizardTowerProxy} controls access to the actual object (
+ {IvoryTower}.
 ++++
 
 include::C:/git/java-design-patterns/proxy/README.adoc[]
@@ -336,9 +336,9 @@ The Chain of Responsibility pattern is a design pattern consisting of command ob
  command objects that it can handle; the rest are passed to the next processing object in the
  chain. A mechanism also exists for adding new processing objects to the end of this chain.
 
- In this example we organize the request handlers ({RequestHandler}) into a chain where each
- handler has a chance to act on the request on its turn. Here the king ({OrcKing}) makes
- requests and the military orcs ({OrcCommander}, {OrcOfficer}, {OrcSoldier})
+ In this example we organize the request handlers {RequestHandler} into a chain where each
+ handler has a chance to act on the request on its turn. Here the king {OrcKing} makes
+ requests and the military orcs {OrcCommander}, {OrcOfficer}, {OrcSoldier})
  form the handler chain.
 ++++
 
@@ -374,7 +374,7 @@ The Interpreter pattern is a design pattern that specifies how to evaluate sente
  the composite pattern and is used to evaluate (interpret) the sentence for a client.
 
  In this example we use the Interpreter pattern to break sentences into expressions (
- {Expression}) that can be evaluated and as a whole form the result.
+ {Expression} that can be evaluated and as a whole form the result.
 ++++
 
 include::C:/git/java-design-patterns/interpreter/README.adoc[]
@@ -384,8 +384,8 @@ include::C:/git/java-design-patterns/interpreter/README.adoc[]
 The Iterator pattern is a design pattern in which an iterator is used to traverse a container and
  access the container's elements. The Iterator pattern decouples algorithms from containers.
 
- In this example the Iterator ({ItemIterator}) adds abstraction layer on top of a collection
- ({TreasureChest}). This way the collection can change its internal implementation without
+ In this example the Iterator {ItemIterator} adds abstraction layer on top of a collection
+ {TreasureChest}. This way the collection can change its internal implementation without
  affecting its clients.
 ++++
 
@@ -409,8 +409,8 @@ The Mediator pattern defines an object that encapsulates how a set of objects in
  mediator. This reduces the dependencies between communicating objects, thereby lowering the
  coupling.
 
- In this example the mediator encapsulates how a set of objects ({PartyMember}) interact.
- Instead of referring to each other directly they use the mediator ({Party}) interface.
+ In this example the mediator encapsulates how a set of objects {PartyMember} interact.
+ Instead of referring to each other directly they use the mediator {Party} interface.
 ++++
 
 include::C:/git/java-design-patterns/mediator/README.adoc[]
@@ -429,7 +429,7 @@ The Memento pattern is a software design pattern that provides the ability to re
  or should not, change). When using this pattern, care should be taken if the originator may
  change other objects or resources - the memento pattern operates on a single object.
 
- In this example the object ({Star}) gives out a "memento" ({StarMemento}) that
+ In this example the object {Star} gives out a "memento" {StarMemento} that
  contains the state of the object. Later on the memento can be set back to the object restoring
  the state.
 ++++
@@ -490,8 +490,8 @@ The Strategy pattern (also known as the policy pattern) is a software design pat
  to write lots of boilerplate code. With modern Java it is easy to pass behavior
  with method references and lambdas making the code shorter and more readable.
 
- In this example ({DragonSlayingStrategy}) encapsulates an algorithm. The containing object
- ({DragonSlayer}) can alter its behavior by changing its strategy.
+ In this example {DragonSlayingStrategy} encapsulates an algorithm. The containing object
+ {DragonSlayer} can alter its behavior by changing its strategy.
 ++++
 
 include::C:/git/java-design-patterns/strategy/README.adoc[]
@@ -724,8 +724,8 @@ Service layer defines an application's boundary with a layer of services that es
  responses to an action. Encoding the logic of the interactions separately in each interface
  causes a lot of duplication.
 
- The example application demonstrates interactions between a client ({App}) and a service (
- {MagicService}). The service is implemented with 3-layer architecture (entity, dao,
+ The example application demonstrates interactions between a client {App} and a service (
+ {MagicService}. The service is implemented with 3-layer architecture (entity, dao,
  service). For persistence the example uses in-memory H2 database which is populated on each
  application startup.
 ++++
@@ -775,7 +775,7 @@ Model-View-Controller is a pattern for implementing user interfaces. It divides 
  or a diagram The third part, the controller, accepts input and converts it to commands for the
  model or view.
 
- In this example we have a giant ({GiantModel}) with statuses for health, fatigue and
+ In this example we have a giant {GiantModel} with statuses for health, fatigue and
  nourishment. {GiantView} can display the giant with its current status.
  {GiantController} receives input affecting the model and delegates redrawing the giant to
  the view.
@@ -814,7 +814,7 @@ When a message with a parameter is sent to an object, the resultant behaviour is
  Instead of the instanceof-checks a better way is to make another virtual call on the parameter object. This way new
  functionality can be easily added without the need to modify existing implementation (open-closed principle).
 
- In this example we have hierarchy of objects ({GameObject}) that can collide to each other. Each object has its
+ In this example we have hierarchy of objects {GameObject} that can collide to each other. Each object has its
  own coordinates which are checked against the other objects' coordinates. If there is an overlap, then the objects
  collide utilizing the Double Dispatch pattern.
 ++++
@@ -932,14 +932,14 @@ Dependency Injection pattern deals with how objects handle their dependencies. T
  - High-level modules should not depend on low-level modules. Both should depend on abstractions.
  - Abstractions should not depend on details. Details should depend on abstractions.
 
- In this example we show you three different wizards. The first one ({SimpleWizard}) is a
+ In this example we show you three different wizards. The first one {SimpleWizard} is a
  naive implementation violating the inversion of control principle. It depends directly on a
  concrete implementation which cannot be changed.
 
- The second and third wizards({AdvancedWizard} and {AdvancedSorceress}) are more flexible.
+ The second and third wizards{AdvancedWizard} and {AdvancedSorceress} are more flexible.
  They do not depend on any concrete implementation but abstraction. They utilizes Dependency Injection
- pattern allowing their {Tobacco} dependency to be injected through constructor ({AdvancedWizard})
- or setter ({AdvancedSorceress}). This way, handling the dependency is no longer the wizard's
+ pattern allowing their {Tobacco} dependency to be injected through constructor {AdvancedWizard})
+ or setter {AdvancedSorceress}. This way, handling the dependency is no longer the wizard's
  responsibility. It is resolved outside the wizard class.
 
  The fourth example takes the pattern a step further. It uses Guice framework for Dependency
@@ -955,16 +955,16 @@ The Front Controller is a presentation tier pattern. Essentially it defines a co
  handles all requests for a web site.
 
  The Front Controller pattern consolidates request handling through a single handler object (
- {FrontController}). This object can carry out the common the behavior such as
+ {FrontController}. This object can carry out the common the behavior such as
  authorization, request logging and routing requests to corresponding views.
 
- Typically the requests are mapped to command objects ({Command}) which then display the
- correct view ({View}).
+ Typically the requests are mapped to command objects {Command} which then display the
+ correct view {View}.
 
  In this example we have implemented two views: {ArcherView} and {CatapultView}. These
  are displayed by sending correct request to the {FrontController} object. For example, the
  {ArcherView} gets displayed when {FrontController} receives request "Archer". When
- the request is unknown, we display the error view ({ErrorView}).
+ the request is unknown, we display the error view {ErrorView}.
 ++++
 
 include::C:/git/java-design-patterns/com.iluwatar.front.controller.app/README.adoc[]
@@ -1078,8 +1078,8 @@ The Business Delegate pattern adds an abstraction layer between the presentation
  retrieved through service lookups. The Business Delegate itself may contain business logic too
  potentially tying together multiple service calls, exception handling, retrying etc.
  
- In this example the client ({Client}) utilizes a business delegate (
- {BusinessDelegate}) to execute a task. The Business Delegate then selects the appropriate
+ In this example the client {Client} utilizes a business delegate (
+ {BusinessDelegate} to execute a task. The Business Delegate then selects the appropriate
  service and makes the service call.
 ++++
 
@@ -1268,14 +1268,14 @@ The Caching pattern describes how to avoid expensive re-acquisition of resources
  synchronized/up-to-date. This pattern can improve performance and also helps to maintain
  consistency between data held in the cache and the data in the underlying data store.
 
- In this example, the user account ({UserAccount}) entity is used as the underlying
+ In this example, the user account {UserAccount} entity is used as the underlying
  application data. The cache itself is implemented as an internal (Java) data structure. It adopts
  a Least-Recently-Used (LRU) strategy for evicting data from itself when its full. The four
  strategies are individually tested. The testing of the cache is restricted towards saving and
- querying of user accounts from the underlying data store ( {DbManager}). The main class (
+ querying of user accounts from the underlying data store {DbManager}. The main class (
  {App} is not aware of the underlying mechanics of the application (i.e. save and query) and
  whether the data is coming from the cache or the DB (i.e. separation of concern). The AppManager
- ({AppManager}) handles the transaction of data to-and-from the underlying data store
+ {AppManager} handles the transaction of data to-and-from the underlying data store
  (depending on the preferred caching policy/strategy).
 
  <i>App --> AppManager --> CacheStore/LRUCache/CachingPolicy --> DBManager</i>
@@ -1536,8 +1536,8 @@ The Abstract Document pattern enables handling additional, non-static
  separate properties of different classes into set of interfaces.
 
 
- In Abstract Document pattern,({AbstractDocument}) fully implements
- {Document}) interface. Traits are then defined to enable access to
+ In Abstract Document pattern,{AbstractDocument} fully implements
+ {Document} interface. Traits are then defined to enable access to
  properties in usual, static way.
 ++++
 
@@ -1792,11 +1792,11 @@ Throttling pattern is a design pattern to throttle or limit the use of resources
  users or a particular tenant. This can allow systems to continue to function and meet service level agreements,
  even when an increase in demand places load on resources.
 
-     In this example we have ({App}) as the initiating point of the service.
+     In this example we have {App} as the initiating point of the service.
      This is a time based throttling, i.e. only a certain number of calls are allowed per second.
  </p>
- ({Tenant}) is the Tenant POJO class with which many tenants can be created
- ({B2BService}) is the service which is consumed by the tenants and is throttled.
+ {Tenant} is the Tenant POJO class with which many tenants can be created
+ {B2BService} is the service which is consumed by the tenants and is throttled.
 ++++
 
 include::C:/git/java-design-patterns/throttling/README.adoc[]
