@@ -70,9 +70,17 @@ public class Sysdoclet {
                     docBuilders.block(s, MarkupBlockStyle.PASSTHROUGH);
 
                     String qn = classDoc.qualifiedTypeName();
-                    String module = pattern.toLowerCase();//qn.substring("com.iluwatar".length()+1, qn.indexOf("App")-1).replace('.', '-');
+                    String module = pattern.toLowerCase();
 
-                    docBuilders.block(
+                    docBuilders.text(
+                            "include::"
+                                    + getOutputLocation()
+                                    + "/"
+                                    + module
+                                    + "/README.adoc[]");
+
+
+/*                    docBuilders.block(
                             "include::"
                                     + getOutputLocation()
                                     + "/"
@@ -80,11 +88,7 @@ public class Sysdoclet {
                                     + "/src/main/java/"
                                     + qn.replace('.', '/') + ".java[tags=code]",
                             MarkupBlockStyle.LISTING, "App.java", MarkupAdmonition.JAVA);
-
-                    /*docBuilders.block(
-                            "include::" + getOutputLocation() + "/bridge/src/main/java/com/iluwatar/bridge/App.java[tags=code]",
-                            MarkupBlockStyle.LISTING, "App.java", MarkupAdmonition.JAVA);*/
-                });
+                */});
     }
 
     private static void writeAdoc(MarkupDocBuilder docBuilders) {

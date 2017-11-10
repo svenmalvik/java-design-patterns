@@ -16,13 +16,7 @@ The Abstract Factory pattern provides a way to encapsulate a group of individual
  king, a castle and an army.
 ++++
 
-[source, java]
-.App.java
-----
-include::C:/git/java-design-patterns/abstract-factory/src/main/java/com/iluwatar/abstractfactory/App.java[tags=code]
-----
-
-
+include::C:/git/java-design-patterns/abstract-factory/README.adoc[]
 === TLS
 ++++
 ThreadLocal pattern
@@ -58,13 +52,7 @@ ThreadLocal pattern
  and those are really hard to find errors.
 ++++
 
-[source, java]
-.App.java
-----
-include::C:/git/java-design-patterns/tls/src/main/java/com/iluwatar/tls/App.java[tags=code]
-----
-
-
+include::C:/git/java-design-patterns/tls/README.adoc[]
 === Bridge
 ++++
 Composition over inheritance. The Bridge pattern can also be thought of as two layers of abstraction.
@@ -78,11 +66,5 @@ Composition over inheritance. The Bridge pattern can also be thought of as two l
  combine any weapon with any enchantment using composition instead of creating deep class hierarchy.
 ++++
 
-[source, java]
-.App.java
-----
-include::C:/git/java-design-patterns/bridge/src/main/java/com/iluwatar/bridge/App.java[tags=code]
-----
-
-
+include::C:/git/java-design-patterns/bridge/README.adoc[]
 
