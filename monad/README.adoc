@@ -7,11 +7,11 @@ pumlid: 9SR13SCm20NGLPe1OkxTXjWeSMMm1Pza_LRgExsjMntP97syBc35cyZvAMV7bKU6U9q6CPGw
 categories: Other
 tags:
  - Java
- - Difficulty-Expert
+ Difficulty: Expert
 
-==  - Functional
+- Functional
 
-== Intent
+=== Intent
 
 Monad pattern based on monad from linear algebra represents the way of chaining operations
 together step by step. Binding functions can be described as passing one's output to another's input
@@ -22,14 +22,14 @@ return - that takes plain type object and returns this object wrapped in a monad
 
 image:./etc/monad.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the Monad in any of the following situations
 
 * when you want to chain operations easily
 * when you want to apply each function regardless of the result of any of them
 
-== Credits
+=== Credits
 
 * https://youtu.be/-k2X7guaArU[Design Pattern Reloaded by Remi Forax]
 * https://channel9.msdn.com/Shows/Going+Deep/Brian-Beckman-Dont-fear-the-Monads[Brian Beckman: Don't fear the Monad]

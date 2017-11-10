@@ -9,17 +9,17 @@ tags:
  - Java
  - Gang Of Four
 
-==  - Difficulty-Intermediate
+Difficulty: Intermediate
 
-== Also known as
+=== Also known as
 
 Handle/Body
 
-== Intent
+=== Intent
 
 Decouple an abstraction from its implementation so that the two can vary independently.
 
-== Explanation
+=== Explanation
 
 Real world example
 
@@ -197,7 +197,7 @@ hammer.unwield();
 // The item's glow fades.
 ----
 
-== Applicability
+=== Applicability
 
 Use the Bridge pattern when
 
@@ -207,6 +207,6 @@ Use the Bridge pattern when
 * you have a proliferation of classes. Such a class hierarchy indicates the need for splitting an object into two parts. Rumbaugh uses the term "nested generalizations" to refer to such class hierarchies
 * you want to share an implementation among multiple objects (perhaps using reference counting), and this fact should be hidden from the client. A simple example is Coplien's String class, in which multiple objects can share the same string representation.
 
-== Credits
+=== Credits
 
 * http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612[Design Patterns: Elements of Reusable Object-Oriented Software]

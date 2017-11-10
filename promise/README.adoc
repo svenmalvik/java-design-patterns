@@ -1,22 +1,12 @@
-—
-layout: pattern
-title: Promise
-folder: promise
-permalink: /patterns/promise/
-pumlid: DOqv4i8m301xNW4FYDLJvIl2rYHYBDcZWtmVKr3jDZkxUw15IhyzM6lFHcdzVaPCVm8ONkNWEFELJbQ71ccKEWIuvuKhXJT-S6laVEWsCO9C7GHz2KmRmav0KVzUqgJCtsydROjV
-categories: Concurrency
-tags:
- - Java
- - Functional
- - Reactive
+- Functional
+- Reactive
+- Difficulty: Intermediate
 
-==  - Difficulty-Intermediate
-
-== Also known as
+=== Also known as
 
 CompletableFuture
 
-== Intent
+=== Intent
 
 A Promise represents a proxy for a value not necessarily known when the promise is created. It
 allows you to associate dependent promises to an asynchronous action's eventual success value or
@@ -25,7 +15,7 @@ in a synchronous way.
 
 image:./etc/promise.png[alt text]
 
-== Applicability
+=== Applicability
 
 Promise pattern is applicable in concurrent programming when some work needs to be done asynchronously
 and:
@@ -34,17 +24,17 @@ and:
 * you need to compose promises and need better error handling for asynchronous tasks.
 * you want to use functional style of programming.
 
-== Real world examples
+=== Real world examples
 
 * https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html[java.util.concurrent.CompletableFuture]
 * https://github.com/google/guava/wiki/ListenableFutureExplained[Guava ListenableFuture]
 
-== Related Patterns
+=== Related Patterns
 
 * Async Method Invocation
 * Callback
 
-== Credits
+=== Credits
 
 * https://gist.github.com/domenic/3889970[You are missing the point to Promises]
 * https://www.infoq.com/articles/Functional-Style-Callbacks-Using-CompletableFuture[Functional style callbacks using CompletableFuture]

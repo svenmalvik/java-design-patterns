@@ -1,21 +1,11 @@
-—
-layout: pattern
-title: Strategy
-folder: strategy
-permalink: /patterns/strategy/
-pumlid: FSV13OCm30NGLM00udktCS4AGOaJsTz5tRwSkBstLiqj3WbhombC_n0PtwbKdB67Y-MX44NAerDjSJFOwE8lRuTuBRfD1iJKgRC_88SnfFn8aD-ai9vczFO7
-categories: Behavioral
-tags:
- - Java
- - Difficulty-Beginner
+- Difficulty: Beginner
+- Gang Of Four
 
-==  - Gang Of Four
-
-== Also known as
+=== Also known as
 
 Policy
 
-== Intent
+=== Intent
 
 Define a family of algorithms, encapsulate each one, and make them
 interchangeable. Strategy lets the algorithm vary independently from clients
@@ -23,7 +13,7 @@ that use it.
 
 image:./etc/strategy_1.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the Strategy pattern when
 
@@ -32,7 +22,7 @@ Use the Strategy pattern when
 * an algorithm uses data that clients shouldn't know about. Use the Strategy pattern to avoid exposing complex, algorithm-specific data structures
 * a class defines many behaviors, and these appear as multiple conditional statements in its operations. Instead of many conditionals, move related conditional branches into their own Strategy class
 
-== Credits
+=== Credits
 
 * http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612[Design Patterns: Elements of Reusable Object-Oriented Software]
 * http://www.amazon.com/Functional-Programming-Java-Harnessing-Expressions/dp/1937785467/ref=sr_1_1[Functional Programming in Java: Harnessing the Power of Java 8 Lambda Expressions]

@@ -1,16 +1,6 @@
-—
-layout: pattern
-title: Value Object
-folder: value-object
-permalink: /patterns/value-object/
-pumlid: LSZ13SCm20NGLTe1RExTXX2KECBOmfza_VRQszDxDnVBNJFiTG9pVOY2dteqdBdbqf3XK4ULqQbPFWmEklZcikjgXvV9W8Olwhn-e9ijjOpjKW4fv2zgHgypktq1
-categories: Creational
-tags:
- - Java
+- Difficulty: Beginner
 
-==  - Difficulty-Beginner
-
-== Intent
+=== Intent
 
 Provide objects which follow value semantics rather than reference semantics.
 This means value objects' equality are not based on identity. Two value objects are
@@ -18,19 +8,19 @@ equal when they have the same value, not necessarily being the same object.
 
 image:./etc/value-object.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the Value Object when
 
 * you need to measure the objects' equality based on the objects' value
 
-== Real world examples
+=== Real world examples
 
 * https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html[java.util.Optional]
 * https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html[java.time.LocalDate]
 * http://www.joda.org/[joda-time, money, beans]
 
-== Credits
+=== Credits
 
 * http://www.martinfowler.com/books/eaa.html[Patterns of Enterprise Application Architecture]
 * http://blog.joda.org/2014/03/valjos-value-java-objects.html[VALJOs - Value Java Objects : Stephen Colebourne's blog]

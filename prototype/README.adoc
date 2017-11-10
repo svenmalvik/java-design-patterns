@@ -1,22 +1,12 @@
-—
-layout: pattern
-title: Prototype
-folder: prototype
-permalink: /patterns/prototype/
-pumlid: HSV13OCm30NGLM00udktCS62eCInxE-YRj_UUdjlRLfx7fBUbmkmU14vF-Lik7BF4AzJ8OfIvw3Mys6mqyrltWw9Tkfc38XhqE3uWSmd9Zuc9AZ_bVHHB4V_0W00
-categories: Creational
-tags:
- - Java
- - Gang Of Four
+- Gang Of Four
+- Difficulty: Beginner
 
-==  - Difficulty-Beginner
-
-== Intent
+=== Intent
 
 Specify the kinds of objects to create using a prototypical
 instance, and create new objects by copying this prototype.
 
-== Explanation
+=== Explanation
 
 Real world example
 
@@ -75,7 +65,7 @@ cloned.setName("Dolly");
 System.out.println(cloned.getName()); // Dolly
 ----
 
-== Applicability
+=== Applicability
 
 Use the Prototype pattern when a system should be independent of how its products are created, composed and represented; and
 
@@ -84,10 +74,10 @@ Use the Prototype pattern when a system should be independent of how its product
 * when instances of a class can have one of only a few different combinations of state. It may be more convenient to install a corresponding number of prototypes and clone them rather than instantiating the class manually, each time with the appropriate state
 * when object creation is expensive compared to cloning
 
-== Real world examples
+=== Real world examples
 
 * http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#clone%28%29[java.lang.Object#clone()]
 
-== Credits
+=== Credits
 
 * http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612[Design Patterns: Elements of Reusable Object-Oriented Software]

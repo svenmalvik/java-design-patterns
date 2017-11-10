@@ -10,16 +10,16 @@ tags:
  - KISS
  - YAGNI
 
-==  - Difficulty-Beginner
+Difficulty: Beginner
 
-== Intent
+=== Intent
 
 Pass data with multiple attributes in one shot from client to server,
 to avoid multiple calls to remote server. 
 
 image:./etc/data-transfer-object.urm.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the Data Transfer Object pattern when
 
@@ -27,7 +27,7 @@ Use the Data Transfer Object pattern when
 * When you want to boost the performance to get resources.
 * You want reduced number of remote calls.
 
-== Credits
+=== Credits
 
 * https://www.tutorialspoint.com/design_pattern/transfer_object_pattern.htm[Design Pattern - Transfer Object Pattern]
 * https://msdn.microsoft.com/en-us/library/ff649585.aspx[Data Transfer Object]

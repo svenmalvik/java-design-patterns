@@ -7,17 +7,17 @@ pumlid: JST15i8m20N0g-W14lRU1YcsQ4BooCS-RwzBTpDNSscvQKQx7C1SDwBWi-w68–vD6Gur55
 categories: Creational
 tags:
  - Java
- - Difficulty-Beginner
+ Difficulty: Beginner
 
-==  - Functional
+- Functional
 
-== Intent
+=== Intent
 
 Define a factory of immutable content with separated builder and factory interfaces.
 
 image:./etc/factory-kit.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the Factory Kit pattern when
 
@@ -26,6 +26,6 @@ Use the Factory Kit pattern when
 * you explicitly want to define types of objects, that factory can build
 * you want a separated builder and creator interface
 
-== Credits
+=== Credits
 
 * https://www.youtube.com/watch?v=-k2X7guaArU[Design Pattern Reloaded by Remi Forax: ]

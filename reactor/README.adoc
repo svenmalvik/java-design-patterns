@@ -1,24 +1,13 @@
-—
-layout: pattern
-title: Reactor
-folder: reactor
-permalink: /patterns/reactor/
-pumlid: DSR14OGm20NGLjO23FVj1f7Hx2Ga0nzjVxtuJc-f9YrtJM-V4vZn9NA-or5nvfQXBiEWXYAZKsrvCzZfnnUlkqOzR9qCg5jGvtX2hYmOJWfvNz9xcTdR7m00
-pumlformat: svg
-categories: Concurrency
-tags:
- - Java
- - Difficulty-Expert
+- Difficulty: Expert
+- I/O
 
-==  - I/O
-
-== Intent
+=== Intent
 
 The Reactor design pattern handles service requests that are delivered concurrently to an application by one or more clients. The application can register specific handlers for processing which are called by reactor on specific events. Dispatching of event handlers is performed by an initiation dispatcher, which manages the registered event handlers. Demultiplexing of service requests is performed by a synchronous event demultiplexer.
 
 image:./etc/reactor.png[Reactor]
 
-== Applicability
+=== Applicability
 
 Use Reactor pattern when
 
@@ -26,11 +15,11 @@ Use Reactor pattern when
 * a server application needs to be available for receiving requests from new clients even when handling older client requests.
 * a server must maximize throughput, minimize latency and use CPU efficiently without blocking.
 
-== Real world examples
+=== Real world examples
 
 * http://projectreactor.io/[Spring Reactor]
 
-== Credits
+=== Credits
 
 * https://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor.pdf[Douglas C. Schmidt - Reactor]
 * http://www.amazon.com/Pattern-Oriented-Software-Architecture-Volume-Patterns/dp/0471958697[Pattern Oriented Software Architecture Vol I-V]

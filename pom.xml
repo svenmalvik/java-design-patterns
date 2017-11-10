@@ -56,15 +56,15 @@
 
     <modules>
         <module>_docs</module>
-        <module>abstract-factory</module>
-                        <module>tls</module>
-      <!--                    <module>builder</module>
-                                <module>factory-method</module>
-                            <module>prototype</module>
-                                <module>singleton</module>
-                                <module>adapter</module>-->
+        <module>tls</module>
+           <module>abstract-factory</module>
+                          <module>builder</module>
+                                   <module>factory-method</module>
+                               <module>prototype</module>
+                                   <module>singleton</module>
+                                   <module>adapter</module>
                                 <module>bridge</module>
- <!--                               <module>composite</module>
+                               <module>composite</module>
                                 <module>dao</module>
                                 <module>data-mapper</module>
                                 <module>decorator</module>
@@ -155,7 +155,7 @@
                                 <module>throttling</module>
                                 <module>partial-response</module>
                                 <module>eip-wire-tap</module>
-                                <module>eip-splitter</module>-->
+                                <module>eip-splitter</module>
 
     </modules>
 

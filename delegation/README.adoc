@@ -8,27 +8,27 @@ categories: Behavioral
 tags:
  - Java
 
-==  - Difficulty-Beginner
+Difficulty: Beginner
 
-== Also known as
+=== Also known as
 
 Proxy Pattern
 
-== Intent
+=== Intent
 
 It is a technique where an object expresses certain behavior to the outside but in
 reality delegates responsibility for implementing that behaviour to an associated object. 
 
 image:./etc/delegation.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the Delegate pattern in order to achieve the following
 
 * Reduce the coupling of methods to their class
 * Components that behave identically, but realize that this situation can change in the future.
 
-== Credits
+=== Credits
 
 * https://en.wikipedia.org/wiki/Delegation_pattern[Delegate Pattern: Wikipedia ]
 * https://en.wikipedia.org/wiki/Proxy_pattern[Proxy Pattern: Wikipedia ]

@@ -8,20 +8,20 @@ categories: Creational
 tags:
  - Java
 
-==  - Difficulty-Beginner
+Difficulty: Beginner
 
-== Also known as
+=== Also known as
 
 Registry
 
-== Intent
+=== Intent
 
 Ensure a class only has limited number of instances, and provide a
 global point of access to them.
 
 image:./etc/multiton.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the Multiton pattern when
 

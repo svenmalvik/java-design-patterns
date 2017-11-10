@@ -8,9 +8,9 @@ categories: Structural
 tags:
  - Java
 
-==  - Difficulty-Intermediate
+Difficulty: Intermediate
 
-== Intent
+=== Intent
 
 Achieve flexibility of untyped languages and keep the type-safety 
 
@@ -18,7 +18,7 @@ image:./etc/abstract-document-base.png[alt text]
 
 image:./etc/abstract-document.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the Abstract Document Pattern when
 
@@ -26,7 +26,7 @@ Use the Abstract Document Pattern when
 * you want a flexible way to organize domain in tree like structure
 * you want more loosely coupled system
 
-== Credits
+=== Credits
 
 * https://en.wikipedia.org/wiki/Abstract_Document_Pattern[Wikipedia: Abstract Document Pattern]
 * http://martinfowler.com/apsupp/properties.pdf[Martin Fowler: Dealing with properties]

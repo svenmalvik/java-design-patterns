@@ -7,21 +7,21 @@ pumlid: NSZB3G8n30N0Lg20n7UwCOxPP9MVx6TMT0zdRgEvjoazYeRrMmMsFuYChtmqr7Y6gycQq8ai
 categories: Creational
 tags:
  - Java
- - Difficulty-Beginner
+ Difficulty: Beginner
 
-==  - Gang Of Four
+- Gang Of Four
 
-== Also known as
+=== Also known as
 
 Virtual Constructor
 
-== Intent
+=== Intent
 
 Define an interface for creating an object, but let subclasses
 decide which class to instantiate. Factory Method lets a class defer
 instantiation to subclasses.
 
-== Explanation
+=== Explanation
 
 Real world example
 
@@ -80,7 +80,7 @@ blacksmith.manufactureWeapon(WeaponType.AXE);
 // Elvish weapons are created
 ----
 
-== Applicability
+=== Applicability
 
 Use the Factory Method pattern when
 
@@ -88,7 +88,7 @@ Use the Factory Method pattern when
 * a class wants its subclasses to specify the objects it creates
 * classes delegate responsibility to one of several helper subclasses, and you want to localize the knowledge of which helper subclass is the delegate
 
-== Known uses
+=== Known uses
 
 * http://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getInstance--[java.util.Calendar]
 * http://docs.oracle.com/javase/8/docs/api/java/util/ResourceBundle.html#getBundle-java.lang.String-[java.util.ResourceBundle]
@@ -98,6 +98,6 @@ Use the Factory Method pattern when
 * https://docs.oracle.com/javase/8/docs/api/java/util/EnumSet.html#of-E-[java.util.EnumSet]
 * https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/JAXBContext.html#createMarshaller--[javax.xml.bind.JAXBContext]
 
-== Credits
+=== Credits
 
 * http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612[Design Patterns: Elements of Reusable Object-Oriented Software]

@@ -1,22 +1,12 @@
-—
-layout: pattern
-title: Object Mother
-folder: object-mother
-permalink: /patterns/object-mother/
-pumlid: LOr13iCW30JlVKNx0E3UKxxYW9KGWK7sklb-wR6dtLbfj9k15DxRurKbDo_isfudCEsTaj8TZuhJTpVMF0GiY7dqL9lVjDHqqOT2OQk7X4a0grZgPAkaiL-S4Vh0kOYH_vVeskFyVMyiPUKN
-categories: Creational
-tags:
- - Java
+- Difficulty: Beginner
 
-==  - Difficulty-Beginner
-
-== Object Mother
+=== Object Mother
 
 Define a factory of immutable content with separated builder and factory interfaces.
 
 image:./etc/object-mother.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the Object Mother pattern when
 
@@ -24,7 +14,7 @@ Use the Object Mother pattern when
 * you want to reduce code for creation of objects in tests
 * every test should run with fresh data
 
-== Credits
+=== Credits
 
 * 
 

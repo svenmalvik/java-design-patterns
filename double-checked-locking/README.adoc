@@ -7,11 +7,11 @@ pumlid: TSdH4SCW203GLTe1bFzkGv1J6qGFeLc_MI1_x-wzkv94uJ1vDVUrFm26LwxTMnonsMYgitgc
 categories: Concurrency
 tags:
  - Java
- - Difficulty-Beginner
+ Difficulty: Beginner
 
-==  - Idiom
+- Idiom
 
-== Intent
+=== Intent
 
 Reduce the overhead of acquiring a lock by first testing the
 locking criterion (the "lock hint") without actually acquiring the lock. Only
@@ -20,7 +20,7 @@ actual locking logic proceed.
 
 image:./etc/double_checked_locking_1.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the Double Checked Locking pattern when
 

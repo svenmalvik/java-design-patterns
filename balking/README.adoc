@@ -7,16 +7,16 @@ categories: Concurrency
 tags:
  - Java
 
-==  - Difficulty-Beginner
+Difficulty: Beginner
 
-== Intent
+=== Intent
 
 Balking Pattern is used to prevent an object from executing certain code if it is an
 incomplete or inappropriate state
 
 image:./etc/balking.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the Balking pattern when
 
@@ -24,7 +24,7 @@ Use the Balking pattern when
 * objects are generally only in a state that is prone to balking temporarily
 but for an unknown amount of time
 
-== Related patterns
+=== Related patterns
 
 * Guarded Suspension Pattern
 * Double Checked Locking Pattern

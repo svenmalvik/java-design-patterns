@@ -8,21 +8,21 @@ tags:
  - Java
  - EIP
 
-==  - Apache Camel™
+- Apache Camel™
 
-== Intent
+=== Intent
 
 When two applications communicate using a messaging system they do it by using logical addresses
 of the system, so called Message Channels.
 
 image:./etc/message-channel.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the Message Channel pattern when
 
 * two or more applications need to communicate using a messaging system
 
-== Real world examples
+=== Real world examples
 
 * http://doc.akka.io/docs/akka/snapshot/scala/camel.html[akka-camel]

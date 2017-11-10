@@ -8,15 +8,15 @@ categories: Architectural
 tags:
  - Java
 
-==  - Difficulty-Intermediate
+Difficulty: Intermediate
 
-== Intent
+=== Intent
 
 CQRS Command Query Responsibility Segregation - Separate the query side from the command side.
 
 image:./etc/cqrs.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the CQRS pattern when
 
@@ -24,7 +24,7 @@ Use the CQRS pattern when
 * you want to use different data models for queries and commands. Useful when dealing with complex domains.
 * you want to use architectures like event sourcing or task based UI.
 
-== Credits
+=== Credits
 
 * http://codebetter.com/gregyoung/2010/02/16/cqrs-task-based-uis-event-sourcing-agh/[Greg Young - CQRS, Task Based UIs, Event Sourcing agh!]
 * https://martinfowler.com/bliki/CQRS.html[Martin Fowler - CQRS]

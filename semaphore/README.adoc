@@ -1,20 +1,10 @@
-—
-layout: pattern
-title: Semaphore
-folder: semaphore
-permalink: /patterns/semaphore/
-pumlid: HSV14SCm20J0Lk82BFxf1ikCfOn06ZZizfDVVhjRjphobFJnQi2ADv7pKwwEbaU6U9q6CPGwbVh8Xy5E7xvvFoNwPVjYGDo2bEC72b5URRgGeFvNqhMirF45
-categories: Concurrency
-tags:
- - Java
+- Difficulty: Intermediate
 
-==  - Difficulty-Intermediate
-
-== Also known as
+=== Also known as
 
 Counting Semaphore
 
-== Intent
+=== Intent
 
 Create a lock which mediates access to a pool of resources.
 Only a limited number of threads, specified at the creation
@@ -24,14 +14,14 @@ is called a binary semaphore.
 
 image:./etc/semaphore.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use a Semaphore when 
 
 * you have a pool of resources to allocate to different threads
 * concurrent access to a resource could lead to a race condition
 
-== Credits
+=== Credits
 
 * [Semaphore(programming)] (http://en.wikipedia.org/wiki/Semaphore_(programming)[http://en.wikipedia.org/wiki/Semaphore_(programming)])
 * http://tutorials.jenkov.com/java-concurrency/semaphores.html[Semaphores]

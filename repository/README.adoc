@@ -1,17 +1,7 @@
-—
-layout: pattern
-title: Repository
-folder: repository
-permalink: /patterns/repository/
-pumlid: JSV13OCm30NGLM00udktCS42eyI9xE-YRjyUUtjlLQij3qblomNCU14vF-LKNBbdYDTX44EfevEsV1ZiTFERjqD2Jzic0-8Mr3b-89SvGZ7yGuBwrvBUoypUlW00
-categories: Persistence Tier
-tags:
- - Java
- - Difficulty-Intermediate
+- Difficulty: Intermediate
+- Spring
 
-==  - Spring
-
-== Intent
+=== Intent
 
 Repository layer is added between the domain and data mapping
 layers to isolate domain objects from details of the database access code and
@@ -21,7 +11,7 @@ querying is utilized.
 
 image:./etc/repository.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the Repository pattern when
 
@@ -30,11 +20,11 @@ Use the Repository pattern when
 * you want to keep the database querying code in single place
 * you have multiple data sources
 
-== Real world examples
+=== Real world examples
 
 * http://projects.spring.io/spring-data/[Spring Data]
 
-== Credits
+=== Credits
 
 * http://thinkinginobjects.com/2012/08/26/dont-use-dao-use-repository/[Don’t use DAO, use Repository]
 * https://spring.io/blog/2011/04/26/advanced-spring-data-jpa-specifications-and-querydsl/[Advanced Spring Data JPA - Specifications and Querydsl]

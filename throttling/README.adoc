@@ -1,19 +1,10 @@
-—
-layout: pattern
-title: Throttling
-folder: throttling
-permalink: /patterns/throttling/
-categories: Behavioral
-tags:
- - Java
+- Difficulty: Beginner
 
-==  - Difficulty-Beginner
-
-== Intent
+=== Intent
 
 Ensure that a given client is not able to access service resources more than the assigned limit.
 
-== Applicability
+=== Applicability
 
 The Throttling pattern should be used:
 

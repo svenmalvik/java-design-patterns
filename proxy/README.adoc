@@ -1,26 +1,16 @@
-—
-layout: pattern
-title: Proxy
-folder: proxy
-permalink: /patterns/proxy/
-pumlid: 9SR13OCm30NGLM00udktCS62eCI9x6yesrEfx_Jcehd69c5rEe3X7oBZE-q5HwpXOhahH95oRrHgt0msEldYPHClkow30J5rQko_qB3-VKYG_qjXBOrezGK0
-categories: Structural
-tags:
- - Java
- - Gang Of Four
+- Gang Of Four
+- Difficulty: Beginner
 
-==  - Difficulty-Beginner
-
-== Also known as
+=== Also known as
 
 Surrogate
 
-== Intent
+=== Intent
 
 Provide a surrogate or placeholder for another object to control
 access to it.
 
-== Explanation
+=== Explanation
 
 Real world example
 
@@ -129,7 +119,7 @@ proxy.enter(new Wizard("Green wizard")); // Green wizard is not allowed to enter
 proxy.enter(new Wizard("Brown wizard")); // Brown wizard is not allowed to enter!
 ----
 
-== Applicability
+=== Applicability
 
 Proxy is applicable whenever there is a need for a more
 versatile or sophisticated reference to an object than a simple pointer. Here
@@ -139,7 +129,7 @@ are several common situations in which the Proxy pattern is applicable
 * Virtual proxy creates expensive objects on demand.
 * Protection proxy controls access to the original object. Protection proxies are useful when objects should have different access rights.
 
-== Typical Use Case
+=== Typical Use Case
 
 * Control access to another object
 * Lazy initialization
@@ -147,20 +137,20 @@ are several common situations in which the Proxy pattern is applicable
 * Facilitate network connection
 * Count references to an object
 
-== Tutorials
+=== Tutorials
 
 * http://java-design-patterns.com/blog/controlling-access-with-proxy-pattern/[Controlling Access With Proxy Pattern]
 
-== Presentations
+=== Presentations
 
 * https://github.com/iluwatar/java-design-patterns/tree/master/proxy/etc/presentation.html[Proxy]
 
-== Real world examples
+=== Real world examples
 
 * http://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Proxy.html[java.lang.reflect.Proxy]
 * https://commons.apache.org/proper/commons-proxy/[Apache Commons Proxy]
 * Mocking frameworks Mockito, Powermock, EasyMock
 
-== Credits
+=== Credits
 
 * http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612[Design Patterns: Elements of Reusable Object-Oriented Software]

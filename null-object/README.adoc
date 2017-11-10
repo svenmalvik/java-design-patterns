@@ -8,9 +8,9 @@ categories: Behavioral
 tags:
  - Java
 
-==  - Difficulty-Beginner
+Difficulty: Beginner
 
-== Intent
+=== Intent
 
 In most object-oriented languages, such as Java or C#, references
 may be null. These references need to be checked to ensure they are not null
@@ -23,12 +23,12 @@ Object is very predictable and has no side effects: it does nothing.
 
 image:./etc/null-object.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the Null Object pattern when
 
 * you want to avoid explicit null checks and keep the algorithm elegant and easy to read.
 
-== Credits
+=== Credits
 
 * http://www.amazon.com/Pattern-Languages-Program-Design-Coplien/dp/0201607344/ref=sr_1_1[Pattern Languages of Program Design]

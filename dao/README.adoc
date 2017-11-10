@@ -8,22 +8,22 @@ categories: Persistence Tier
 tags:
  - Java
 
-==  - Difficulty-Beginner
+Difficulty: Beginner
 
-== Intent
+=== Intent
 
 Object provides an abstract interface to some type of database or
 other persistence mechanism.
 
 image:./etc/dao.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the Data Access Object in any of the following situations
 
 * when you want to consolidate how the data layer is accessed
 * when you want to avoid writing multiple data retrieval/persistence layers
 
-== Credits
+=== Credits
 
 * http://www.amazon.com/J2EE-Design-Patterns-William-Crawford/dp/0596004273/ref=sr_1_2[J2EE Design Patterns]

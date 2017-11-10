@@ -8,16 +8,16 @@ categories: Structural
 tags:
  - Java
  - Gang Of Four
- - Difficulty-Intermediate
+ Difficulty: Intermediate
 
-==  - Performance
+- Performance
 
-== Intent
+=== Intent
 
 Use sharing to support large numbers of fine-grained objects
 efficiently.
 
-== Explanation
+=== Explanation
 
 Real world example
 
@@ -92,7 +92,7 @@ public class PotionFactory {
 
   Potion createPotion(PotionType type) {
     Potion potion = potions.get(type);
-    if (potion == null) {
+    if (potion === null) {
       switch (type) {
         case HEALING:
           potion = new HealingPotion();
@@ -128,7 +128,7 @@ factory.createPotion(PotionType.HOLY_WATER).drink(); // You feel blessed. (Potio
 factory.createPotion(PotionType.HEALING).drink(); // You feel healed. (Potion=648129364)
 ----
 
-== Applicability
+=== Applicability
 
 The Flyweight pattern's effectiveness depends heavily on how
 and where it's used. Apply the Flyweight pattern when all of the following are
@@ -140,10 +140,10 @@ true
 * many groups of objects may be replaced by relatively few shared objects once extrinsic state is removed
 * the application doesn't depend on object identity. Since flyweight objects may be shared, identity tests will return true for conceptually distinct objects.
 
-== Real world examples
+=== Real world examples
 
 * http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html#valueOf%28int%29[java.lang.Integer#valueOf(int)] and similarly for Byte, Character and other wrapped types.
 
-== Credits
+=== Credits
 
 * http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612[Design Patterns: Elements of Reusable Object-Oriented Software]

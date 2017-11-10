@@ -9,19 +9,19 @@ tags:
  - Java
  - Gang Of Four
 
-==  - Difficulty-Beginner
+Difficulty: Beginner
 
-== Also known as
+=== Also known as
 
 Wrapper
 
-== Intent
+=== Intent
 
 Attach additional responsibilities to an object dynamically.
 Decorators provide a flexible alternative to subclassing for extending
 functionality.
 
-== Explanation
+=== Explanation
 
 Real world example
 
@@ -127,7 +127,7 @@ troll.attack(); // The troll tries to grab you! The troll swings at you with a c
 troll.fleeBattle(); // The troll shrieks in horror and runs away!
 ----
 
-== Applicability
+=== Applicability
 
 Use Decorator
 
@@ -135,7 +135,7 @@ Use Decorator
 * For responsibilities that can be withdrawn
 * When extension by subclassing is impractical. Sometimes a large number of independent extensions are possible and would produce an explosion of subclasses to support every combination. Or a class definition may be hidden or otherwise unavailable for subclassing
 
-== Real world examples
+=== Real world examples
 
 * http://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html[java.io.InputStream], http://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html[java.io.OutputStream],
  http://docs.oracle.com/javase/8/docs/api/java/io/Reader.html[java.io.Reader] and http://docs.oracle.com/javase/8/docs/api/java/io/Writer.html[java.io.Writer]
@@ -143,7 +143,7 @@ Use Decorator
 * http://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#unmodifiableCollection-java.util.Collection-[java.util.Collections#unmodifiableXXX()]
 * http://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#checkedCollection-java.util.Collection-java.lang.Class-[java.util.Collections#checkedXXX()]
 
-== Credits
+=== Credits
 
 * http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612[Design Patterns: Elements of Reusable Object-Oriented Software]
 * http://www.amazon.com/Functional-Programming-Java-Harnessing-Expressions/dp/1937785467/ref=sr_1_1[Functional Programming in Java: Harnessing the Power of Java 8 Lambda Expressions]

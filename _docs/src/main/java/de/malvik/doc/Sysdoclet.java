@@ -66,7 +66,7 @@ public class Sysdoclet {
                     String s = classDoc.commentText();
                     Tag[] tags = classDoc.tags("@pattern");
                     String pattern = tags.length > 0 ? tags[0].text() : classDoc.qualifiedName();
-                    docBuilders.sectionTitleLevel2(pattern);
+                    docBuilders.sectionTitleLevel1(pattern);
                     docBuilders.block(s, MarkupBlockStyle.PASSTHROUGH);
 
                     String qn = classDoc.qualifiedTypeName();
@@ -79,6 +79,7 @@ public class Sysdoclet {
                                     + module
                                     + "/README.adoc[]");
 
+                    docBuilders.newLine();
 
 /*                    docBuilders.block(
                             "include::"

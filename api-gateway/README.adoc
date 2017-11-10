@@ -7,25 +7,25 @@ pumlid: JSox3SCm303HLP819FRUXg49cO542_nOyFPncUvUSszHwhbpMdyT4TCt0CDLcyIHdtGsEZLO
 categories: Architectural
 tags:
 - Java
-- Difficulty-Intermediate
+Difficulty: Intermediate
 
-== - Spring
+=== - Spring
 
-== Intent
+=== Intent
 
 Aggregate calls to microservices in a single location: the API Gateway. The user makes a single
 call to the API Gateway, and the API Gateway then calls each relevant microservice.
 
 image:./etc/api-gateway.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the API Gateway pattern when
 
 * you're also using the Microservices pattern and need a single point of aggregation for your
 microservice calls
 
-== Credits
+=== Credits
 
 * http://microservices.io/patterns/apigateway.html[microservices.io - API Gateway]
 * https://www.nginx.com/blog/building-microservices-using-an-api-gateway/[NGINX - Building Microservices: Using an API Gateway]

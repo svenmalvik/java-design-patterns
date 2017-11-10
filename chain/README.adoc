@@ -9,15 +9,15 @@ tags:
  - Java
  - Gang Of Four
 
-==  - Difficulty-Intermediate
+Difficulty: Intermediate
 
-== Intent
+=== Intent
 
 Avoid coupling the sender of a request to its receiver by giving
 more than one object a chance to handle the request. Chain the receiving
 objects and pass the request along the chain until an object handles it.
 
-== Explanation
+=== Explanation
 
 Real world example
 
@@ -159,7 +159,7 @@ king.makeRequest(new Request(RequestType.TORTURE_PRISONER, "torture prisoner"));
 king.makeRequest(new Request(RequestType.COLLECT_TAX, "collect tax")); // Orc soldier handling request "collect tax"
 ----
 
-== Applicability
+=== Applicability
 
 Use Chain of Responsibility when
 
@@ -167,12 +167,12 @@ Use Chain of Responsibility when
 * you want to issue a request to one of several objects without specifying the receiver explicitly
 * the set of objects that can handle a request should be specified dynamically
 
-== Real world examples
+=== Real world examples
 
 * http://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#log%28java.util.logging.Level,%20java.lang.String%29[java.util.logging.Logger#log()]
 * https://commons.apache.org/proper/commons-chain/index.html[Apache Commons Chain]
 * http://docs.oracle.com/javaee/7/api/javax/servlet/Filter.html#doFilter-javax.servlet.ServletRequest-javax.servlet.ServletResponse-javax.servlet.FilterChain-[javax.servlet.Filter#doFilter()]
 
-== Credits
+=== Credits
 
 * http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612[Design Patterns: Elements of Reusable Object-Oriented Software]

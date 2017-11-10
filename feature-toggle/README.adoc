@@ -8,13 +8,13 @@ categories: Behavioral
 tags:
  - Java
 
-==  - Difficulty-Beginner
+Difficulty: Beginner
 
-== Also known as
+=== Also known as
 
 Feature Flag
 
-== Intent
+=== Intent
 
 Used to switch code execution paths based on properties or groupings. Allowing new features to be released, tested
 and rolled out. Allowing switching back to the older feature quickly if needed. It should be noted that this pattern,
@@ -23,7 +23,7 @@ going to phase out is never removed, causing redundant code smells and increased
 
 image:./etc/feature-toggle.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the Feature Toggle pattern when
 
@@ -31,6 +31,6 @@ Use the Feature Toggle pattern when
 * Rolling out a new feature incrementally.
 * Switching between development and production environments.
 
-== Credits
+=== Credits
 
 * http://martinfowler.com/bliki/FeatureToggle.html[Martin Fowler 29 October 2010 (2010-10-29).]

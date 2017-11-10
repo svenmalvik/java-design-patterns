@@ -8,16 +8,16 @@ categories: Presentation Tier
 tags:
  - Java
 
-==  - Difficulty-Intermediate
+Difficulty: Intermediate
 
-== Intent
+=== Intent
 
 Apply a "Separation of Concerns" principle in a way that allows
 developers to build and test user interfaces.
 
 image:./etc/model-view-presenter_1.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the Model-View-Presenter in any of the following
 situations
@@ -25,6 +25,6 @@ situations
 * when you want to improve the "Separation of Concerns" principle in presentation logic
 * when a user interface development and testing is necessary.
 
-== Real world examples
+=== Real world examples
 
 * https://github.com/amineoualialami/mvp4j[MVP4J]

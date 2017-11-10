@@ -9,18 +9,18 @@ tags:
  - Java
  - Gang Of Four
 
-==  - Difficulty-Intermediate
+Difficulty: Intermediate
 
-== Also known as
+=== Also known as
 
 Kit
 
-== Intent
+=== Intent
 
 Provide an interface for creating families of related or dependent
 objects without specifying their concrete classes.
 
-== Explanation
+=== Explanation
 
 Real world example
 
@@ -138,7 +138,7 @@ king.getDescription(); // Output: This is the Elven king!
 army.getDescription(); // Output: This is the Elven Army!
 ----
 
-== Applicability
+=== Applicability
 
 Use the Abstract Factory pattern when
 
@@ -151,21 +151,21 @@ Use the Abstract Factory pattern when
 * you want to decide which product to call from a family at runtime.
 * you need to supply one or more parameters only known at run-time before you can resolve a dependency.
 
-== Use Cases:
+=== Use Cases:
 
 * Selecting to call the appropriate implementation of FileSystemAcmeService or DatabaseAcmeService or NetworkAcmeService at runtime.
 * Unit test case writing becomes much easier
 
-== Consequences:
+=== Consequences:
 
 * Dependency injection in java hides the service class dependencies that can lead to runtime errors that would have been caught at compile time.
 
-== Real world examples
+=== Real world examples
 
 * http://docs.oracle.com/javase/8/docs/api/javax/xml/parsers/DocumentBuilderFactory.html[javax.xml.parsers.DocumentBuilderFactory]
 * http://docs.oracle.com/javase/8/docs/api/javax/xml/transform/TransformerFactory.html#newInstance--[javax.xml.transform.TransformerFactory]
 * http://docs.oracle.com/javase/8/docs/api/javax/xml/xpath/XPathFactory.html#newInstance--[javax.xml.xpath.XPathFactory]
 
-== Credits
+=== Credits
 
 * http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612[Design Patterns: Elements of Reusable Object-Oriented Software]

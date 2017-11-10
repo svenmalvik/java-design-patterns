@@ -8,9 +8,9 @@ tags:
  - Java
  - Difficulty Intermediate
 
-==  - Queue
+- Queue
 
-== Intent
+=== Intent
 
 Event Queue is a good pattern if You have a limited accessibility resource (for example:
 Audio or Database), but You need to handle all the requests that want to use that.
@@ -20,12 +20,12 @@ removes it from the queue.
 
 image:./etc/model.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the Event Queue pattern when
 
 * You have a limited accessibility resource and the asynchronous process is acceptable to reach that
 
-== Credits
+=== Credits
 
 * http://gameprogrammingpatterns.com/event-queue.html[Mihaly Kuprivecz - Event Queue]

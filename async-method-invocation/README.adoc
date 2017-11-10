@@ -7,12 +7,12 @@ pumlid: TSdB3SCW303GLTe1mFTkunWhk0A3_4dKxTi5UdlIUuhIoCPfuz4Zjhy03EzwIlGyqjbeQR16
 categories: Concurrency
 tags:
  - Java
- - Difficulty-Intermediate
+ Difficulty: Intermediate
  - Functional
 
-==  - Reactive
+- Reactive
 
-== Intent
+=== Intent
 
 Asynchronous method invocation is pattern where the calling thread
 is not blocked while waiting results of tasks. The pattern provides parallel
@@ -21,7 +21,7 @@ callbacks or waiting until everything is done.
 
 image:./etc/async-method-invocation.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use async method invocation pattern when
 
@@ -30,7 +30,7 @@ Use async method invocation pattern when
 * you have limited amount of processing capacity or long running tasks and the
  caller should not wait the tasks to be ready
 
-== Real world examples
+=== Real world examples
 
 * http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/FutureTask.html[FutureTask], https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html[CompletableFuture] and http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html[ExecutorService] (Java)
 * https://msdn.microsoft.com/en-us/library/hh873175.aspx[Task-based Asynchronous Pattern] (.NET)

@@ -7,11 +7,11 @@ pumlid: PSf13iCW30NHgxG70Ezx6uTOX0eCih-JwvTzTwEdUJSjFKu9wwyBMFuXCdvoRRZY21ShKo6A
 categories: Structural
 tags:
  - Java
- - Difficulty-Beginner
+ Difficulty: Beginner
 
-==  - Reactive
+- Reactive
 
-== Intent
+=== Intent
 
 A system with lots of objects can lead to complexities when a
 client wants to subscribe to events. The client has to find and register for
@@ -22,7 +22,7 @@ allowing clients to register with just the aggregator.
 
 image:./etc/classes.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the Event Aggregator pattern when
 
@@ -32,6 +32,6 @@ Use the Event Aggregator pattern when
  Aggregator. As well as simplifying registration, a Event Aggregator also
  simplifies the memory management issues in using observers.
 
-== Credits
+=== Credits
 
 * http://martinfowler.com/eaaDev/EventAggregator.html[Martin Fowler - Event Aggregator]

@@ -1,27 +1,17 @@
-—
-layout: pattern
-title: Publish Subscribe
-folder: publish-subscribe
-permalink: /patterns/publish-subscribe/
-categories: Integration
-tags:
- - Java
- - EIP
+- Apache Camel™
 
-==  - Apache Camel™
-
-== Intent
+=== Intent
 
 Broadcast messages from sender to all the interested receivers.
 
 image:./etc/publish-subscribe.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the Publish Subscribe Channel pattern when
 
 * two or more applications need to communicate using a messaging system for broadcasts.
 
-== Credits
+=== Credits
 
 * http://www.amazon.com/J2EE-Design-Patterns-William-Crawford/dp/0596004273/ref=sr_1_2[J2EE Design Patterns]

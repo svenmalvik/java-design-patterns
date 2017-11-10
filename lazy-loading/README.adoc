@@ -7,12 +7,12 @@ pumlid: LSXB3W8X303Gg-W1e7jlqu66gIc5zED4JwzRTo_lpjeaEwN9xOpO_W0mlEhWEFD89sjBWpHg
 categories: Other
 tags:
  - Java
- - Difficulty-Beginner
+ Difficulty: Beginner
  - Idiom
 
-==  - Performance
+- Performance
 
-== Intent
+=== Intent
 
 Lazy loading is a design pattern commonly used to defer
 initialization of an object until the point at which it is needed. It can
@@ -21,16 +21,16 @@ appropriately used.
 
 image:./etc/lazy-loading.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the Lazy Loading idiom when
 
 * eager loading is expensive or the object to be loaded might not be needed at all
 
-== Real world examples
+=== Real world examples
 
 * JPA annotations @OneToOne, @OneToMany, @ManyToOne, @ManyToMany and fetch = FetchType.LAZY
 
-== Credits
+=== Credits
 
 * http://www.amazon.com/J2EE-Design-Patterns-William-Crawford/dp/0596004273/ref=sr_1_2[J2EE Design Patterns]

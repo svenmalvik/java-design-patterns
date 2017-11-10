@@ -9,9 +9,9 @@ tags:
  - Java
  - Gang Of Four
 
-==  - Difficulty-Intermediate
+Difficulty: Intermediate
 
-== Intent
+=== Intent
 
 Define an object that encapsulates how a set of objects interact.
 Mediator promotes loose coupling by keeping objects from referring to each
@@ -19,7 +19,7 @@ other explicitly, and it lets you vary their interaction independently.
 
 image:./etc/mediator_1.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the Mediator pattern when
 
@@ -27,7 +27,7 @@ Use the Mediator pattern when
 * reusing an object is difficult because it refers to and communicates with many other objects
 * a behavior that's distributed between several classes should be customizable without a lot of subclassing
 
-== Real world examples
+=== Real world examples
 
 * All scheduleXXX() methods of http://docs.oracle.com/javase/8/docs/api/java/util/Timer.html[java.util.Timer]
 * http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executor.html#execute-java.lang.Runnable-[java.util.concurrent.Executor#execute()]
@@ -35,6 +35,6 @@ Use the Mediator pattern when
 * scheduleXXX() methods of http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ScheduledExecutorService.html[java.util.concurrent.ScheduledExecutorService]
 * http://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Method.html#invoke-java.lang.Object-java.lang.Object...-[java.lang.reflect.Method#invoke()]
 
-== Credits
+=== Credits
 
 * http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612[Design Patterns: Elements of Reusable Object-Oriented Software]

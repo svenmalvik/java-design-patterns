@@ -9,19 +9,19 @@ tags:
  - Java
  - Gang Of Four
 
-==  - Difficulty-Beginner
+Difficulty: Beginner
 
-== Also known as
+=== Also known as
 
 Wrapper
 
-== Intent
+=== Intent
 
 Convert the interface of a class into another interface the clients
 expect. Adapter lets classes work together that couldn't otherwise because of
 incompatible interfaces.
 
-== Explanation
+=== Explanation
 
 Real world example
 
@@ -117,7 +117,7 @@ Captain captain = new Captain(new FishingBoatAdapter());
 captain.row();
 ----
 
-== Applicability
+=== Applicability
 
 Use the Adapter pattern when
 
@@ -126,7 +126,7 @@ Use the Adapter pattern when
 * you need to use several existing subclasses, but it's impractical to adapt their interface by subclassing every one. An object adapter can adapt the interface of its parent class.
 * most of the applications using third party libraries use adapters as a middle layer between the application and the 3rd party library to decouple the application from the library. If another library has to be used only an adapter for the new library is required without having to change the application code.
 
-== Consequences:
+=== Consequences:
 
 Class and object adapters have different trade-offs. A class adapter
 
@@ -139,14 +139,14 @@ An object adapter
 * let’s a single Adapter work with many Adaptees—that is, the Adaptee itself and all of its subclasses (if any). The Adapter can also add functionality to all Adaptees at once.
 * makes it harder to override Adaptee behavior. It will require subclassing Adaptee and making Adapter refer to the subclass rather than the Adaptee itself.
 
-== Real world examples
+=== Real world examples
 
 * http://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html#asList%28T...%29[java.util.Arrays#asList()]
 * https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#list-java.util.Enumeration-[java.util.Collections#list()]
 * https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#enumeration-java.util.Collection-[java.util.Collections#enumeration()]
 * http://docs.oracle.com/javase/8/docs/api/javax/xml/bind/annotation/adapters/XmlAdapter.html#marshal-BoundType-[javax.xml.bind.annotation.adapters.XMLAdapter]
 
-== Credits
+=== Credits
 
 * http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612[Design Patterns: Elements of Reusable Object-Oriented Software]
 * http://www.amazon.com/J2EE-Design-Patterns-William-Crawford/dp/0596004273/ref=sr_1_2[J2EE Design Patterns]

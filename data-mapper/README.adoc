@@ -8,21 +8,21 @@ categories: Persistence Tier
 tags:
  - Java
 
-==  - Difficulty-Beginner
+Difficulty: Beginner
 
-== Intent
+=== Intent
 
 A layer of mappers that moves data between objects and a database while keeping them independent of each other and the mapper itself
 
 image:./etc/data-mapper.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the Data Mapper in any of the following situations
 
 * when you want to decouple data objects from DB access layer
 * when you want to write multiple data retrieval/persistence implementations
 
-== Credits
+=== Credits
 
 * http://richard.jp.leguen.ca/tutoring/soen343-f2010/tutorials/implementing-data-mapper/[Data Mapper]

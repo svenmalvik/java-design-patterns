@@ -7,11 +7,11 @@ pumlid: NSZ14G8n20NGLhI0XBlT865suoGa0n_NylNixSsxTvEHJTF7xGHsF8YShtfqdFdCK9TbK4EL
 categories: Other
 tags:
  - Java
- - Difficulty-Beginner
+ Difficulty: Beginner
 
-==  - Idiom
+- Idiom
 
-== Intent
+=== Intent
 
 Execute Around idiom frees the user from certain actions that
 should always be executed before and after the business method. A good example
@@ -20,12 +20,12 @@ only what to do with the resource.
 
 image:./etc/execute-around.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the Execute Around idiom when
 
 * you use an API that requires methods to be called in pairs such as open/close or allocate/deallocate.
 
-== Credits
+=== Credits
 
 * http://www.amazon.com/Functional-Programming-Java-Harnessing-Expressions/dp/1937785467/ref=sr_1_1[Functional Programming in Java: Harnessing the Power of Java 8 Lambda Expressions]

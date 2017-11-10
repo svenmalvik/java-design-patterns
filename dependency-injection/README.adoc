@@ -8,9 +8,9 @@ categories: Behavioral
 tags:
  - Java
 
-==  - Difficulty-Beginner
+Difficulty: Beginner
 
-== Intent
+=== Intent
 
 Dependency Injection is a software design pattern in which one or
 more dependencies (or services) are injected, or passed by reference, into a
@@ -21,7 +21,7 @@ inversion of control and single responsibility principles.
 
 image:./etc/dependency-injection.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the Dependency Injection pattern when
 

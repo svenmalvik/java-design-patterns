@@ -9,15 +9,15 @@ tags:
  - Java
  - Gang Of Four
 
-==  - Difficulty-Intermediate
+Difficulty: Intermediate
 
-== Intent
+=== Intent
 
 Compose objects into tree structures to represent part-whole
 hierarchies. Composite lets clients treat individual objects and compositions
 of objects uniformly.
 
-== Explanation
+=== Explanation
 
 Real world example
 
@@ -146,18 +146,18 @@ LetterComposite elfMessage = new Messenger().messageFromElves();
 elfMessage.print(); // Much wind pours from your mouth.
 ----
 
-== Applicability
+=== Applicability
 
 Use the Composite pattern when
 
 * you want to represent part-whole hierarchies of objects
 * you want clients to be able to ignore the difference between compositions of objects and individual objects. Clients will treat all objects in the composite structure uniformly
 
-== Real world examples
+=== Real world examples
 
 * http://docs.oracle.com/javase/8/docs/api/java/awt/Container.html[java.awt.Container] and http://docs.oracle.com/javase/8/docs/api/java/awt/Component.html[java.awt.Component]
 * https://github.com/apache/wicket[Apache Wicket] component tree, see https://github.com/apache/wicket/blob/91e154702ab1ff3481ef6cbb04c6044814b7e130/wicket-core/src/main/java/org/apache/wicket/Component.java[Component] and https://github.com/apache/wicket/blob/b60ec64d0b50a611a9549809c9ab216f0ffa3ae3/wicket-core/src/main/java/org/apache/wicket/MarkupContainer.java[MarkupContainer]
 
-== Credits
+=== Credits
 
 * http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612[Design Patterns: Elements of Reusable Object-Oriented Software]

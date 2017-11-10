@@ -8,9 +8,9 @@ categories: Architectural
 tags:
  - Java
 
-==  - Difficulty-Intermediate
+Difficulty: Intermediate
 
-== Intent
+=== Intent
 
 Allows send of messages/events between components of an application
 without them needing to know about each other. They only need to know
@@ -18,7 +18,7 @@ about the type of the message/event being sent.
 
 image:./etc/data-bus.urm.png[data bus pattern uml diagram]
 
-== Applicability
+=== Applicability
 
 Use Data Bus pattern when
 
@@ -26,7 +26,7 @@ Use Data Bus pattern when
 * you want to have many-to-many communication
 * you want your components to know nothing about each other
 
-== Related Patterns
+=== Related Patterns
 
 Data Bus is similar to
 

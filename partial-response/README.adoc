@@ -1,31 +1,22 @@
-—
-layout: pattern
-title: Partial Response
-folder: partial-response
-permalink: /patterns/partial-response/
-categories: Architectural
-tags:
- - Java
- - KISS
- - YAGNI
+- KISS
+- YAGNI
+- Difficulty: Beginner
 
-==  - Difficulty-Beginner
-
-== Intent
+=== Intent
 
 Send partial response from server to client on need basis. Client will specify the the fields
 that it need to server, instead of serving all details for resource. 
 
 image:./etc/partial-response.urm.png[alt text]
 
-== Applicability
+=== Applicability
 
 Use the Partial Response pattern when
 
 * Client need only subset of data from resource.
 * To avoid too much data transfer over wire
 
-== Credits
+=== Credits
 
 * https://cloud.google.com/apis/design/design_patterns[Common Design Patterns]
 * http://yaoganglian.com/2013/07/01/partial-response/[Partial Response in RESTful API Design]

@@ -9,39 +9,39 @@ categories: Architectural
 tags:
  - Java
 
-==  - Difficulty-Expert
+Difficulty: Expert
 
-== Also known as
+=== Also known as
 
 * Ports and Adapters
 * Clean Architecture
 * Onion Architecture
 
-== Intent
+=== Intent
 
 Allow an application to equally be driven by users, programs, automated test or batch scripts, and to be developed and tested in isolation from its eventual run-time devices and databases.
 
 image:./etc/hexagonal.png[Hexagonal Architecture class diagram]
 
-== Applicability
+=== Applicability
 
 Use Hexagonal Architecture pattern when
 
 * When the application needs to be independent of any frameworks
 * When it is important that the application highly maintainable and fully testable
 
-== Tutorials
+=== Tutorials
 
 * http://java-design-patterns.com/blog/build-maintainable-systems-with-hexagonal-architecture/[Build Maintainable Systems With Hexagonal Architecture]
 
-== Presentations
+=== Presentations
 
 * https://github.com/iluwatar/java-design-patterns/tree/master/hexagonal/etc/presentation.html[Hexagonal Architecture]
 
-== Real world examples
+=== Real world examples
 
 * https://isis.apache.org/[Apache Isis] builds generic UI and REST API directly from the underlying domain objects
 
-== Credits
+=== Credits
 
 * http://alistair.cockburn.us/Hexagonal+architecture[Alistair Cockburn - Hexagonal Architecture]
