@@ -63,11 +63,12 @@ public class Sysdoclet {
         Arrays.stream(classDocs)
                 .filter(c -> c.name().endsWith("App"))
                 .forEach(classDoc -> {
-                    String s = classDoc.commentText();
+                    String jd = classDoc.commentText().replaceAll("@link ", "");
+
                     Tag[] tags = classDoc.tags("@pattern");
                     String pattern = tags.length > 0 ? tags[0].text() : classDoc.qualifiedName();
                     docBuilders.sectionTitleLevel1(pattern);
-                    docBuilders.block(s, MarkupBlockStyle.PASSTHROUGH);
+                    docBuilders.block(jd, MarkupBlockStyle.PASSTHROUGH);
 
                     String qn = classDoc.qualifiedTypeName();
                     String module = pattern.toLowerCase();

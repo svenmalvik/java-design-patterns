@@ -78,8 +78,8 @@ The Abstract Factory pattern provides a way to encapsulate a group of individual
  implementation of a set of objects from their general usage and relies on object composition, as object creation is
  implemented in methods exposed in the factory interface.
 
- The essence of the Abstract Factory pattern is a factory interface ({@link KingdomFactory}) and its implementations (
- {@link ElfKingdomFactory}, {@link OrcKingdomFactory}). The example uses both concrete implementations to create a
+ The essence of the Abstract Factory pattern is a factory interface ({KingdomFactory}) and its implementations (
+ {ElfKingdomFactory}, {OrcKingdomFactory}). The example uses both concrete implementations to create a
  king, a castle and an army.
 ++++
 
@@ -101,12 +101,12 @@ The intention of the Builder pattern is to find a solution to the telescoping co
  In this example we have the Builder pattern variation as described by Joshua Bloch in Effective
  Java 2nd Edition.
 
- We want to build {@link Hero} objects, but its construction is complex because of the many
- parameters needed. To aid the user we introduce {@link Builder} class. {@link Hero.Builder}
- takes the minimum parameters to build {@link Hero} object in its constructor. After that
- additional configuration for the {@link Hero} object can be done using the fluent
- {@link Builder} interface. When configuration is ready the build method is called to receive
- the final {@link Hero} object.
+ We want to build {Hero} objects, but its construction is complex because of the many
+ parameters needed. To aid the user we introduce {Builder} class. {Hero.Builder}
+ takes the minimum parameters to build {Hero} object in its constructor. After that
+ additional configuration for the {Hero} object can be done using the fluent
+ {Builder} interface. When configuration is ready the build method is called to receive
+ the final {Hero} object.
 ++++
 
 include::C:/git/java-design-patterns/builder/README.adoc[]
@@ -119,9 +119,9 @@ The Factory Method is a creational design pattern which uses factory methods to 
  and implemented by child classes, or implemented in a base class and optionally overridden by
  derived classes—rather than by calling a constructor.
 
- In this Factory Method example we have an interface ({@link Blacksmith}) with a method for
- creating objects ({@link Blacksmith#manufactureWeapon}). The concrete subclasses (
- {@link OrcBlacksmith}, {@link ElfBlacksmith}) then override the method to produce objects of
+ In this Factory Method example we have an interface ({Blacksmith}) with a method for
+ creating objects ({Blacksmith#manufactureWeapon}). The concrete subclasses (
+ {OrcBlacksmith}, {ElfBlacksmith}) then override the method to produce objects of
  their liking.
 ++++
 
@@ -135,7 +135,7 @@ The Prototype pattern is a creational design pattern in software development. It
  application, like the abstract factory pattern does. - avoid the inherent cost of creating a new
  object in the standard way (e.g., using the 'new' keyword)
 
- In this example we have a factory class ({@link HeroFactoryImpl}) producing objects by cloning
+ In this example we have a factory class ({HeroFactoryImpl}) producing objects by cloning
  the existing ones. The factory's prototype objects are given as constructor parameters.
 ++++
 
@@ -153,29 +153,29 @@ Singleton pattern ensures that the class can have only one existing instance per
  not be clear why you are seeing certain changes in behaviour.
 
  There are many ways to implement the Singleton. The first one is the eagerly initialized instance
- in {@link IvoryTower}. Eager initialization implies that the implementation is thread safe. If
+ in {IvoryTower}. Eager initialization implies that the implementation is thread safe. If
  you can afford giving up control of the instantiation moment, then this implementation will suit
  you fine.
 
  The other option to implement eagerly initialized Singleton is enum based Singleton. The example
- is found in {@link EnumIvoryTower}. At first glance the code looks short and simple. However, you
+ is found in {EnumIvoryTower}. At first glance the code looks short and simple. However, you
  should be aware of the downsides including committing to implementation strategy, extending the
  enum class, serializability and restrictions to coding. These are extensively discussed in Stack
  Overflow:
  http://programmers.stackexchange.com/questions/179386/what-are-the-downsides-of-implementing
  -a-singleton-with-javas-enum
 
- {@link ThreadSafeLazyLoadedIvoryTower} is a Singleton implementation that is initialized on
+ {ThreadSafeLazyLoadedIvoryTower} is a Singleton implementation that is initialized on
  demand. The downside is that it is very slow to access since the whole access method is
  synchronized.
 
  Another Singleton implementation that is initialized on demand is found in
- {@link ThreadSafeDoubleCheckLocking}. It is somewhat faster than
- {@link ThreadSafeLazyLoadedIvoryTower} since it doesn't synchronize the whole access method but
+ {ThreadSafeDoubleCheckLocking}. It is somewhat faster than
+ {ThreadSafeLazyLoadedIvoryTower} since it doesn't synchronize the whole access method but
  only the method internals on specific conditions.
 
  Yet another way to implement thread safe lazily initialized Singleton can be found in
- {@link InitializingOnDemandHolderIdiom}. However, this implementation requires at least Java 8
+ {InitializingOnDemandHolderIdiom}. However, this implementation requires at least Java 8
  API level to work.
 ++++
 
@@ -194,15 +194,15 @@ An adapter helps two incompatible interfaces to work together. This is the real 
  object. This example uses the object adapter approach.
 
 
- The Adapter ({@link FishingBoatAdapter}) converts the interface of the adaptee class (
- {@link FishingBoat}) into a suitable one expected by the client ( {@link RowingBoat} ).
+ The Adapter ({FishingBoatAdapter}) converts the interface of the adaptee class (
+ {FishingBoat}) into a suitable one expected by the client ( {RowingBoat} ).
 
 
  The story of this implementation is this. <br>
- Pirates are coming! we need a {@link RowingBoat} to flee! We have a {@link FishingBoat} and our
- captain. We have no time to make up a new ship! we need to reuse this {@link FishingBoat}. The
- captain needs a rowing boat which he can operate. The spec is in {@link RowingBoat}. We will
- use the Adapter pattern to reuse {@link FishingBoat}.
+ Pirates are coming! we need a {RowingBoat} to flee! We have a {FishingBoat} and our
+ captain. We have no time to make up a new ship! we need to reuse this {FishingBoat}. The
+ captain needs a rowing boat which he can operate. The spec is in {RowingBoat}. We will
+ use the Adapter pattern to reuse {FishingBoat}.
 ++++
 
 include::C:/git/java-design-patterns/adapter/README.adoc[]
@@ -212,8 +212,8 @@ include::C:/git/java-design-patterns/adapter/README.adoc[]
 Composition over inheritance. The Bridge pattern can also be thought of as two layers of abstraction.
  With Bridge, you can decouple an abstraction from its implementation so that the two can vary independently.
 
- In Bridge pattern both abstraction ({@link Weapon}) and implementation (
- {@link Enchantment}) have their own class hierarchies. The interface of the implementations
+ In Bridge pattern both abstraction ({Weapon}) and implementation (
+ {Enchantment}) have their own class hierarchies. The interface of the implementations
  can be changed without affecting the clients.
 
  In this example we have two class hierarchies. One of weapons and another one of enchantments. We can easily
@@ -231,7 +231,7 @@ The Composite pattern is a partitioning design pattern. The Composite pattern de
  uniformly.
 
  In this example we have sentences composed of words composed of letters. All of the objects can
- be treated through the same interface ({@link LetterComposite}).
+ be treated through the same interface ({LetterComposite}).
 ++++
 
 include::C:/git/java-design-patterns/composite/README.adoc[]
@@ -273,8 +273,8 @@ The Decorator pattern is a more flexible alternative to subclassing. The Decorat
  target. Using the Decorator pattern it is possible to change the behavior of the class during
  runtime.
 
- In this example we show how the simple {@link SimpleTroll} first attacks and then flees the battle.
- Then we decorate the {@link SimpleTroll} with a {@link ClubbedTroll} and perform the attack again. You
+ In this example we show how the simple {SimpleTroll} first attacks and then flees the battle.
+ Then we decorate the {SimpleTroll} with a {ClubbedTroll} and perform the attack again. You
  can see how the behavior changes after the decoration.
 ++++
 
@@ -289,7 +289,7 @@ The Facade design pattern is often used when a system is very complex or difficu
  members required by client. These members access the system on behalf of the facade client and
  hide the implementation details.
 
- In this example the Facade is ({@link DwarvenGoldmineFacade}) and it provides a simpler interface
+ In this example the Facade is ({DwarvenGoldmineFacade}) and it provides a simpler interface
  to the goldmine subsystem.
 ++++
 
@@ -300,9 +300,9 @@ include::C:/git/java-design-patterns/facade/README.adoc[]
 Flyweight pattern is useful when the program needs a huge amount of objects. It provides means to
  decrease resource usage by sharing object instances.
 
- In this example {@link AlchemistShop} has great amount of potions on its shelves. To fill the
- shelves {@link AlchemistShop} uses {@link PotionFactory} (which represents the Flyweight in this
- example). Internally {@link PotionFactory} holds a map of the potions and lazily creates new ones
+ In this example {AlchemistShop} has great amount of potions on its shelves. To fill the
+ shelves {AlchemistShop} uses {PotionFactory} (which represents the Flyweight in this
+ example). Internally {PotionFactory} holds a map of the potions and lazily creates new ones
  when requested.
 
  To enable safe sharing, between clients and threads, Flyweight objects must be immutable.
@@ -323,8 +323,8 @@ A proxy, in its most general form, is a class functioning as an interface to som
  wrapper class as the proxy. The wrapper class, which is the proxy, can add additional
  functionality to the object of interest without changing the object's code.
 
- In this example the proxy ({@link WizardTowerProxy}) controls access to the actual object (
- {@link IvoryTower}).
+ In this example the proxy ({WizardTowerProxy}) controls access to the actual object (
+ {IvoryTower}).
 ++++
 
 include::C:/git/java-design-patterns/proxy/README.adoc[]
@@ -336,9 +336,9 @@ The Chain of Responsibility pattern is a design pattern consisting of command ob
  command objects that it can handle; the rest are passed to the next processing object in the
  chain. A mechanism also exists for adding new processing objects to the end of this chain.
 
- In this example we organize the request handlers ({@link RequestHandler}) into a chain where each
- handler has a chance to act on the request on its turn. Here the king ({@link OrcKing}) makes
- requests and the military orcs ({@link OrcCommander}, {@link OrcOfficer}, {@link OrcSoldier})
+ In this example we organize the request handlers ({RequestHandler}) into a chain where each
+ handler has a chance to act on the request on its turn. Here the king ({OrcKing}) makes
+ requests and the military orcs ({OrcCommander}, {OrcOfficer}, {OrcSoldier})
  form the handler chain.
 ++++
 
@@ -374,7 +374,7 @@ The Interpreter pattern is a design pattern that specifies how to evaluate sente
  the composite pattern and is used to evaluate (interpret) the sentence for a client.
 
  In this example we use the Interpreter pattern to break sentences into expressions (
- {@link Expression}) that can be evaluated and as a whole form the result.
+ {Expression}) that can be evaluated and as a whole form the result.
 ++++
 
 include::C:/git/java-design-patterns/interpreter/README.adoc[]
@@ -384,8 +384,8 @@ include::C:/git/java-design-patterns/interpreter/README.adoc[]
 The Iterator pattern is a design pattern in which an iterator is used to traverse a container and
  access the container's elements. The Iterator pattern decouples algorithms from containers.
 
- In this example the Iterator ({@link ItemIterator}) adds abstraction layer on top of a collection
- ({@link TreasureChest}). This way the collection can change its internal implementation without
+ In this example the Iterator ({ItemIterator}) adds abstraction layer on top of a collection
+ ({TreasureChest}). This way the collection can change its internal implementation without
  affecting its clients.
 ++++
 
@@ -409,8 +409,8 @@ The Mediator pattern defines an object that encapsulates how a set of objects in
  mediator. This reduces the dependencies between communicating objects, thereby lowering the
  coupling.
 
- In this example the mediator encapsulates how a set of objects ({@link PartyMember}) interact.
- Instead of referring to each other directly they use the mediator ({@link Party}) interface.
+ In this example the mediator encapsulates how a set of objects ({PartyMember}) interact.
+ Instead of referring to each other directly they use the mediator ({Party}) interface.
 ++++
 
 include::C:/git/java-design-patterns/mediator/README.adoc[]
@@ -429,7 +429,7 @@ The Memento pattern is a software design pattern that provides the ability to re
  or should not, change). When using this pattern, care should be taken if the originator may
  change other objects or resources - the memento pattern operates on a single object.
 
- In this example the object ({@link Star}) gives out a "memento" ({@link StarMemento}) that
+ In this example the object ({Star}) gives out a "memento" ({StarMemento}) that
  contains the state of the object. Later on the memento can be set back to the object restoring
  the state.
 ++++
@@ -443,8 +443,8 @@ The Model-View-Presenter(MVP) architectural pattern, helps us achieve what is ca
  logic (Model), GUIs (View), and finally the way that the user's actions update the application's
  logic (Presenter).
 
- In the following example, The {@link FileLoader} class represents the app's logic, the
- {@link FileSelectorJFrame} is the GUI and the {@link FileSelectorPresenter} is responsible to
+ In the following example, The {FileLoader} class represents the app's logic, the
+ {FileSelectorJFrame} is the GUI and the {FileSelectorPresenter} is responsible to
  respond to users' actions.
 
  Finally, please notice the wiring between the Presenter and the View and between the Presenter
@@ -462,8 +462,8 @@ The Observer pattern is a software design pattern in which an object, called the
  model–view–controller (MVC) architectural pattern. The Observer pattern is implemented in
  numerous programming libraries and systems, including almost all GUI toolkits.
 
- In this example {@link Weather} has a state that can be observed. The {@link Orcs} and
- {@link Hobbits} register as observers and receive notifications when the {@link Weather} changes.
+ In this example {Weather} has a state that can be observed. The {Orcs} and
+ {Hobbits} register as observers and receive notifications when the {Weather} changes.
 ++++
 
 include::C:/git/java-design-patterns/observer/README.adoc[]
@@ -476,7 +476,7 @@ In State pattern the container object has an internal state object that defines 
  This can be a cleaner way for an object to change its behavior at runtime without resorting to
  large monolithic conditional statements and thus improves maintainability.
 
- In this example the {@link Mammoth} changes its behavior as time passes by.
+ In this example the {Mammoth} changes its behavior as time passes by.
 ++++
 
 include::C:/git/java-design-patterns/state/README.adoc[]
@@ -490,8 +490,8 @@ The Strategy pattern (also known as the policy pattern) is a software design pat
  to write lots of boilerplate code. With modern Java it is easy to pass behavior
  with method references and lambdas making the code shorter and more readable.
 
- In this example ({@link DragonSlayingStrategy}) encapsulates an algorithm. The containing object
- ({@link DragonSlayer}) can alter its behavior by changing its strategy.
+ In this example ({DragonSlayingStrategy}) encapsulates an algorithm. The containing object
+ ({DragonSlayer}) can alter its behavior by changing its strategy.
 ++++
 
 include::C:/git/java-design-patterns/strategy/README.adoc[]
@@ -501,8 +501,8 @@ include::C:/git/java-design-patterns/strategy/README.adoc[]
 Template Method defines a skeleton for an algorithm. The algorithm subclasses provide
  implementation for the blank parts.
 
- In this example {@link HalflingThief} contains {@link StealingMethod} that can be changed. First
- the thief hits with {@link HitAndRunMethod} and then with {@link SubtleMethod}.
+ In this example {HalflingThief} contains {StealingMethod} that can be changed. First
+ the thief hits with {HitAndRunMethod} and then with {SubtleMethod}.
 ++++
 
 include::C:/git/java-design-patterns/template-method/README.adoc[]
@@ -512,9 +512,9 @@ include::C:/git/java-design-patterns/template-method/README.adoc[]
 Visitor pattern defines mechanism to apply operations on nodes in hierarchy. New operations can
  be added without altering the node interface.
 
- In this example there is a unit hierarchy beginning from {@link Commander}. This hierarchy is
- traversed by visitors. {@link SoldierVisitor} applies its operation on {@link Soldier}s,
- {@link SergeantVisitor} on {@link Sergeant}s and so on.
+ In this example there is a unit hierarchy beginning from {Commander}. This hierarchy is
+ traversed by visitors. {SoldierVisitor} applies its operation on {Soldier}s,
+ {SergeantVisitor} on {Sergeant}s and so on.
 ++++
 
 include::C:/git/java-design-patterns/com.iluwatar.visitor.app/README.adoc[]
@@ -526,7 +526,7 @@ Double Checked Locking is a concurrency design pattern used to reduce the overhe
  lock. Only if the locking criterion check indicates that locking is required does the actual
  locking logic proceed.
 
- In {@link Inventory} we store the items with a given size. However, we do not store more items
+ In {Inventory} we store the items with a given size. However, we do not store more items
  than the inventory size. To address concurrent access problems we use double checked locking to
  add item to inventory. In this method, the thread which gets the lock first adds the item.
 ++++
@@ -539,7 +539,7 @@ Servant offers some functionality to a group of classes without defining that fu
  each of them. A Servant is a class whose instance provides methods that take care of a desired
  service, while objects for which the servant does something, are taken as parameters.
 
- In this example {@link Servant} is serving {@link King} and {@link Queen}.
+ In this example {Servant} is serving {King} and {Queen}.
 ++++
 
 include::C:/git/java-design-patterns/servant/README.adoc[]
@@ -577,16 +577,16 @@ A system with lots of objects can lead to complexities when a client wants to su
  An Event Aggregator acts as a single source of events for many objects. It registers for all the
  events of the many objects allowing clients to register with just the aggregator.
 
- In the example {@link LordBaelish}, {@link LordVarys} and {@link Scout} deliver events to
- {@link KingsHand}. {@link KingsHand}, the event aggregator, then delivers the events to
- {@link KingJoffrey}.
+ In the example {LordBaelish}, {LordVarys} and {Scout} deliver events to
+ {KingsHand}. {KingsHand}, the event aggregator, then delivers the events to
+ {KingJoffrey}.
 ++++
 
 include::C:/git/java-design-patterns/com.iluwatar.event.aggregator.app/README.adoc[]
 
 == com.iluwatar.callback.LambdasApp
 ++++
-This example generates the exact same output as {@link App} however the callback has been
+This example generates the exact same output as {App} however the callback has been
  defined as a Lambdas expression.
 ++++
 
@@ -607,8 +607,8 @@ The Execute Around idiom specifies some code to be executed before and after a m
  the idiom is used when the API has methods to be executed in pairs, such as resource
  allocation/deallocation or lock acquisition/release.
 
- In this example, we have {@link SimpleFileWriter} class that opens and closes the file for the
- user. The user specifies only what to do with the file by providing the {@link FileWriterAction}
+ In this example, we have {SimpleFileWriter} class that opens and closes the file for the
+ user. The user specifies only what to do with the file by providing the {FileWriterAction}
  implementation.
 ++++
 
@@ -624,7 +624,7 @@ The Property pattern is also known as Prototype inheritance.
  amended at runtime (by adding or removal of some property), and all child objects will be
  affected as result.
 
- In this example we demonstrate {@link Character} instantiation using the Property pattern.
+ In this example we demonstrate {Character} instantiation using the Property pattern.
 ++++
 
 include::C:/git/java-design-patterns/property/README.adoc[]
@@ -649,7 +649,7 @@ When a request enters a Web application, it often must pass several entrance tes
  specific filtering action. This is the Intercepting Filter pattern in action.
 
  In this example we check whether the order request is valid through pre-processing done via
- {@link Filter}. Each field has its own corresponding {@link Filter}
+ {Filter}. Each field has its own corresponding {Filter}
 ++++
 
 include::C:/git/java-design-patterns/com.iluwatar.intercepting.filter.app/README.adoc[]
@@ -724,8 +724,8 @@ Service layer defines an application's boundary with a layer of services that es
  responses to an action. Encoding the logic of the interactions separately in each interface
  causes a lot of duplication.
 
- The example application demonstrates interactions between a client ({@link App}) and a service (
- {@link MagicService}). The service is implemented with 3-layer architecture (entity, dao,
+ The example application demonstrates interactions between a client ({App}) and a service (
+ {MagicService}). The service is implemented with 3-layer architecture (entity, dao,
  service). For persistence the example uses in-memory H2 database which is populated on each
  application startup.
 ++++
@@ -753,13 +753,13 @@ Tolerant Reader is an integration pattern that helps creating robust communicati
  idea is to be as tolerant as possible when reading data from another service. This way, when the
  communication schema changes, the readers must not break.
 
- In this example we use Java serialization to write representations of {@link RainbowFish} objects
- to file. {@link RainbowFish} is the initial version which we can easily read and write using
- {@link RainbowFishSerializer} methods. {@link RainbowFish} then evolves to {@link RainbowFishV2}
+ In this example we use Java serialization to write representations of {RainbowFish} objects
+ to file. {RainbowFish} is the initial version which we can easily read and write using
+ {RainbowFishSerializer} methods. {RainbowFish} then evolves to {RainbowFishV2}
  and we again write it to file with a method designed to do just that. However, the reader client
  does not know about the new format and still reads with the method designed for V1 schema.
  Fortunately the reading method has been designed with the Tolerant Reader pattern and does not
- break even though {@link RainbowFishV2} has new fields that are serialized.
+ break even though {RainbowFishV2} has new fields that are serialized.
 ++++
 
 include::C:/git/java-design-patterns/tolerant-reader/README.adoc[]
@@ -775,9 +775,9 @@ Model-View-Controller is a pattern for implementing user interfaces. It divides 
  or a diagram The third part, the controller, accepts input and converts it to commands for the
  model or view.
 
- In this example we have a giant ({@link GiantModel}) with statuses for health, fatigue and
- nourishment. {@link GiantView} can display the giant with its current status.
- {@link GiantController} receives input affecting the model and delegates redrawing the giant to
+ In this example we have a giant ({GiantModel}) with statuses for health, fatigue and
+ nourishment. {GiantView} can display the giant with its current status.
+ {GiantController} receives input affecting the model and delegates redrawing the giant to
  the view.
 ++++
 
@@ -814,7 +814,7 @@ When a message with a parameter is sent to an object, the resultant behaviour is
  Instead of the instanceof-checks a better way is to make another virtual call on the parameter object. This way new
  functionality can be easily added without the need to modify existing implementation (open-closed principle).
 
- In this example we have hierarchy of objects ({@link GameObject}) that can collide to each other. Each object has its
+ In this example we have hierarchy of objects ({GameObject}) that can collide to each other. Each object has its
  own coordinates which are checked against the other objects' coordinates. If there is an overlap, then the objects
  collide utilizing the Double Dispatch pattern.
 ++++
@@ -827,8 +827,8 @@ Whereas Singleton design pattern introduces single globally accessible object th
  pattern defines many globally accessible objects. The client asks for the correct instance from
  the Multiton by passing an enumeration as parameter.
 
- In this example {@link Nazgul} is the Multiton and we can ask single {@link Nazgul} from it using
- {@link NazgulName}. The {@link Nazgul}s are statically initialized and stored in concurrent hash
+ In this example {Nazgul} is the Multiton and we can ask single {Nazgul} from it using
+ {NazgulName}. The {Nazgul}s are statically initialized and stored in concurrent hash
  map.
 ++++
 
@@ -842,13 +842,13 @@ Resource Acquisition Is Initialization pattern was developed for exception safe 
  In RAII resource is tied to object lifetime: resource allocation is done during object creation
  while resource deallocation is done during object destruction.
 
- In Java RAII is achieved with try-with-resources statement and interfaces {@link Closeable} and
- {@link AutoCloseable}. The try-with-resources statement ensures that each resource is closed at
- the end of the statement. Any object that implements {@link java.lang.AutoCloseable}, which
- includes all objects which implement {@link java.io.Closeable}, can be used as a resource.
+ In Java RAII is achieved with try-with-resources statement and interfaces {Closeable} and
+ {AutoCloseable}. The try-with-resources statement ensures that each resource is closed at
+ the end of the statement. Any object that implements {java.lang.AutoCloseable}, which
+ includes all objects which implement {java.io.Closeable}, can be used as a resource.
 
- In this example, {@link SlidingDoor} implements {@link AutoCloseable} and {@link TreasureChest}
- implements {@link Closeable}. Running the example, we can observe that both resources are
+ In this example, {SlidingDoor} implements {AutoCloseable} and {TreasureChest}
+ implements {Closeable}. Running the example, we can observe that both resources are
  automatically closed.
 
  http://docs.oracle.com/javase/7/docs/technotes/guides/language/try-with-resources.html
@@ -866,9 +866,9 @@ Thread Pool pattern is where a number of threads are created to perform a number
  tasks available.
 
  In this example we create a list of tasks presenting work to be done. Each task is then wrapped
- into a {@link Worker} object that implements {@link Runnable}. We create an
- {@link ExecutorService} with fixed number of threads (Thread Pool) and use them to execute the
- {@link Worker}s.
+ into a {Worker} object that implements {Runnable}. We create an
+ {ExecutorService} with fixed number of threads (Thread Pool) and use them to execute the
+ {Worker}s.
 ++++
 
 include::C:/git/java-design-patterns/thread-pool/README.adoc[]
@@ -878,9 +878,9 @@ include::C:/git/java-design-patterns/thread-pool/README.adoc[]
 Twin pattern is a design pattern which provides a standard solution to simulate multiple
  inheritance in java.
 
- In this example, the essence of the Twin pattern is the {@link BallItem} class and
- {@link BallThread} class represent the twin objects to coordinate with each other(via the twin
- reference) like a single class inheriting from {@link GameItem} and {@link Thread}.
+ In this example, the essence of the Twin pattern is the {BallItem} class and
+ {BallThread} class represent the twin objects to coordinate with each other(via the twin
+ reference) like a single class inheriting from {GameItem} and {Thread}.
 ++++
 
 include::C:/git/java-design-patterns/twin/README.adoc[]
@@ -892,13 +892,13 @@ The Private Class Data design pattern seeks to reduce exposure of attributes by 
  object. It allows the class designer to remove write privilege of attributes that are intended to
  be set only during construction, even from methods of the target class.
 
- In the example we have normal {@link Stew} class with some ingredients given in constructor. Then
+ In the example we have normal {Stew} class with some ingredients given in constructor. Then
  we have methods to enumerate the ingredients and to taste the stew. The method for tasting the
- stew alters the private members of the {@link Stew} class.
+ stew alters the private members of the {Stew} class.
  
- The problem is solved with the Private Class Data pattern. We introduce {@link ImmutableStew}
- class that contains {@link StewData}. The private data members of {@link Stew} are now in
- {@link StewData} and cannot be altered by {@link ImmutableStew} methods.
+ The problem is solved with the Private Class Data pattern. We introduce {ImmutableStew}
+ class that contains {StewData}. The private data members of {Stew} are now in
+ {StewData} and cannot be altered by {ImmutableStew} methods.
 ++++
 
 include::C:/git/java-design-patterns/private-class-data/README.adoc[]
@@ -918,8 +918,8 @@ When it is necessary to work with a large number of objects that are particularl
  computationally expensive instantiation process. It is important to note that once an object has
  been used and returned, existing references will become invalid.
 
- In this example we have created {@link OliphauntPool} inheriting from generic {@link ObjectPool}.
- {@link Oliphaunt}s can be checked out from the pool and later returned to it. The pool tracks
+ In this example we have created {OliphauntPool} inheriting from generic {ObjectPool}.
+ {Oliphaunt}s can be checked out from the pool and later returned to it. The pool tracks
  created instances and their status (available, inUse).
 ++++
 
@@ -932,19 +932,19 @@ Dependency Injection pattern deals with how objects handle their dependencies. T
  - High-level modules should not depend on low-level modules. Both should depend on abstractions.
  - Abstractions should not depend on details. Details should depend on abstractions.
 
- In this example we show you three different wizards. The first one ({@link SimpleWizard}) is a
+ In this example we show you three different wizards. The first one ({SimpleWizard}) is a
  naive implementation violating the inversion of control principle. It depends directly on a
  concrete implementation which cannot be changed.
 
- The second and third wizards({@link AdvancedWizard} and {@link AdvancedSorceress}) are more flexible.
+ The second and third wizards({AdvancedWizard} and {AdvancedSorceress}) are more flexible.
  They do not depend on any concrete implementation but abstraction. They utilizes Dependency Injection
- pattern allowing their {@link Tobacco} dependency to be injected through constructor ({@link AdvancedWizard})
- or setter ({@link AdvancedSorceress}). This way, handling the dependency is no longer the wizard's
+ pattern allowing their {Tobacco} dependency to be injected through constructor ({AdvancedWizard})
+ or setter ({AdvancedSorceress}). This way, handling the dependency is no longer the wizard's
  responsibility. It is resolved outside the wizard class.
 
  The fourth example takes the pattern a step further. It uses Guice framework for Dependency
- Injection. {@link TobaccoModule} binds a concrete implementation to abstraction. Injector is then
- used to create {@link GuiceWizard} object with correct dependencies.
+ Injection. {TobaccoModule} binds a concrete implementation to abstraction. Injector is then
+ used to create {GuiceWizard} object with correct dependencies.
 ++++
 
 include::C:/git/java-design-patterns/com.iluwatar.dependency.injection.app/README.adoc[]
@@ -955,16 +955,16 @@ The Front Controller is a presentation tier pattern. Essentially it defines a co
  handles all requests for a web site.
 
  The Front Controller pattern consolidates request handling through a single handler object (
- {@link FrontController}). This object can carry out the common the behavior such as
+ {FrontController}). This object can carry out the common the behavior such as
  authorization, request logging and routing requests to corresponding views.
 
- Typically the requests are mapped to command objects ({@link Command}) which then display the
- correct view ({@link View}).
+ Typically the requests are mapped to command objects ({Command}) which then display the
+ correct view ({View}).
 
- In this example we have implemented two views: {@link ArcherView} and {@link CatapultView}. These
- are displayed by sending correct request to the {@link FrontController} object. For example, the
- {@link ArcherView} gets displayed when {@link FrontController} receives request "Archer". When
- the request is unknown, we display the error view ({@link ErrorView}).
+ In this example we have implemented two views: {ArcherView} and {CatapultView}. These
+ are displayed by sending correct request to the {FrontController} object. For example, the
+ {ArcherView} gets displayed when {FrontController} receives request "Archer". When
+ the request is unknown, we display the error view ({ErrorView}).
 ++++
 
 include::C:/git/java-design-patterns/com.iluwatar.front.controller.app/README.adoc[]
@@ -980,8 +980,8 @@ Repository pattern mediates between the domain and data mapping layers using a c
  minimize duplicate query logic.
 
  In this example we utilize Spring Data to automatically generate a repository for us from the
- {@link Person} domain object. Using the {@link PersonRepository} we perform CRUD operations on
- the entity, moreover, the query by {@link org.springframework.data.jpa.domain.Specification} are
+ {Person} domain object. Using the {PersonRepository} we perform CRUD operations on
+ the entity, moreover, the query by {org.springframework.data.jpa.domain.Specification} are
  also performed. Underneath we have configured in-memory H2 database for which schema is created
  and dropped on each run.
 ++++
@@ -1018,8 +1018,8 @@ The MonoState pattern ensures that all instances of the class will have the same
  be used a direct replacement of the Singleton pattern.
  
 
- In the following example, The {@link LoadBalancer} class represents the app's logic. It contains
- a series of Servers, which can handle requests of type {@link Request}. Two instances of
+ In the following example, The {LoadBalancer} class represents the app's logic. It contains
+ a series of Servers, which can handle requests of type {Request}. Two instances of
  LoadBalacer are created. When a request is made to a server via the first LoadBalancer the state
  change in the first load balancer affects the second. So if the first LoadBalancer selects the
  Server 1, the second LoadBalancer on a new request will select the Second server. If a third
@@ -1078,8 +1078,8 @@ The Business Delegate pattern adds an abstraction layer between the presentation
  retrieved through service lookups. The Business Delegate itself may contain business logic too
  potentially tying together multiple service calls, exception handling, retrying etc.
  
- In this example the client ({@link Client}) utilizes a business delegate (
- {@link BusinessDelegate}) to execute a task. The Business Delegate then selects the appropriate
+ In this example the client ({Client}) utilizes a business delegate (
+ {BusinessDelegate}) to execute a task. The Business Delegate then selects the appropriate
  service and makes the service call.
 ++++
 
@@ -1088,7 +1088,7 @@ include::C:/git/java-design-patterns/com.iluwatar.business.delegate.app/README.a
 == Half-Sync-Half-Async
 ++++
 This application demonstrates Half-Sync/Half-Async pattern. Key parts of the pattern are
- {@link AsyncTask} and {@link AsynchronousService}.
+ {AsyncTask} and {AsynchronousService}.
  
 
  <i>PROBLEM</i> <br/>
@@ -1188,9 +1188,9 @@ The Fluent Interface pattern is useful when you want to provide an easy readable
  Those interfaces tend to mimic domain specific languages, so they can nearly be read as human
  languages.
 
- In this example two implementations of a {@link FluentIterable} interface are given. The
- {@link SimpleFluentIterable} evaluates eagerly and would be too costly for real world
- applications. The {@link LazyFluentIterable} is evaluated on termination. Their usage is
+ In this example two implementations of a {FluentIterable} interface are given. The
+ {SimpleFluentIterable} evaluates eagerly and would be too costly for real world
+ applications. The {LazyFluentIterable} is evaluated on termination. Their usage is
  demonstrated with a simple number list that is filtered, transformed and collected. The result is
  printed afterwards.
 ++++
@@ -1222,19 +1222,19 @@ This application demonstrates Reactor pattern. The example demonstrated is a Dis
 
  <i>PARTICIPANTS</i> <br/>
  <ul>
- <li>Synchronous Event De-multiplexer</li> {@link NioReactor} plays the role of synchronous event
+ <li>Synchronous Event De-multiplexer</li> {NioReactor} plays the role of synchronous event
  de-multiplexer. It waits for events on multiple channels registered to it in an event loop.
  
 
- <li>Initiation Dispatcher</li> {@link NioReactor} plays this role as the application specific
- {@link ChannelHandler}s are registered to the reactor.
+ <li>Initiation Dispatcher</li> {NioReactor} plays this role as the application specific
+ {ChannelHandler}s are registered to the reactor.
  
 
- <li>Handle</li> {@link AbstractNioChannel} acts as a handle that is registered to the reactor.
+ <li>Handle</li> {AbstractNioChannel} acts as a handle that is registered to the reactor.
  When any events occur on a handle, reactor calls the appropriate handler.
  
 
- <li>Event Handler</li> {@link ChannelHandler} acts as an event handler, which is bound to a
+ <li>Event Handler</li> {ChannelHandler} acts as an event handler, which is bound to a
  channel and is called back when any event occurs on any of its associated handles. Application
  logic resides in event handlers.
  </ul>
@@ -1268,14 +1268,14 @@ The Caching pattern describes how to avoid expensive re-acquisition of resources
  synchronized/up-to-date. This pattern can improve performance and also helps to maintain
  consistency between data held in the cache and the data in the underlying data store.
 
- In this example, the user account ({@link UserAccount}) entity is used as the underlying
+ In this example, the user account ({UserAccount}) entity is used as the underlying
  application data. The cache itself is implemented as an internal (Java) data structure. It adopts
  a Least-Recently-Used (LRU) strategy for evicting data from itself when its full. The four
  strategies are individually tested. The testing of the cache is restricted towards saving and
- querying of user accounts from the underlying data store ( {@link DbManager}). The main class (
- {@link App} is not aware of the underlying mechanics of the application (i.e. save and query) and
+ querying of user accounts from the underlying data store ( {DbManager}). The main class (
+ {App} is not aware of the underlying mechanics of the application (i.e. save and query) and
  whether the data is coming from the cache or the DB (i.e. separation of concern). The AppManager
- ({@link AppManager}) handles the transaction of data to-and-from the underlying data store
+ ({AppManager}) handles the transaction of data to-and-from the underlying data store
  (depending on the preferred caching policy/strategy).
 
  <i>App --> AppManager --> CacheStore/LRUCache/CachingPolicy --> DBManager</i>
@@ -1308,14 +1308,14 @@ include::C:/git/java-design-patterns/com.iluwatar.publish.subscribe.app/README.a
 == com.iluwatar.delegation.simple.App
 ++++
 The delegate pattern provides a mechanism to abstract away the implementation and control of the desired action.
- The class being called in this case {@link PrinterController} is not responsible for the actual desired action,
- but is actually delegated to a helper class either {@link CanonPrinter}, {@link EpsonPrinter} or {@link HpPrinter}.
+ The class being called in this case {PrinterController} is not responsible for the actual desired action,
+ but is actually delegated to a helper class either {CanonPrinter}, {EpsonPrinter} or {HpPrinter}.
  The consumer does not have or require knowledge of the actual class carrying out the action, only the
  container on which they are calling.
 
- In this example the delegates are {@link EpsonPrinter}, {@link HpPrinter} and {@link CanonPrinter} they all implement
- {@link Printer}. The {@link PrinterController} class also implements {@link Printer}. However neither provide the
- functionality of {@link Printer} by printing to the screen, they actually call upon the instance of {@link Printer}
+ In this example the delegates are {EpsonPrinter}, {HpPrinter} and {CanonPrinter} they all implement
+ {Printer}. The {PrinterController} class also implements {Printer}. However neither provide the
+ functionality of {Printer} by printing to the screen, they actually call upon the instance of {Printer}
  that they were instantiated with. Therefore delegating the behaviour to another class.
 ++++
 
@@ -1326,9 +1326,9 @@ include::C:/git/java-design-patterns/com.iluwatar.delegation.simple.app/README.a
 An event-driven architecture (EDA) is a framework that orchestrates behavior around the
  production, detection and consumption of events as well as the responses they evoke. An event is
  any identifiable occurrence that has significance for system hardware or software.  The
- example below uses an {@link EventDispatcher} to link/register {@link Event} objects to their
- respective handlers once an {@link Event} is dispatched, it's respective handler is invoked and
- the {@link Event} is handled accordingly.
+ example below uses an {EventDispatcher} to link/register {Event} objects to their
+ respective handlers once an {Event} is dispatched, it's respective handler is invoked and
+ the {Event} is handled accordingly.
 ++++
 
 include::C:/git/java-design-patterns/event-driven-architecture/README.adoc[]
@@ -1352,13 +1352,13 @@ With the Microservices pattern, a client may need data from multiple different m
 
 
  This implementation shows what the API Gateway pattern could look like for an e-commerce site.
- The {@link ApiGateway} makes calls to the Image and Price microservices using the
- {@link ImageClientImpl} and {@link PriceClientImpl} respectively. Customers viewing the site on a
- desktop device can see both price information and an image of a product, so the {@link ApiGateway}
- calls both of the microservices and aggregates the data in the {@link DesktopProduct} model.
+ The {ApiGateway} makes calls to the Image and Price microservices using the
+ {ImageClientImpl} and {PriceClientImpl} respectively. Customers viewing the site on a
+ desktop device can see both price information and an image of a product, so the {ApiGateway}
+ calls both of the microservices and aggregates the data in the {DesktopProduct} model.
  However, mobile users only see price information; they do not see a product image. For mobile
- users, the {@link ApiGateway} only retrieves price information, which it uses to populate the
- {@link MobileProduct}.
+ users, the {ApiGateway} only retrieves price information, which it uses to populate the
+ {MobileProduct}.
 ++++
 
 include::C:/git/java-design-patterns/com.iluwatar.api.gateway.app/README.adoc[]
@@ -1370,11 +1370,11 @@ Factory-kit is a creational pattern which defines a factory of immutable content
  creating one of the objects specified directly in the factory-kit instance.
 
 
- In the given example {@link WeaponFactory} represents the factory-kit, that contains
- four {@link Builder}s for creating new objects of
- the classes implementing {@link Weapon} interface.
- <br>Each of them can be called with {@link WeaponFactory#create(WeaponType)} method, with
- an input representing an instance of {@link WeaponType} that needs to
+ In the given example {WeaponFactory} represents the factory-kit, that contains
+ four {Builder}s for creating new objects of
+ the classes implementing {Weapon} interface.
+ <br>Each of them can be called with {WeaponFactory#create(WeaponType)} method, with
+ an input representing an instance of {WeaponType} that needs to
  be mapped explicitly with desired class type in the factory instance.
 ++++
 
@@ -1383,12 +1383,12 @@ include::C:/git/java-design-patterns/factory-kit/README.adoc[]
 == Feature-Toggle
 ++++
 The Feature Toggle pattern allows for complete code executions to be turned on or off with ease. This allows features
- to be controlled by either dynamic methods just as {@link User} information or by {@link Properties}. In the App
- below there are two examples. Firstly the {@link Properties} version of the feature toggle, where the enhanced
+ to be controlled by either dynamic methods just as {User} information or by {Properties}. In the App
+ below there are two examples. Firstly the {Properties} version of the feature toggle, where the enhanced
  version of the welcome message which is personalised is turned either on or off at instance creation. This method
- is not as dynamic as the {@link User} driven version where the feature of the personalised welcome message is
- dependant on the {@link UserGroup} the {@link User} is in. So if the user is a memeber of the
- {@link UserGroup#isPaid(User)} then they get an ehanced version of the welcome message.
+ is not as dynamic as the {User} driven version where the feature of the personalised welcome message is
+ dependant on the {UserGroup} the {User} is in. So if the user is a memeber of the
+ {UserGroup#isPaid(User)} then they get an ehanced version of the welcome message.
 
  Note that this pattern can easily introduce code complexity, and if not kept in check can result in redundant
  unmaintained code within the codebase.
@@ -1438,11 +1438,11 @@ The Monad pattern defines a monad structure, that enables chaining operations
  monadic value and returns monadic value.
  <br>return - that takes plain type object and returns this object wrapped in a monadic value.
 
- In the given example, the Monad pattern is represented as a {@link Validator} that takes an instance
- of a plain object with {@link Validator#of(Object)}
- and validates it {@link Validator#validate(Function, Predicate, String)} against given predicates.
- As a validation result {@link Validator#get()} it either returns valid object {@link Validator#t}
- or throws a list of exceptions {@link Validator#exceptions} collected during validation.
+ In the given example, the Monad pattern is represented as a {Validator} that takes an instance
+ of a plain object with {Validator#of(Object)}
+ and validates it {Validator#validate(Function, Predicate, String)} against given predicates.
+ As a validation result {Validator#get()} it either returns valid object {Validator#t}
+ or throws a list of exceptions {Validator#exceptions} collected during validation.
 ++++
 
 include::C:/git/java-design-patterns/monad/README.adoc[]
@@ -1517,13 +1517,13 @@ Hexagonal Architecture pattern decouples the application core from the
  from the services it uses.
  
  The primary ports for the application are console interfaces
- {@link ConsoleAdministration} through which the lottery round is
- initiated and run and {@link ConsoleLottery} that allows players to
+ {ConsoleAdministration} through which the lottery round is
+ initiated and run and {ConsoleLottery} that allows players to
  submit lottery tickets for the draw.
  
- The secondary ports that application core uses are {@link WireTransfers}
- which is a banking service, {@link LotteryEventLog} that delivers
- eventlog as lottery events occur and {@link LotteryTicketRepository}
+ The secondary ports that application core uses are {WireTransfers}
+ which is a banking service, {LotteryEventLog} that delivers
+ eventlog as lottery events occur and {LotteryTicketRepository}
  that is the storage for the lottery tickets.
 ++++
 
@@ -1536,8 +1536,8 @@ The Abstract Document pattern enables handling additional, non-static
  separate properties of different classes into set of interfaces.
 
 
- In Abstract Document pattern,({@link AbstractDocument}) fully implements
- {@link Document}) interface. Traits are then defined to enable access to
+ In Abstract Document pattern,({AbstractDocument}) fully implements
+ {Document}) interface. Traits are then defined to enable access to
  properties in usual, static way.
 ++++
 
@@ -1616,7 +1616,7 @@ This application demonstrates the <b>Event-based Asynchronous</b> pattern. Essen
  event is complete, the appropriate listener/callback method will be called. The listener then proceeds to carry out
  further processing depending on the needs of the user.
 
- The {@link EventManager} manages the events/threads that the user creates. Currently, the supported event operations
+ The {EventManager} manages the events/threads that the user creates. Currently, the supported event operations
  are: <code>start</code>, <code>stop</code>, <code>getStatus</code>. For Synchronous events, the user is unable to
  start another (Synchronous) event if one is already running at the time. The running event would have to either be
  stopped or completed before a new event can be started.
@@ -1667,9 +1667,9 @@ Many solutions in the cloud involve running tasks that invoke services. In this 
  at its own pace irrespective of the volume of requests from concurrent tasks. Additionally, 
  there is no delay to a task if the service is not available at the time it posts a message to the queue.
 
- In this example we have a class {@link MessageQueue} to hold the message {@link Message} objects. 
- All the worker threads {@link TaskGenerator} will submit the messages to the MessageQueue. 
- The service executor class {@link ServiceExecutor} will pick up one task at a time from the Queue and 
+ In this example we have a class {MessageQueue} to hold the message {Message} objects. 
+ All the worker threads {TaskGenerator} will submit the messages to the MessageQueue. 
+ The service executor class {ServiceExecutor} will pick up one task at a time from the Queue and 
  execute them.
 ++++
 
@@ -1683,7 +1683,7 @@ The Data Bus pattern
 
  The Data-Bus pattern provides a method where different parts of an application may
  pass messages between each other without needing to be aware of the other's existence.</p>
- Similar to the {@code ObserverPattern}, members register themselves with the {@link DataBus}
+ Similar to the {@code ObserverPattern}, members register themselves with the {DataBus}
  and may then receive each piece of data that is published to the Data-Bus. The member
  may react to any given message or not.</p>
  It allows for Many-to-Many distribution of data, as there may be any number of
@@ -1694,12 +1694,12 @@ The Data Bus pattern
  This example of the pattern implements a Synchronous Data-Bus, meaning that
  when data is published to the Data-Bus, the publish method will not return until
  all members have received the data and returned.</p>
- The {@link DataBus} class is a Singleton.</p>
- Members of the Data-Bus must implement the {@link Member} interface.</p>
- Data to be published via the Data-Bus must implement the {@link DataType} interface.</p>
- The {@code data} package contains example {@link DataType} implementations.</p>
- The {@code members} package contains example {@link Member} implementations.</p>
- The {@link StatusMember} demonstrates using the DataBus to publish a message
+ The {DataBus} class is a Singleton.</p>
+ Members of the Data-Bus must implement the {Member} interface.</p>
+ Data to be published via the Data-Bus must implement the {DataType} interface.</p>
+ The {@code data} package contains example {DataType} implementations.</p>
+ The {@code members} package contains example {Member} implementations.</p>
+ The {StatusMember} demonstrates using the DataBus to publish a message
  to the Data-Bus when it receives a message.</p>
 ++++
 
@@ -1777,11 +1777,11 @@ include::C:/git/java-design-patterns/com.iluwatar.event.sourcing.app.app/README.
 The Data Transfer Object pattern is a design pattern in which an data transfer object is used to serve related
  information together to avoid multiple call for each piece of information.
  <p>
- In this example, ({@link CustomerClientApp}) as as customer details consumer i.e. client to request for
+ In this example, ({CustomerClientApp}) as as customer details consumer i.e. client to request for
  customer details to server.
  <p>
- CustomerResource ({@link CustomerResource}) act as server to serve customer information.
- And The CustomerDto ({@link CustomerDto} is data transfer object to share customer information.
+ CustomerResource ({CustomerResource}) act as server to serve customer information.
+ And The CustomerDto ({CustomerDto} is data transfer object to share customer information.
 ++++
 
 include::C:/git/java-design-patterns/com.iluwatar.datatransfer.customerclientapp/README.adoc[]
@@ -1792,11 +1792,11 @@ Throttling pattern is a design pattern to throttle or limit the use of resources
  users or a particular tenant. This can allow systems to continue to function and meet service level agreements,
  even when an increase in demand places load on resources.
 
-     In this example we have ({@link App}) as the initiating point of the service.
+     In this example we have ({App}) as the initiating point of the service.
      This is a time based throttling, i.e. only a certain number of calls are allowed per second.
  </p>
- ({@link Tenant}) is the Tenant POJO class with which many tenants can be created
- ({@link B2BService}) is the service which is consumed by the tenants and is throttled.
+ ({Tenant}) is the Tenant POJO class with which many tenants can be created
+ ({B2BService}) is the service which is consumed by the tenants and is throttled.
 ++++
 
 include::C:/git/java-design-patterns/throttling/README.adoc[]
@@ -1804,11 +1804,11 @@ include::C:/git/java-design-patterns/throttling/README.adoc[]
 == Partial-Response
 ++++
 The Partial response pattern is a design pattern in which client specifies fields to fetch to serve.
- Here {@link App} is playing as client for {@link VideoResource} server.
+ Here {App} is playing as client for {VideoResource} server.
  Client ask for specific fields information in video to server.
 
 
- {@link VideoResource} act as server to serve video information.
+ {VideoResource} act as server to serve video information.
 ++++
 
 include::C:/git/java-design-patterns/partial-response/README.adoc[]
