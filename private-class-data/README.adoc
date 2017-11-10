@@ -1,6 +1,3 @@
-- Difficulty: Beginner
-- Idiom
-
 === Intent
 
 Private Class Data design pattern seeks to reduce exposure of

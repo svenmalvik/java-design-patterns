@@ -1,7 +1,3 @@
-- Difficulty: Intermediate
-- I/O
-- Reactive
-
 === Intent
 
 Producer Consumer Design pattern is a classic concurrency pattern which reduces

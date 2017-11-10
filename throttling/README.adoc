@@ -1,5 +1,3 @@
-- Difficulty: Beginner
-
 === Intent
 
 Ensure that a given client is not able to access service resources more than the assigned limit.

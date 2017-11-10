@@ -1,6 +1,3 @@
-- Difficulty-Beginner
-- Gang Of Four
-
 === Intent
 
 Define the skeleton of an algorithm in an operation, deferring some

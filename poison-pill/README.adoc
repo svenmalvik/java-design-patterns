@@ -1,6 +1,3 @@
-- Difficulty: Intermediate
-- Reactive
-
 === Intent
 
 Poison Pill is known predefined data item that allows to provide

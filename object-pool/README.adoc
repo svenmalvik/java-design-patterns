@@ -1,6 +1,3 @@
-- Difficulty: Beginner
-- Performance
-
 === Intent
 
 When objects are expensive to create and they are needed only for

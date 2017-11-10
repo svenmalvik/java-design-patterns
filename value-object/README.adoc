@@ -1,5 +1,3 @@
-- Difficulty: Beginner
-
 === Intent
 
 Provide objects which follow value semantics rather than reference semantics.

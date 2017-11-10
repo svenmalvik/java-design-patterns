@@ -1,5 +1,3 @@
-- Difficulty: Beginner
-
 === Intent
 
 Servant is used for providing some behavior to a group of classes.

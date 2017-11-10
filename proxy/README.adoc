@@ -1,6 +1,3 @@
-- Gang Of Four
-- Difficulty: Beginner
-
 === Also known as
 
 Surrogate

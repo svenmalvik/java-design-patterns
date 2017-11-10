@@ -1,14 +1,3 @@
-—
-layout: pattern
-title: Converter
-folder: converter
-permalink: /patterns/converter/
-categories:
-tags:
- - Java
-
-Difficulty: Beginner
-
 === Intent
 
 The purpose of the Converter Pattern is to provide a generic, common way of bidirectional

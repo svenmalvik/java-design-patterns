@@ -1,5 +1,3 @@
-- Difficulty: Intermediate
-
 === Also known as
 
 Counting Semaphore

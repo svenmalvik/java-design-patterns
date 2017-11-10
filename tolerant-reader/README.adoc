@@ -1,5 +1,3 @@
-- Difficulty: Beginner
-
 === Intent
 
 Tolerant Reader is an integration pattern that helps creating

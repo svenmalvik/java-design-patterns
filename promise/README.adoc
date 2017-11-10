@@ -1,7 +1,3 @@
-- Functional
-- Reactive
-- Difficulty: Intermediate
-
 === Also known as
 
 CompletableFuture

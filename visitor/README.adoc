@@ -1,6 +1,3 @@
-- Difficulty: Intermediate
-- Gang Of Four
-
 === Intent
 
 Represent an operation to be performed on the elements of an object

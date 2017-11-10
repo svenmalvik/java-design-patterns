@@ -1,14 +1,3 @@
-—
-layout: pattern
-title: Balking
-folder: balking
-permalink: /patterns/balking/
-categories: Concurrency
-tags:
- - Java
-
-Difficulty: Beginner
-
 === Intent
 
 Balking Pattern is used to prevent an object from executing certain code if it is an

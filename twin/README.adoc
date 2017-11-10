@@ -1,5 +1,3 @@
-- Difficulty: Intermediate
-
 === Intent
 
 Twin pattern is a design pattern which provides a standard solution to simulate multiple

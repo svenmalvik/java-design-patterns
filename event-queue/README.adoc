@@ -1,15 +1,3 @@
-—
-layout: pattern
-title: Event Queue
-folder: event-queue
-permalink: /patterns/event-queue/
-categories: Concurrency
-tags:
- - Java
- - Difficulty Intermediate
-
-- Queue
-
 === Intent
 
 Event Queue is a good pattern if You have a limited accessibility resource (for example:

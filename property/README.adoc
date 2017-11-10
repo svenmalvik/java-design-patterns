@@ -1,5 +1,3 @@
-- Difficulty: Beginner
-
 === Intent
 
 Create hierarchy of objects and new objects using already existing

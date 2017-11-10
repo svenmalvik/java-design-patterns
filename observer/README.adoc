@@ -1,7 +1,3 @@
-- Difficulty: Beginner
-- Gang Of Four
-- Reactive
-
 === Also known as
 
 Dependents, Publish-Subscribe

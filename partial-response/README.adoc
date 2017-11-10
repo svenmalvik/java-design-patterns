@@ -1,7 +1,3 @@
-- KISS
-- YAGNI
-- Difficulty: Beginner
-
 === Intent
 
 Send partial response from server to client on need basis. Client will specify the the fields

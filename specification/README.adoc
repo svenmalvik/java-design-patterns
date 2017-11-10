@@ -1,5 +1,3 @@
-- Difficulty: Beginner
-
 === Also known as
 
 Filter, Criteria
