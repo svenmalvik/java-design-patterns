@@ -65,7 +65,7 @@ public class App {
         from("{{wireTapEndpoint}}").log("WIRETAPPED ENDPOINT: ${body}");
       }
 
-    });
+    }.
 
     // Add producer that will send test message to an entry point in WireTapRoute
     camelContext.createProducerTemplate().sendBody("{{entry}}", "Test message");

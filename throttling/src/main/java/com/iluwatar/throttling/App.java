@@ -38,11 +38,11 @@ import java.util.concurrent.TimeUnit;
  * users or a particular tenant. This can allow systems to continue to function and meet service level agreements,
  * even when an increase in demand places load on resources.
  *
- *     In this example we have ({@link App}) as the initiating point of the service.
+ *     In this example we have {@link App} as the initiating point of the service.
  *     This is a time based throttling, i.e. only a certain number of calls are allowed per second.
  * </p>
- * ({@link Tenant}) is the Tenant POJO class with which many tenants can be created
- * ({@link B2BService}) is the service which is consumed by the tenants and is throttled.
+ * {@link Tenant} is the Tenant POJO class with which many tenants can be created
+ * {@link B2BService} is the service which is consumed by the tenants and is throttled.
  *
  * @pattern Throttling
  */

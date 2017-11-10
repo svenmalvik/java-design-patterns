@@ -60,7 +60,7 @@ public class App {
         while (true) {
           producer.produce();
         }
-      });
+      }.
     }
 
     for (int i = 0; i < 3; i++) {
@@ -69,7 +69,7 @@ public class App {
         while (true) {
           consumer.consume();
         }
-      });
+      }.
     }
 
     executorService.shutdown();

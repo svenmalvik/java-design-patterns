@@ -33,7 +33,7 @@ import org.slf4j.LoggerFactory;
  * uniformly.
  *
  * In this example we have sentences composed of words composed of letters. All of the objects can
- * be treated through the same interface ({@link LetterComposite}).
+ * be treated through the same interface {@link LetterComposite}.
  *
  * @pattern Composite
  */

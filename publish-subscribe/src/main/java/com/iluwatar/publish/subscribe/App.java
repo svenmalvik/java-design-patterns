@@ -62,7 +62,7 @@ public class App {
       public void configure() throws Exception {
         from("direct:origin").multicast().to("mock:foo", "mock:bar", "stream:out");
       }
-    });
+    }.
     ProducerTemplate template = context.createProducerTemplate();
     context.start();
     context.getRoutes().stream().forEach(r -> LOGGER.info(r.toString()));

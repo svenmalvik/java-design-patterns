@@ -33,7 +33,7 @@ import org.slf4j.LoggerFactory;
  * application, like the abstract factory pattern does. - avoid the inherent cost of creating a new
  * object in the standard way (e.g., using the 'new' keyword)
  *
- * In this example we have a factory class ({@link HeroFactoryImpl}) producing objects by cloning
+ * In this example we have a factory class {@link HeroFactoryImpl} producing objects by cloning
  * the existing ones. The factory's prototype objects are given as constructor parameters.
  *
  * @pattern Prototype

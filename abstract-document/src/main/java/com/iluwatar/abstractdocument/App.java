@@ -40,8 +40,8 @@ import java.util.Map;
  * separate properties of different classes into set of interfaces.
  *
  *
- * In Abstract Document pattern,({@link AbstractDocument}) fully implements
- * {@link Document}) interface. Traits are then defined to enable access to
+ * In Abstract Document pattern,{@link AbstractDocument} fully implements
+ * {@link Document} interface. Traits are then defined to enable access to
  * properties in usual, static way.
  *
  * @pattern Abstract-Document

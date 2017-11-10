@@ -35,7 +35,7 @@ import java.util.Stack;
  * the composite pattern and is used to evaluate (interpret) the sentence for a client.
  *
  * In this example we use the Interpreter pattern to break sentences into expressions (
- * {@link Expression}) that can be evaluated and as a whole form the result.
+ * {@link Expression} that can be evaluated and as a whole form the result.
  *
  * @pattern Interpreter
  */

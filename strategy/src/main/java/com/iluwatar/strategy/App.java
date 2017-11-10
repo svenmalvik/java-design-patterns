@@ -34,8 +34,8 @@ import org.slf4j.LoggerFactory;
  * to write lots of boilerplate code. With modern Java it is easy to pass behavior
  * with method references and lambdas making the code shorter and more readable.
  *
- * In this example ({@link DragonSlayingStrategy}) encapsulates an algorithm. The containing object
- * ({@link DragonSlayer}) can alter its behavior by changing its strategy.
+ * In this example {@link DragonSlayingStrategy} encapsulates an algorithm. The containing object
+ * {@link DragonSlayer} can alter its behavior by changing its strategy.
  *
  * @pattern Strategy
  */

@@ -65,7 +65,7 @@ public class App {
         from("{{endpoint}}").log("ENDPOINT: ${body}");
       }
 
-    });
+    }.
 
     // Add producer that will send test message to an entry point in WireTapRoute
     String[] stringArray = {"Test item #1", "Test item #2", "Test item #3"};

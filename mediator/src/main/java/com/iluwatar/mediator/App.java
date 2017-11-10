@@ -40,8 +40,8 @@ package com.iluwatar.mediator;
  * mediator. This reduces the dependencies between communicating objects, thereby lowering the
  * coupling.
  *
- * In this example the mediator encapsulates how a set of objects ({@link PartyMember}) interact.
- * Instead of referring to each other directly they use the mediator ({@link Party}) interface.
+ * In this example the mediator encapsulates how a set of objects {@link PartyMember} interact.
+ * Instead of referring to each other directly they use the mediator {@link Party} interface.
  *
  * @pattern Mediator
  */

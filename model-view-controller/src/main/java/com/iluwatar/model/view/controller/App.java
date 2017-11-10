@@ -33,7 +33,7 @@ package com.iluwatar.model.view.controller;
  * or a diagram The third part, the controller, accepts input and converts it to commands for the
  * model or view.
  *
- * In this example we have a giant ({@link GiantModel}) with statuses for health, fatigue and
+ * In this example we have a giant {@link GiantModel} with statuses for health, fatigue and
  * nourishment. {@link GiantView} can display the giant with its current status.
  * {@link GiantController} receives input affecting the model and delegates redrawing the giant to
  * the view.

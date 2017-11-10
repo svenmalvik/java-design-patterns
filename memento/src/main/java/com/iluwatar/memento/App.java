@@ -41,7 +41,7 @@ import java.util.Stack;
  * or should not, change). When using this pattern, care should be taken if the originator may
  * change other objects or resources - the memento pattern operates on a single object.
  *
- * In this example the object ({@link Star}) gives out a "memento" ({@link StarMemento}) that
+ * In this example the object {@link Star} gives out a "memento" {@link StarMemento} that
  * contains the state of the object. Later on the memento can be set back to the object restoring
  * the state.
  * @pattern Memento

@@ -41,7 +41,7 @@ import java.util.List;
  * Instead of the instanceof-checks a better way is to make another virtual call on the parameter object. This way new
  * functionality can be easily added without the need to modify existing implementation (open-closed principle).
  *
- * In this example we have hierarchy of objects ({@link GameObject}) that can collide to each other. Each object has its
+ * In this example we have hierarchy of objects {@link GameObject} that can collide to each other. Each object has its
  * own coordinates which are checked against the other objects' coordinates. If there is an overlap, then the objects
  * collide utilizing the Double Dispatch pattern.
  *
@@ -72,7 +72,7 @@ public class App {
       if (o1 != o2 && o1.intersectsWith(o2)) {
         o1.collision(o2);
       }
-    }));
+    }.;
     LOGGER.info("");
 
     // output eventual object statuses

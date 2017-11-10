@@ -51,8 +51,8 @@ import org.slf4j.LoggerFactory;
  * responses to an action. Encoding the logic of the interactions separately in each interface
  * causes a lot of duplication.
  *
- * The example application demonstrates interactions between a client ({@link App}) and a service (
- * {@link MagicService}). The service is implemented with 3-layer architecture (entity, dao,
+ * The example application demonstrates interactions between a client {@link App} and a service (
+ * {@link MagicService}. The service is implemented with 3-layer architecture (entity, dao,
  * service). For persistence the example uses in-memory H2 database which is populated on each
  * application startup.
  *

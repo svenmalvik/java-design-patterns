@@ -50,6 +50,6 @@ public class App {
         writer.append(" ");
         writer.append("there!");
       }
-    });
+    }.
   }
 }

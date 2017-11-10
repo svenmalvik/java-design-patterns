@@ -28,16 +28,16 @@ package com.iluwatar.front.controller;
  * handles all requests for a web site.
  *
  * The Front Controller pattern consolidates request handling through a single handler object (
- * {@link FrontController}). This object can carry out the common the behavior such as
+ * {@link FrontController}. This object can carry out the common the behavior such as
  * authorization, request logging and routing requests to corresponding views.
  *
- * Typically the requests are mapped to command objects ({@link Command}) which then display the
- * correct view ({@link View}).
+ * Typically the requests are mapped to command objects {@link Command} which then display the
+ * correct view {@link View}.
  *
  * In this example we have implemented two views: {@link ArcherView} and {@link CatapultView}. These
  * are displayed by sending correct request to the {@link FrontController} object. For example, the
  * {@link ArcherView} gets displayed when {@link FrontController} receives request "Archer". When
- * the request is unknown, we display the error view ({@link ErrorView}).
+ * the request is unknown, we display the error view {@link ErrorView}.
  *
  */
 public class App {

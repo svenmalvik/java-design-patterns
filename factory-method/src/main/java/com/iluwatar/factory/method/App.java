@@ -33,9 +33,9 @@ import org.slf4j.LoggerFactory;
  * and implemented by child classes, or implemented in a base class and optionally overridden by
  * derived classes—rather than by calling a constructor.
  *
- * In this Factory Method example we have an interface ({@link Blacksmith}) with a method for
- * creating objects ({@link Blacksmith#manufactureWeapon}). The concrete subclasses (
- * {@link OrcBlacksmith}, {@link ElfBlacksmith}) then override the method to produce objects of
+ * In this Factory Method example we have an interface {@link Blacksmith} with a method for
+ * creating objects {@link Blacksmith#manufactureWeapon}. The concrete subclasses (
+ * {@link OrcBlacksmith}, {@link ElfBlacksmith} then override the method to produce objects of
  * their liking.
  *
  * @pattern Factory Method

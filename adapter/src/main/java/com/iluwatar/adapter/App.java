@@ -34,8 +34,8 @@ package com.iluwatar.adapter;
  * object. This example uses the object adapter approach.
  *
  *
- * The Adapter ({@link FishingBoatAdapter}) converts the interface of the adaptee class (
- * {@link FishingBoat}) into a suitable one expected by the client ( {@link RowingBoat} ).
+ * The Adapter {@link FishingBoatAdapter} converts the interface of the adaptee class (
+ * {@link FishingBoat} into a suitable one expected by the client {@link RowingBoat} ).
  *
  *
  * The story of this implementation is this. <br>

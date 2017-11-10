@@ -55,7 +55,7 @@ public class App {
       builder.add(WeaponType.AXE, Axe::new);
       builder.add(WeaponType.SPEAR, Spear::new);
       builder.add(WeaponType.BOW, Bow::new);
-    });
+    }.
     Weapon axe = factory.create(WeaponType.AXE);
     LOGGER.info(axe.toString());
   }

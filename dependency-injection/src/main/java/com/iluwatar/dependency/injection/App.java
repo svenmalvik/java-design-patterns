@@ -31,14 +31,14 @@ import com.google.inject.Injector;
  * - High-level modules should not depend on low-level modules. Both should depend on abstractions.
  * - Abstractions should not depend on details. Details should depend on abstractions.
  *
- * In this example we show you three different wizards. The first one ({@link SimpleWizard}) is a
+ * In this example we show you three different wizards. The first one {@link SimpleWizard} is a
  * naive implementation violating the inversion of control principle. It depends directly on a
  * concrete implementation which cannot be changed.
  *
- * The second and third wizards({@link AdvancedWizard} and {@link AdvancedSorceress}) are more flexible.
+ * The second and third wizards{@link AdvancedWizard} and {@link AdvancedSorceress} are more flexible.
  * They do not depend on any concrete implementation but abstraction. They utilizes Dependency Injection
- * pattern allowing their {@link Tobacco} dependency to be injected through constructor ({@link AdvancedWizard})
- * or setter ({@link AdvancedSorceress}). This way, handling the dependency is no longer the wizard's
+ * pattern allowing their {@link Tobacco} dependency to be injected through constructor {@link AdvancedWizard})
+ * or setter {@link AdvancedSorceress}. This way, handling the dependency is no longer the wizard's
  * responsibility. It is resolved outside the wizard class.
  *
  * The fourth example takes the pattern a step further. It uses Guice framework for Dependency

@@ -43,14 +43,14 @@ import org.slf4j.LoggerFactory;
  * synchronized/up-to-date. This pattern can improve performance and also helps to maintain
  * consistency between data held in the cache and the data in the underlying data store.
  *
- * In this example, the user account ({@link UserAccount}) entity is used as the underlying
+ * In this example, the user account {@link UserAccount} entity is used as the underlying
  * application data. The cache itself is implemented as an internal (Java) data structure. It adopts
  * a Least-Recently-Used (LRU) strategy for evicting data from itself when its full. The four
  * strategies are individually tested. The testing of the cache is restricted towards saving and
- * querying of user accounts from the underlying data store ( {@link DbManager}). The main class (
+ * querying of user accounts from the underlying data store {@link DbManager}. The main class (
  * {@link App} is not aware of the underlying mechanics of the application (i.e. save and query) and
  * whether the data is coming from the cache or the DB (i.e. separation of concern). The AppManager
- * ({@link AppManager}) handles the transaction of data to-and-from the underlying data store
+ * {@link AppManager} handles the transaction of data to-and-from the underlying data store
  * (depending on the preferred caching policy/strategy).
  *
  * <i>App --> AppManager --> CacheStore/LRUCache/CachingPolicy --> DBManager</i>
